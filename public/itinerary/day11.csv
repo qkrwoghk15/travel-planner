@@ -1,0 +1,7 @@
+Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,PlanB,Transit
+2026-04-13,11,09:30,12:00,🎨 브레라 지구(Brera) 산책,Milan,Sightseeing,0,"https://www.google.com/maps/place/Brera,+Milan/@45.4715,9.1885,17z/",,,밀라노에서 가장 예술적인 거리 탐방,45.4715,9.1885,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,메트로 M3 (Centrale FS -> Montenapoleone) 이동 후 도보 산책 시작
+2026-04-13,11,12:30,14:00,🍴 점심: Ratanà (모던 밀라네제),Milan,Food,55,"https://www.google.com/maps/place/Ratan%C3%A0/@45.4855,9.1895,17z/",,,현대적으로 재해석된 최고의 리조또 미식,45.4855,9.1895,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,브레라에서 도보 또는 메트로 M2 (Lanza -> Gioia) 이동
+2026-04-13,11,14:30,17:00,🏰 스포르체스코 성 & 공원 휴식,Milan,Sightseeing,0,"https://www.google.com/maps/place/Sforzesco+Castle/@45.4705,9.1793,17z/",,,밀라노의 역사적 성과 셈피오네 공원 산책,45.4705,9.1793,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,도보 10분
+2026-04-13,11,17:30,19:00,☕ 스타벅스 리저브 로스터리,Milan,Sightseeing,15,"https://www.google.com/maps/place/Starbucks+Reserve+Roastery/@45.4655,9.1865,17z/",,,구 우체국 건물을 개조한 환상적인 공간,45.4655,9.1865,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,메트로 M2 (Gioia -> Cadorna) 환승 후 M1 (Cadorna -> Cordusio) 이동
+2026-04-13,11,19:30,21:30,🍴 저녁: 나빌리(Navigli) 아페리티보,Milan,Food,20,"https://www.google.com/maps/place/Navigli/@45.4525,9.1755,17z/",,,1인 20유로 내외로 음료와 뷔페를 무제한으로 즐기는 밀라노식 가성비 저녁,45.4525,9.1755,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,메트로 M2 (Cordusio -> Porta Genova FS) 이동
+2026-04-13,11,22:00,23:59,🛌 숙소 복귀 및 휴식,Milan,Rest,0,,,,연박 숙소에서 여유로운 밤,45.4847,9.2045,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,나빌리에서 메트로 M2 (Porta Genova FS -> Centrale FS) 이동 후 도보 2분

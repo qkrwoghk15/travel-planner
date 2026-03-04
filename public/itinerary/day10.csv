@@ -1,0 +1,7 @@
+Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,PlanB,Transit
+2026-04-12,10,08:30,11:30,🚆 기차 이동 (인터라켄 -> 밀라노),Interlaken -> Milan,Transport,85,"https://www.google.com/maps/place/Milano+Centrale/@45.4858,9.2039,17z/",,,도모도솔라 경유 이탈리아 입국,45.4858,9.2039,지연 시 다음 열차 이용,TGV/EuroCity (Interlaken Ost -> Milano Centrale)
+2026-04-12,10,12:00,13:30,🍴 점심: Luini (판제로티),Milan,Food,15,"https://www.google.com/maps/place/Luini/@45.4646,9.1916,17z/",,,밀라노 3대 길거리 미식. 판제로티(Classico Fritto) 시식,45.4646,9.1916,대기 길 경우 Spontini 조각 피자 추천,밀라노 중앙역에서 메트로 M3 (Duomo 역) 이동
+2026-04-12,10,14:00,15:00,🏠 [체크인] 43 Station Hotel,Milan,Accommodation,150,"https://www.google.com/maps/place/43+Station+Hotel/@45.4862,9.2025,17z/",,,중앙역 도보 3분 현대적인 가성비 4성급,45.4862,9.2025,예약 불가 시 Hotel Berna 추천,메트로 M3 (Duomo -> Centrale FS) 복귀 후 도보 3분
+2026-04-12,10,15:30,18:00,⛪ 밀라노 두오모 루프탑 & Peck 쇼핑,Milan,Sightseeing,25,"https://www.google.com/maps/place/Duomo+di+Milano/@45.4642,9.1919,17z/",,,두오모 테라스에서 첨탑 관람 후 140년 전통 Peck에서 보르디예 버터와 치즈 탐방,45.4642,9.1919,비 올 때 노베첸토 미술관 (실내 두오모 뷰),숙소에서 메트로 M3 (Centrale -> Duomo) 이용
+2026-04-12,10,18:30,20:30,🍴 저녁: Ratanà (오소부코),Milan,Food,65,"https://www.google.com/maps/place/Ratan%C3%A0/@45.4855,9.1895,17z/",,,추천 메뉴: Risotto alla Milanese con Ossobuco. 현대적 감각의 정통 미식,45.4855,9.1895,예약 불가 시 Stendhal Brera 추천,숙소에서 메트로 M2 (Centrale -> Gioia) 이동 후 도보 5분
+2026-04-12,10,21:00,23:59,🛌 숙소 복귀 및 휴식,Milan,Rest,0,,,,이탈리아 첫날 여유로운 마무리,45.4862,9.2025,야간 도보 이동 주의,식당에서 도보 10분 또는 메트로 M2 (Moscova -> Centrale FS) 이동

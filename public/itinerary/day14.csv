@@ -1,0 +1,6 @@
+Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,PlanB,Transit
+2026-04-16,14,09:30,11:30,🚶 볼로냐 대학 & 해부학 강의실,Bologna,Sightseeing,5,"https://www.google.com/maps/place/Archiginnasio+of+Bologna/@44.4920,11.3435,17z/",,,유럽 최고 대학의 역사 체험,44.4920,11.3435,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,도보 및 로컬 교통
+2026-04-16,14,11:30,13:30,🍴 점심: Mercato delle Erbe (에르베 시장),Bologna,Food,25,https://www.google.com/maps/search/Mercato+delle+Erbe+Bologna/,,,현지인 시장 내 푸드코트 미식,44.4975,11.3395,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,현지 교통 이용
+2026-04-16,14,14:00,17:00,🚶 볼로냐 사탑(Two Towers) 등정,Bologna,Sightseeing,10,"https://www.google.com/maps/place/Two+Towers/@44.4942,11.3468,17z/",,,498개 계단 등정 후 도시 조망,"44.4942,11.3468",,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,도보 이동
+2026-04-16,14,18:30,20:00,🍴 저녁: Oltre (모던 볼로네제),Bologna,Food,55,https://www.google.com/maps/search/Oltre+Bologna/,,,전통의 현대적 재해석 미식,"44.5000,11.3400",,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,로컬 교통
+2026-04-16,14,20:30,23:59,🛌 숙소 복귀 및 휴식,Bologna,Rest,0,,,,연박 숙소 개인실 휴식,44.5080,11.3420,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,숙소 복귀 이동

@@ -1,0 +1,4 @@
+Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,PlanB,Transit
+2026-04-03,1,18:10,19:10,🛬 CDG 공항 착륙,Paris (CDG),Transport,0,"https://www.google.com/maps/place/Paris+Charles+de+Gaulle+Airport/@49.0096,2.5479,15z/",,,파리 도착 및 입국 심사,49.0097,2.5479,현지 기상 상황에 따른 유동적 휴식,RER B (Aéroport CDG 2 TGV -> Châtelet-Les Halles) 직통
+2026-04-03,1,20:10,21:00,🏠 [체크인] Hôtel Astra Opéra,Paris (9구),Accommodation,145,"https://www.google.com/maps/place/H%C3%B4tel+Astra+Op%C3%A9ra+-+Astotel/@48.8732,2.3295,17z/",,https://astotel.com/hotel/astra-opera,무료 미니바 및 24h 스낵 서비스 포함 4성급 부티크,48.8732,2.3295,예약 불가 시 M Social Hotel 추천,"Châtelet 역에서 메트로 7호선 환승 후 Le Peletier 역 하차, 도보 3분"
+2026-04-03,1,21:00,22:30,🍴 저녁: Bistrot Paul Bert,Paris (11구),Food,45,https://www.google.com/maps/search/Bistrot+Paul+Bert+Paris/,,,"추천 메뉴: Steak Frites, 수플레. 파리 비스트로의 정수",48.8506,2.3852,우천 시 인근 가성비 부용(Bouillon) 식당 이용,메트로 8호선 (Ledru-Rollin 역) 이동 후 도보 5분

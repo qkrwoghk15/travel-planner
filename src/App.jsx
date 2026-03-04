@@ -87,40 +87,59 @@ function MapController({ center, zoom, bounds, forceFly = false }) {
 }
 
 export default function App() {
-  const [itinerary, setItinerary] = useState([]);
+  const [itinerary, setItinerary] = useState([]); // Current day events
+  const [summary, setSummary] = useState(null); // Global metadata
   const [selectedDay, setSelectedDay] = useState(1);
   const [loading, setLoading] = useState(true);
+  const [dayLoading, setDayLoading] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [now, setNow] = useState(new Date());
   const [mapConfig, setMapConfig] = useState({ center: [48.8566, 2.3522], zoom: 14, bounds: null, forceFly: false });
   const [slideshowIndex, setSlideshowIndex] = useState(0);
   const [focusedEventIndex, setFocusedEventIndex] = useState(null);
 
+  // 1. Initial Metadata Load
   useEffect(() => {
-    Papa.parse('/itinerary.csv', {
+    fetch('/itinerary/summary.json')
+      .then(res => res.json())
+      .then(data => {
+        setSummary(data);
+        setLoading(false);
+      })
+      .catch(err => {
+        console.error('Summary Load Error:', err);
+        setLoading(false);
+      });
+
+    const timer = setInterval(() => setNow(new Date()), 60000);
+    return () => clearInterval(timer);
+  }, []);
+
+  // 2. Dynamic Day Load
+  useEffect(() => {
+    if (!summary) return;
+    setDayLoading(true);
+    Papa.parse(`/itinerary/day${selectedDay}.csv`, {
       download: true,
       header: true,
       dynamicTyping: true,
       skipEmptyLines: true,
       complete: (results) => {
-        console.log('Parsed Data:', results.data);
-        const data = results.data.filter(row => row.Day && row.Activity);
+        const data = results.data.filter(row => row.Activity);
         setItinerary(data);
-        setLoading(false);
+        setDayLoading(false);
       },
       error: (err) => {
-        console.error('CSV Parsing Error:', err);
-        setLoading(false);
+        console.error('Day Load Error:', err);
+        setDayLoading(false);
       }
     });
-    const timer = setInterval(() => setNow(new Date()), 60000);
-    return () => clearInterval(timer);
-  }, []);
+  }, [selectedDay, summary]);
 
   const goToSlide = (index) => {
-    if (index < 0 || index >= allTripPoints.length) return;
+    if (!summary || index < 0 || index >= summary.total_points.length) return;
     setSlideshowIndex(index);
-    const point = allTripPoints[index];
+    const point = summary.total_points[index];
     setMapConfig({ center: point.pos, zoom: 14, forceFly: true });
   };
 
@@ -128,38 +147,35 @@ export default function App() {
   const handlePrev = () => goToSlide(slideshowIndex - 1);
 
   const currentStatus = useMemo(() => {
+    if (!summary) return { isTripDay: false, currentDay: null };
     const todayStr = now.toISOString().split('T')[0];
     const timeStr = now.toTimeString().split(' ')[0].substring(0, 5);
+    
+    // Check if any point in total_points matches today
+    const todayInfo = summary.total_points.find(item => item.date === todayStr); 
+    // Note: If date is not in summary points, we'd need another check.
+    // For now, keep it simple using the first event of the current day.
     const activeEvent = itinerary.find(item => item.Date === todayStr && timeStr >= (item.StartTime || '') && timeStr < (item.EndTime || ''));
-    const todayInfo = itinerary.find(item => item.Date === todayStr);
-    return { isTripDay: !!todayInfo, currentDay: todayInfo ? Number(todayInfo.Day) : null, activeEvent, todayStr, timeStr };
-  }, [itinerary, now]);
+    
+    return { isTripDay: !!todayInfo, currentDay: todayInfo ? Number(todayInfo.day) : null, activeEvent, todayStr, timeStr };
+  }, [itinerary, summary, now]);
 
   useEffect(() => {
-    if (currentStatus.currentDay && itinerary.length > 0) {
+    if (currentStatus.currentDay && summary) {
       setSelectedDay(currentStatus.currentDay);
     }
-  }, [currentStatus.currentDay, itinerary.length]);
+  }, [currentStatus.currentDay, summary]);
 
-  const days = useMemo(() => {
-    return [...new Set(itinerary.map(item => Number(item.Day)))].sort((a, b) => a - b);
-  }, [itinerary]);
+  const days = useMemo(() => summary?.days || [], [summary]);
 
   const currentDayEvents = useMemo(() => {
-    return itinerary.filter(item => Number(item.Day) === selectedDay)
-      .sort((a, b) => (a.StartTime || '').localeCompare(b.StartTime || ''));
-  }, [itinerary, selectedDay]);
+    return itinerary.sort((a, b) => (a.StartTime || '').localeCompare(b.StartTime || ''));
+  }, [itinerary]);
 
   const stats = useMemo(() => {
-    const categories = ['Food', 'Transport', 'Sightseeing', 'Accommodation'];
-    const summary = categories.map(cat => ({
-      name: cat,
-      displayName: CATEGORY_MAP[cat],
-      cost: itinerary.filter(item => item.Category === cat).reduce((sum, i) => sum + (Number(i.Cost) || 0), 0),
-    }));
-    const total = summary.reduce((sum, item) => sum + item.cost, 0);
-    return { summary, total };
-  }, [itinerary]);
+    if (!summary) return { summary: [], total: 0 };
+    return { summary: summary.summary, total: summary.total_cost };
+  }, [summary]);
 
   const dayCost = useMemo(() => currentDayEvents.reduce((sum, item) => sum + (Number(item.Cost) || 0), 0), [currentDayEvents]);
 
@@ -186,48 +202,15 @@ export default function App() {
 
   useEffect(() => {
     resetToDailyView();
-  }, [selectedDay, currentDayEvents]);
+  }, [selectedDay, itinerary]); // Reset map when day or itinerary changes
 
-  const stayGroups = useMemo(() => {
-    const groups = [];
-    if (days.length === 0) return groups;
-
-    let currentGroup = null;
-
-    days.forEach(day => {
-      const dayEvents = itinerary.filter(item => Number(item.Day) === day);
-      const allPrevAccommodations = itinerary
-        .filter(e => Number(e.Day) <= day && e.Category === 'Accommodation')
-        .sort((a, b) => (Number(b.Day) - Number(a.Day)) || (b.StartTime || '').localeCompare(a.StartTime || ''));
-      
-      const acc = allPrevAccommodations[0]?.Activity
-        .replace('[체크인]', '').replace('[공식 체크인]', '').replace('🏠', '').trim() || "기내/이동";
-      const city = dayEvents[dayEvents.length - 1]?.Location?.split('(')[0].trim() || "N/A";
-
-      if (!currentGroup || currentGroup.accommodation !== acc || currentGroup.city !== city) {
-        currentGroup = {
-          city,
-          accommodation: acc,
-          days: [day]
-        };
-        groups.push(currentGroup);
-      } else {
-        currentGroup.days.push(day);
-      }
-    });
-    return groups;
-  }, [itinerary, days]);
+  const stayGroups = useMemo(() => summary?.stay_groups || [], [summary]);
 
   const dayPathPoints = useMemo(() => {
     return currentDayEvents.filter(e => e.Lat && e.Lng).map(e => [e.Lat, e.Lng]);
   }, [currentDayEvents]);
 
-  const allTripPoints = useMemo(() => {
-    return itinerary
-      .filter(e => e.Lat && e.Lng)
-      .sort((a, b) => (Number(a.Day) - Number(b.Day)) || (a.StartTime || '').localeCompare(b.StartTime || ''))
-      .map(e => ({ pos: [e.Lat, e.Lng], day: Number(e.Day), activity: e.Activity, time: e.StartTime }));
-  }, [itinerary]);
+  const allTripPoints = useMemo(() => summary?.total_points || [], [summary]);
 
   if (loading) return (
     <div className="flex flex-col items-center justify-center h-screen bg-slate-50 gap-4">
@@ -381,9 +364,27 @@ export default function App() {
                           <span className={cn("px-1.5 py-0.5 rounded-full text-[7px] font-black uppercase tracking-widest border", CATEGORY_COLORS[event.Category])}>{CATEGORY_MAP[event.Category] || '기타'}</span>
                           <h3 className="text-[13px] font-black text-slate-800 tracking-tight truncate">{event.Activity}</h3>
                         </div>
-                        <div className="flex items-center gap-3">
-                          <span className="flex items-center gap-1 text-[9px] text-slate-400 font-black shrink-0"><MapPin className="w-2.5 h-2.5 text-red-400" />{event.Location}</span>
-                          <p className="text-slate-500 text-[10px] font-medium truncate italic opacity-80">{event.Description}</p>
+                        <div className="flex flex-col gap-1">
+                          <div className="flex items-center gap-3">
+                            <span className="flex items-center gap-1 text-[9px] text-slate-400 font-black shrink-0"><MapPin className="w-2.5 h-2.5 text-red-400" />{event.Location}</span>
+                            <p className="text-slate-500 text-[10px] font-medium truncate italic opacity-80">{event.Description}</p>
+                          </div>
+                          
+                          {/* Transit & Plan B Row */}
+                          <div className="flex flex-wrap gap-2 mt-1">
+                            {event.Transit && (
+                              <div className="flex items-center gap-1.5 bg-blue-50 px-2 py-1 rounded-md border border-blue-100/50">
+                                <Train className="w-2.5 h-2.5 text-blue-600" />
+                                <p className="text-[9px] text-blue-700 font-bold uppercase tracking-tight">{event.Transit}</p>
+                              </div>
+                            )}
+                            {event.PlanB && event.PlanB !== '현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식' && (
+                              <div className="flex items-center gap-1.5 bg-amber-50 px-2 py-1 rounded-md border border-amber-100/50">
+                                <RotateCcw className="w-2.5 h-2.5 text-amber-600" />
+                                <p className="text-[9px] text-amber-700 font-bold leading-tight"><span className="opacity-70 mr-0.5">Plan B:</span> {event.PlanB}</p>
+                              </div>
+                            )}
+                          </div>
                         </div>
                       </div>
 

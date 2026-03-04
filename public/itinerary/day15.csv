@@ -1,0 +1,9 @@
+Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,PlanB,Transit
+2026-04-17,15,08:30,09:00,🔑 [체크아웃] Combo Bologna,Bologna,Accommodation,0,,,,체크아웃 후 피렌체행 열차 탑승,44.5080,11.3420,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,도보 및 로컬 교통
+2026-04-17,15,09:00,10:00,🚆 기차 이동 (볼로냐 -> 피렌체),Bologna -> Florence,Transport,25,"https://www.google.com/maps/place/Firenze+Santa+Maria+Novella/@43.7765,11.2478,17z/",,,피렌체 SMN 역 도착,43.7775,11.2515,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,현지 교통 이용
+2026-04-17,15,11:30,13:30,🍴 점심: Mercato Centrale (피렌체 중앙시장),Florence,Food,25,"https://www.google.com/maps/place/Mercato+Centrale+Firenze/@43.7765,11.2555,17z/",,,추천 메뉴: Nerbone의 곱창 샌드위치(Lampredotto). 현지 상인들이 즐기는 소울 푸드,43.7765,11.2555,우천 시 시장 2층 푸드코트 다양한 메뉴 시식,피렌체 SMN 역에서 도보 10분
+2026-04-17,15,13:30,15:00,🚶 산 로렌초 지구 & 가죽 시장,Florence,Sightseeing,0,"https://www.google.com/maps/place/Mercato+di+San+Lorenzo/@43.7755,11.2545,17z/",,,피렌체 전통 가죽 제품 구경 및 두오모 주변 골목 탐방,43.7755,11.2545,우천 시 중앙시장 실내 쇼핑,식당에서 도보 5분
+2026-04-17,15,14:00,15:00,🏠 [체크인] Plus Florence (프라이빗 룸),Florence,Accommodation,150,"https://www.google.com/maps/place/Plus+Florence/@43.7800,11.2550,17z/",,,수영장과 루프탑이 훌륭한 고평점 개인실,43.7800,11.2550,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,로컬 교통
+2026-04-17,15,15:30,18:00,🎨 우피치 미술관 관람,Florence,Sightseeing,25,"https://www.google.com/maps/place/Uffizi+Gallery/@43.7677,11.2553,17z/",,,르네상스 예술의 정수 체험,43.7677,11.2553,예약 불가 시 바르젤로 국립 미술관 또는 조토의 종탑(실내),숙소 복귀 이동
+2026-04-17,15,18:30,20:30,🍴 저녁: Regina Bistecca (티본 스테이크),Florence,Food,85,"https://www.google.com/maps/place/Regina+Bistecca/@43.7735,11.2565,17z/",,,추천 메뉴: Bistecca alla Fiorentina (Chianina 품종). 고서점 개조 공간에서의 품격 있는 만찬,43.7735,11.2565,예약 불가 시 Trattoria dall'Oste 추천,두오모 광장에서 도보 3분
+2026-04-17,15,21:00,23:59,🛌 숙소 복귀 및 휴식,Florence,Rest,0,,,,티본 스테이크 만찬 후 피렌체 야경 산책하며 숙소 복귀,43.7800,11.2550,밝은 길 위주 이동,식당에서 도보 15분

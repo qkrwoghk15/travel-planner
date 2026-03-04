@@ -1,0 +1,7 @@
+Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,PlanB,Transit
+2026-04-11,9,08:00,09:30,🚆 [이동] 융프라우요흐 등정,Jungfraujoch,Transport,0,"https://www.google.com/maps/place/Grindelwald+Terminal/@46.6245,8.0185,17z/",,,동역 -> 그린델발트 터미널 -> 아이거 익스프레스 케이블카 이용,46.6245,8.0185,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,도보 및 로컬 교통
+2026-04-11,9,09:30,11:30,🏔️ 융프라우요흐 등정,Jungfraujoch,Sightseeing,165,"https://www.google.com/maps/place/Jungfraujoch/@46.5475,7.9854,17z/",,,유럽의 지붕에서 만년설 감상,46.5475,7.9851,악천후 시 인터라켄 실내 초콜릿 체험(Funky Chocolate) 또는 튠 성 관람,현지 교통 이용
+2026-04-11,9,11:30,13:30,🍴 점심: Jungfraujoch 산 위 레스토랑,Jungfraujoch,Food,35,https://www.google.com/maps/search/Jungfraujoch+Restaurant/,,,"해발 3,454m 알프스 설산을 보며 즐기는 최고의 뷰 런치",46.5475,7.9854,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,도보 이동
+2026-04-11,9,14:00,17:30,🚶 라우터브루넨 폭포 마을 탐방,Lauterbrunnen,Sightseeing,0,"https://www.google.com/maps/place/Lauterbrunnen/@46.5935,7.9077,17z/",,,72개 폭포가 있는 요정 마을 산책,46.5935,7.9077,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,로컬 교통
+2026-04-11,9,18:30,20:00,🍴 저녁: Restaurant Bären (정통 뢰스티),Unterseen,Food,45,https://www.google.com/maps/search/Restaurant+Bären+Unterseen/,,,인터라켄 서역 인근 고풍스러운 미식,46.6865,7.8485,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,숙소 복귀 이동
+2026-04-11,9,20:30,23:59,🛌 숙소 복귀 및 휴식,Interlaken,Rest,0,,,,연박 숙소 프라이빗 룸 휴식,46.6854,7.8614,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,도보 및 로컬 교통

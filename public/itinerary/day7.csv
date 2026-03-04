@@ -1,0 +1,9 @@
+Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,PlanB,Transit
+2026-04-09,7,08:30,09:00,🔑 숙소 조식 및 하이킹 준비,Zermatt,Rest,0,,,,하이킹을 위한 든든한 조식 및 복장 준비,46.0150,7.7460,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,도보 및 로컬 교통
+2026-04-09,7,09:00,09:30,🚆 [이동] 수네가(Sunnegga) 승강장 이동,Zermatt Village,Transport,0,"https://www.google.com/maps/place/Sunnegga-Express/@46.0225,7.7525,17z/",,,숙소 앞 버스 정류장에서 전기버스(Green Line) 탑승 후 북쪽 승강장 이동,46.0225,7.7525,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,현지 교통 이용
+2026-04-09,7,09:30,12:30,🚶 수네가 5대 호수 하이킹 (5-Seenweg),Sunnegga/Blauherd,Sightseeing,50,"https://www.google.com/maps/place/Stellisee/@46.0175,7.8025,15z/",,,"블라우헤르트~수네가 구간: 슈텔리제(반영), 그린디제, 그륀제, 모스지제, 라이제 5개 호수 탐방",46.0175,7.8025,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,도보 이동
+2026-04-09,7,12:30,14:00,🍴 점심: Saycheese! (프리미엄 퐁뒤),Zermatt Village,Food,50,https://www.google.com/maps/search/Saycheese!+Zermatt/,,,푸니쿨라로 하산 후 즐기는 최고급 치즈 미식,46.0200,7.7490,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,로컬 교통
+2026-04-09,7,14:00,14:30,🚠 [이동] 글래시어 파라다이스 승강장,Zermatt Bergbahnen,Transport,0,"https://www.google.com/maps/place/Zermatt+Bergbahnen+AG/@46.0145,7.7455,17z/",,,마을 남쪽 끝 케이블카 승강장으로 도보/전기버스 이동,46.0145,7.7455,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,숙소 복귀 이동
+2026-04-09,7,14:30,17:30,🏔️ 마터호른 글래시어 파라다이스,Zermatt Glacier,Sightseeing,100,"https://www.google.com/maps/place/Matterhorn+Glacier+Paradise/@45.9383,7.7300,17z/",,,"케이블카로 해발 3,883m 등정하여 만년설과 얼음궁전 체험",45.9383,7.7300,기상 악화 시 체르마트 마을 미식 투어 및 로컬 공방 체험,도보 및 로컬 교통
+2026-04-09,7,18:30,20:00,🍴 저녁: Restaurant Schäferstube (양고기),Zermatt Village,Food,55,https://www.google.com/maps/search/Restaurant+Schaferstube+Zermatt/,,,체르마트 명물 블랙노즈 양고기 스테이크 정통 미식 체험,46.0185,7.7485,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,도보 및 로컬 교통
+2026-04-09,7,20:30,23:59,🛌 숙소 복귀 및 휴식,Zermatt,Rest,0,,,,연박 숙소 개인실에서 편안한 휴식,46.0150,7.7460,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,도보 및 로컬 교통

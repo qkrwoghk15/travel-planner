@@ -1,0 +1,6 @@
+Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,PlanB,Transit
+2026-04-05,3,09:30,11:30,🎨 오르세 미술관 관람,Paris,Sightseeing,16,"https://www.google.com/maps/place/Mus%C3%A9e+d'Orsay/@48.8599,2.3265,17z/",,,인상주의 미술의 정수 감상,48.8599,2.3265,입장 불가 시 로댕 미술관 정원 및 실내 전시,메트로 12호선 (Le Peletier -> Solférino) 이동 후 도보 2분
+2026-04-05,3,11:30,13:30,🍴 점심: L'As du Fallafel (마레 지구),Paris,Food,15,"https://www.google.com/maps/place/L'As+du+Fallafel/@48.8574,2.3590,17z/",,,메트로 1호선 Saint-Paul 역 인근 맛집,48.8574,2.3591,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,메트로 12/1호선 환승 (Solférino -> Concorde -> Saint-Paul) 이동
+2026-04-05,3,14:00,17:00,🚶 몽마르트르 언덕 & 사크레쾨르,Paris,Sightseeing,0,"https://www.google.com/maps/place/Sacr%C3%A9-C%C5%93ur+Basillica/@48.8867,2.3431,17z/",,,파리 전경 감상 및 도보 산책,48.8867,2.3431,우천 시 파리 지하 카타콤 또는 실내 쇼핑몰 포룸 데 알,메트로 1호선/12호선 환승 (Saint-Paul -> Concorde -> Abbesses) 이동
+2026-04-05,3,18:30,20:00,🍴 저녁: Galeries Lafayette Le Gourmet (9구),Paris,Food,30,"https://www.google.com/maps/place/Galeries+Lafayette+Le+Gourmet/@48.8735,2.3315,17z/",,,오페라 프리미엄 식품관 델리 저녁,48.8735,2.3315,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,도보 10분
+2026-04-05,3,20:30,23:59,🛌 숙소 복귀 및 짐 정리,Paris,Rest,0,,,,익일 TGV 이동 준비,48.8719,2.3456,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,몽마르트르에서 메트로 12호선 (Abbesses -> Le Peletier) 직통 이동

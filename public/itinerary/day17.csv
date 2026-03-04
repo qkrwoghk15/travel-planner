@@ -1,0 +1,7 @@
+Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,PlanB,Transit
+2026-04-19,17,08:30,09:00,🔑 [체크아웃] Plus Florence,Florence,Accommodation,0,,,,체크아웃 후 로마행 고속열차 탑승,43.7800,11.2550,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,도보 및 로컬 교통
+2026-04-19,17,09:00,10:40,🚆 기차 이동 (피렌체 -> 로마),Florence -> Rome,Transport,35,"https://www.google.com/maps/place/Roma+Termini/@41.9009,12.5018,17z/",,,로마 테르미니 역 도착,41.9028,12.4964,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,현지 교통 이용
+2026-04-19,17,11:30,13:30,🍴 점심: Bonci Pizzarium (조각 피자),Rome,Food,25,"https://www.google.com/maps/place/Bonci+Pizzarium/@41.9077,12.4485,17z/",,,바티칸 인근 프리미엄 조각 피자,41.9077,12.4485,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,도보 이동
+2026-04-19,17,14:00,15:00,🏠 [체크인] The RomeHello (프라이빗 룸),Rome,Accommodation,180,"https://www.google.com/maps/place/The+RomeHello/@41.9020,12.4920,17z/",,,테르미니 역 초근접 최고 평점 개인실,"41.9020,12.4920",,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,로컬 교통
+2026-04-19,17,15:30,18:00,🏛️ 로마 콜로세움 & 판테온,Rome,Sightseeing,18,"https://www.google.com/maps/place/Colosseum/@41.8902,12.4922,17z/",,,고대 로마 유적 투어,41.8902,12.4922,입장 제한 시 로마 국립 박물관(Palazzo Massimo) 또는 보르게세 미술관,숙소 복귀 이동
+2026-04-19,17,18:30,20:30,🍴 저녁: Da Enzo al 29 (트라스테베레),Rome,Food,45,"https://www.google.com/maps/place/Da+Enzo+al+29/@41.8885,12.4785,17z/",,,"추천 메뉴: Cacio e Pepe, Carciofi alla Giudia(튀긴 아티초크). 로마 현지인들의 줄 서는 맛집",41.8885,12.4785,대기 길 경우 Tonnarello 또는 Grazia & Graziella 추천,트라스테베레 지구 내 도보 또는 버스 H 승차 -> Mastai 하차

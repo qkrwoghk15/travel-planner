@@ -1,0 +1,6 @@
+Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,PlanB,Transit
+2026-04-18,16,09:30,11:30,⛪ 피렌체 두오모 광장 & 산책,Florence,Sightseeing,0,"https://www.google.com/maps/place/Piazza+del+Duomo/@43.7731,11.2560,17z/",,,브루넬레스키의 돔 감상 후 도보 산책,43.7731,11.2560,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,도보 및 로컬 교통
+2026-04-18,16,11:30,13:30,🍴 점심: All'Antico Vinaio (샌드위치),Florence,Food,15,"https://www.google.com/maps/place/All'Antico+Vinaio/@43.7685,11.2575,17z/",,,전설적인 스키아차타 미식,43.7685,11.2575,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,현지 교통 이용
+2026-04-18,16,14:00,18:00,📸 시에나(Siena) 근교 투어,Tuscany,Sightseeing,110,"https://www.google.com/maps/place/Siena/@43.3183,11.3306,17z/",,,중세 도시 투어 및 전원 풍경,43.3183,11.3306,우천 시 피렌체 실내 중앙시장 미식 클래스 또는 가죽 공방 체험,도보 이동
+2026-04-18,16,18:30,20:00,🍴 저녁: Trattoria Sostanza (버터 치킨),Florence,Food,50,https://www.google.com/maps/search/Trattoria+Sostanza+Florence/,,,정통 버터 치킨 미식 체험,43.7735,11.2465,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,로컬 교통
+2026-04-18,16,20:30,23:59,🛌 숙소 복귀 및 휴식,Florence,Rest,0,,,,연박 숙소 개인실 여유로운 밤,43.7800,11.2550,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,숙소 복귀 이동
