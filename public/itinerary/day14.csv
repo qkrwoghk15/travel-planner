@@ -1,6 +1,9 @@
 Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,PlanB,Transit
-2026-04-16,14,09:30,11:30,🚶 볼로냐 대학 & 해부학 강의실,Bologna,Sightseeing,5,"https://www.google.com/maps/place/Archiginnasio+of+Bologna/@44.4920,11.3435,17z/",,,유럽 최고 대학의 역사 체험,44.4920,11.3435,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,도보 및 로컬 교통
-2026-04-16,14,11:30,13:30,🍴 점심: Mercato delle Erbe (에르베 시장),Bologna,Food,25,https://www.google.com/maps/search/Mercato+delle+Erbe+Bologna/,,,현지인 시장 내 푸드코트 미식,44.4975,11.3395,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,현지 교통 이용
-2026-04-16,14,14:00,17:00,🚶 볼로냐 사탑(Two Towers) 등정,Bologna,Sightseeing,10,"https://www.google.com/maps/place/Two+Towers/@44.4942,11.3468,17z/",,,498개 계단 등정 후 도시 조망,"44.4942,11.3468",,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,도보 이동
-2026-04-16,14,18:30,20:00,🍴 저녁: Oltre (모던 볼로네제),Bologna,Food,55,https://www.google.com/maps/search/Oltre+Bologna/,,,전통의 현대적 재해석 미식,"44.5000,11.3400",,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,로컬 교통
-2026-04-16,14,20:30,23:59,🛌 숙소 복귀 및 휴식,Bologna,Rest,0,,,,연박 숙소 개인실 휴식,44.5080,11.3420,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,숙소 복귀 이동
+2026-04-16,14,08:30,09:30,🌅 기상 및 로컬 카페 조식,Bologna,Food,10,,,,볼로냐 현지인들처럼 카푸치노와 코르네토로 시작,44.4938,11.3430,,도보
+2026-04-16,14,09:30,11:30,🏫 아르키긴나시오 & 해부학 강의실,Bologna,Sightseeing,5,"https://www.google.com/maps/place/Archiginnasio+of+Bologna/@44.4920,11.3435,17z/",,,유럽에서 가장 오래된 대학의 본부와 목조 해부학 강의실 관람,44.4920,11.3435,도서관 구경,도보 5분
+2026-04-16,14,11:30,13:30,🍴 점심: Mercato delle Erbe (현지 시장),Bologna,Food,20,"https://www.google.com/maps/search/Mercato+delle+Erbe+Bologna/","","","관광객보다 현지인이 더 많은 시장 내 푸드코트에서 신선한 파스타,44.4975,11.3395,Sfoglia Rina 추천,도보 10분
+2026-04-16,14,13:30,16:00,🚶 볼로냐 '7개의 비밀' 탐방,Bologna,Sightseeing,0,,,,베네치아 창문, 속삭이는 벽 등 볼로냐의 숨겨진 재미 찾기 산책,44.4938,11.3430,,도보
+2026-04-16,14,16:00,18:30,🍦 젤라또 투어 & 자유 시간,Bologna,Food,10,"https://www.google.com/maps/place/Cremeria+Santo+Stefano/@44.4895,11.3525,17z/",,,세계 최고의 젤라또 대학이 있는 도시에서 즐기는 젤라또 (Cremeria Santo Stefano),44.4895,11.3525,쇼핑 거리 구경,도보
+2026-04-16,14,18:30,20:30,🍴 저녁: Oltre (모던 볼로네제 미식),Bologna,Food,60,"https://www.google.com/maps/search/Oltre+Bologna/","","","전통적인 볼로냐 요리를 세련되게 재해석한 힙한 레스토랑,44.5000,11.3400,Trattoria di Via Serra,도보
+2026-04-16,14,20:30,22:00,🍷 볼로냐 대학가 바 투어,Bologna,Sightseeing,15,,,,유럽에서 가장 활기찬 대학가에서 로컬 맥주와 함께 밤 만끽,44.4955,11.3515,,도보
+2026-04-16,14,22:00,23:59,🛌 숙소 복귀 및 휴식,Bologna,Rest,0,,,,피렌체 이동을 위한 짐 정리 및 휴식,44.5080,11.3420,,도보

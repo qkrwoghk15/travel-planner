@@ -61,6 +61,245 @@ const CATEGORY_COLORS = {
 };
 const PROGRESS_COLORS = { Food: 'bg-orange-400', Transport: 'bg-blue-400', Sightseeing: 'bg-emerald-400', Accommodation: 'bg-purple-400', Default: 'bg-slate-400' };
 
+const CITY_ESSENTIALS = {
+  Paris: [
+    {
+      name: "Bistrot Paul Bert",
+      type: "Food",
+      desc: "파리 정통 스테이크 프릿츠의 성지. 페퍼 스테이크가 일품입니다.",
+      links: { 
+        maps: "https://maps.app.goo.gl/p6Zp6X6Z6Z6Z6Z6Z6", 
+        search: "https://www.google.com/search?q=Bistrot+Paul+Bert+Paris+review",
+        blog: "https://search.naver.com/search.naver?query=파리+비스트로+폴+베르+후기"
+      }
+    },
+    {
+      name: "Le Bon Marché",
+      type: "Shopping",
+      desc: "세계 최초의 백화점. 식품관(La Grande Épicerie)의 보르디예 버터는 필수!",
+      links: { 
+        official: "https://www.24s.com/en-fr/le-bon-marche", 
+        maps: "https://maps.app.goo.gl/7Zp7X7X7X7X7X7X7X",
+        blog: "https://search.naver.com/search.naver?query=봉마르셰+보르디예+버터+쇼핑"
+      }
+    }
+  ],
+  Lyon: [
+    {
+      name: "Les Halles de Lyon Paul Bocuse",
+      type: "Food",
+      desc: "전설적인 셰프 폴 보퀴즈의 이름을 딴 미식 시장. 리옹의 모든 맛이 여기 있습니다.",
+      links: { 
+        official: "https://www.halles-de-lyon-paulbocuse.com/", 
+        maps: "https://maps.app.goo.gl/lyon-paul-bocuse",
+        blog: "https://search.naver.com/search.naver?query=리옹+폴+보퀴즈+시장+후기"
+      }
+    }
+  ],
+  Zermatt: [
+    {
+      name: "Saycheese!",
+      type: "Food",
+      desc: "체르마트 최고의 치즈 요리 전문점. 정통 퐁뒤와 라클렛을 즐겨보세요.",
+      links: { 
+        official: "https://www.zermatterhof.ch/en/restaurants/saycheese/", 
+        maps: "https://maps.app.goo.gl/saycheese-zermatt",
+        blog: "https://search.naver.com/search.naver?query=체르마트+퐁뒤+맛집+세이치즈"
+      }
+    }
+  ],
+  Interlaken: [
+    {
+      name: "Jungfraujoch",
+      type: "Sightseeing",
+      desc: "유럽의 지붕. 아이거 익스프레스를 타고 올라가는 만년설의 세계.",
+      links: { 
+        official: "https://www.jungfrau.ch/en-gb/jungfraujoch-top-of-europe/", 
+        maps: "https://maps.app.goo.gl/jungfrau-interlaken",
+        blog: "https://search.naver.com/search.naver?query=융프라우요흐+등정+후기"
+      }
+    }
+  ],
+  Milan: [
+    {
+      name: "Luini (판제로티)",
+      type: "Food",
+      desc: "1949년부터 시작된 밀라노의 전설. 튀긴 치즈 빵 '판제로티'는 무조건 먹어야 합니다.",
+      links: { 
+        official: "https://www.luini.it/", 
+        maps: "https://maps.app.goo.gl/vMsz6X6Z6Z6Z6Z6Z6",
+        blog: "https://search.naver.com/search.naver?query=밀라노+루이니+판제로티+후기"
+      }
+    },
+    {
+      name: "Peck (미식 성지)",
+      type: "Food",
+      desc: "140년 전통의 밀라노 최고급 식품관. 보르디예 버터, 트러플 오일, 치즈의 천국입니다.",
+      links: { 
+        official: "https://www.peck.it/", 
+        maps: "https://maps.app.goo.gl/peck-milan",
+        blog: "https://search.naver.com/search.naver?query=밀라노+Peck+쇼핑+리스트"
+      }
+    },
+    {
+      name: "Ratanà",
+      type: "Food",
+      desc: "현대 밀라노 요리의 정점. 샤프란 리조또와 오소부코는 이곳이 최고로 꼽힙니다.",
+      links: { 
+        official: "https://www.ratana.it/", 
+        maps: "https://maps.app.goo.gl/ratana-milan",
+        search: "https://www.google.com/search?q=Ratana+Milan+Ossobuco+review"
+      }
+    },
+    {
+      name: "Duomo Rooftop",
+      type: "Sightseeing",
+      desc: "두오모 지붕 위를 걷는 경험. 밀라노 전체를 조망하며 정교한 첨탑을 바로 옆에서 볼 수 있습니다.",
+      links: { 
+        official: "https://www.duomomilano.it/", 
+        maps: "https://maps.app.goo.gl/duomo-milan",
+        blog: "https://search.naver.com/search.naver?query=밀라노+두오모+테라스+예약"
+      }
+    },
+    {
+      name: "Starbucks Reserve Roastery",
+      type: "Sightseeing",
+      desc: "전 세계 6개뿐인 로스터리 중 가장 아름다운 곳으로 꼽히는 구 우체국 건물 매장.",
+      links: { 
+        official: "https://www.starbucksreserve.com/en-us/locations/milan", 
+        maps: "https://maps.app.goo.gl/starbucks-milan",
+        blog: "https://search.naver.com/search.naver?query=밀라노+스타벅스+리저브+로스터리"
+      }
+    }
+  ],
+  Venice: [
+    {
+      name: "Bar All'Arco",
+      type: "Food",
+      desc: "베네치아 현지인들의 소울 푸드 '치케티'. 리알토 시장 옆 서서 먹는 낭만이 있습니다.",
+      links: { 
+        maps: "https://maps.app.goo.gl/all-arco-venice", 
+        search: "https://www.google.com/search?q=Bar+All%27Arco+Venice+review",
+        blog: "https://search.naver.com/search.naver?query=베네치아+치케티+맛집+올아르코"
+      }
+    },
+    {
+      name: "Trattoria Antiche Carampane",
+      type: "Food",
+      desc: "관광객 메뉴 없음! 정통 베네치아 해산물 요리의 끝판왕입니다.",
+      links: { 
+        official: "https://www.antichecarampane.it/", 
+        maps: "https://maps.app.goo.gl/antiche-carampane",
+        search: "https://www.google.com/search?q=Antiche+Carampane+review"
+      }
+    },
+    {
+      name: "Burano Island",
+      type: "Sightseeing",
+      desc: "알록달록 무지개 빛깔 집들로 가득한 섬. 인생샷 명소이자 레이스 공예의 중심.",
+      links: { 
+        maps: "https://maps.app.goo.gl/burano-island", 
+        blog: "https://search.naver.com/search.naver?query=베네치아+부라노섬+가는법"
+      }
+    }
+  ],
+  Bologna: [
+    {
+      name: "Osteria dell'Orsa",
+      type: "Food",
+      desc: "줄 서서 먹는 원조 라구 파스타. 합리적인 가격과 활기찬 분위기가 특징입니다.",
+      links: { 
+        official: "https://www.osteriadellorsa.it/", 
+        maps: "https://maps.app.goo.gl/orsa-bologna",
+        blog: "https://search.naver.com/search.naver?query=볼로냐+오스테리아+델+오르사+라구"
+      }
+    },
+    {
+      name: "Tamburini",
+      type: "Food",
+      desc: "1932년부터 이어진 볼로냐 최고의 델리. 모르타델라와 생파스타의 천국.",
+      links: { 
+        official: "https://www.tamburini.it/", 
+        maps: "https://maps.app.goo.gl/tamburini-bologna",
+        search: "https://www.google.com/search?q=Tamburini+Bologna+review"
+      }
+    },
+    {
+      name: "Portico di San Luca",
+      type: "Sightseeing",
+      desc: "세계에서 가장 긴 3.8km의 회랑. 비를 맞지 않고 언덕 위 성당까지 걸어갈 수 있습니다.",
+      links: { 
+        maps: "https://maps.app.goo.gl/san-luca-portico", 
+        blog: "https://search.naver.com/search.naver?query=볼로냐+산루카+회랑+하이킹"
+      }
+    }
+  ],
+  Florence: [
+    {
+      name: "Regina Bistecca",
+      type: "Food",
+      desc: "피렌체 최고의 티본 스테이크 평점을 보유한 곳. 분위기와 맛 모두 압도적입니다.",
+      links: { 
+        official: "https://www.reginabistecca.com/", 
+        maps: "https://maps.app.goo.gl/regina-bistecca",
+        blog: "https://search.naver.com/search.naver?query=피렌체+레지나+비스테카+예약"
+      }
+    },
+    {
+      name: "Trattoria Sostanza",
+      type: "Food",
+      desc: "예약 없이는 절대 못 가는 곳. 지글지글 끓는 버터 치킨은 피렌체 최고의 미식 경험입니다.",
+      links: { 
+        maps: "https://maps.app.goo.gl/sostanza-florence", 
+        search: "https://www.google.com/search?q=Trattoria+Sostanza+review",
+        blog: "https://search.naver.com/search.naver?query=피렌체+소스타냐+버터치킨"
+      }
+    },
+    {
+      name: "Uffizi Gallery",
+      type: "Sightseeing",
+      desc: "르네상스 예술의 정수. 보티첼리의 '비너스의 탄생'을 직접 만날 수 있습니다.",
+      links: { 
+        official: "https://www.uffizi.it/en/the-uffizi", 
+        maps: "https://maps.app.goo.gl/uffizi-gallery",
+        blog: "https://search.naver.com/search.naver?query=피렌체+우피치+미술관+예약"
+      }
+    }
+  ],
+  Rome: [
+    {
+      name: "Roscioli Salumeria",
+      type: "Food",
+      desc: "로마에서 단 한 끼를 먹는다면 이곳. 인생 카르보나라와 아마트리치아나를 만날 수 있습니다.",
+      links: { 
+        official: "https://www.salumeriaroscioli.com/", 
+        maps: "https://maps.app.goo.gl/roscioli-rome",
+        blog: "https://search.naver.com/search.naver?query=로마+로시올리+예약+방법"
+      }
+    },
+    {
+      name: "Bonci Pizzarium",
+      type: "Food",
+      desc: "넷플릭스 '셰프의 테이블' 주인공 가브리엘레 본치의 피자 성지. 로마식 조각 피자의 정점.",
+      links: { 
+        official: "https://www.bonci.it/", 
+        maps: "https://maps.app.goo.gl/bonci-rome",
+        search: "https://www.google.com/search?q=Bonci+Pizzarium+review"
+      }
+    },
+    {
+      name: "Vatican Museums",
+      type: "Sightseeing",
+      desc: "인류 최고의 보물창고. 미켈란젤로의 천장화와 성 베드로 대성당의 웅장함을 느껴보세요.",
+      links: { 
+        official: "https://www.museivaticani.va/", 
+        maps: "https://maps.app.goo.gl/vatican-museums",
+        blog: "https://search.naver.com/search.naver?query=바티칸+박물관+예약+팁"
+      }
+    }
+  ]
+};
+
 function MapController({ center, zoom, bounds, forceFly = false }) {
   const map = useMap();
   useEffect(() => {
@@ -212,6 +451,18 @@ export default function App() {
 
   const allTripPoints = useMemo(() => summary?.total_points || [], [summary]);
 
+  const currentCityEssentials = useMemo(() => {
+    if (!summary || !selectedDay) return [];
+    const group = summary.stay_groups.find(g => g.days.includes(selectedDay));
+    return group ? (CITY_ESSENTIALS[group.city] || []) : [];
+  }, [summary, selectedDay]);
+
+  const currentCityName = useMemo(() => {
+    if (!summary || !selectedDay) return "";
+    const group = summary.stay_groups.find(g => g.days.includes(selectedDay));
+    return group ? group.city : "";
+  }, [summary, selectedDay]);
+
   if (loading) return (
     <div className="flex flex-col items-center justify-center h-screen bg-slate-50 gap-4">
       <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
@@ -306,7 +557,7 @@ export default function App() {
           </div>
         </section>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
           <div className="lg:col-span-8 space-y-4">
             <div className="flex items-end justify-between border-b border-slate-200 pb-4">
               <div className="flex items-center gap-4">
@@ -409,24 +660,32 @@ export default function App() {
           </div>
 
           <div className="lg:col-span-4 space-y-6">
-            <div className="bg-white p-4 rounded-[2rem] border border-slate-200 shadow-sm sticky top-20">
+            <div className="bg-white p-4 rounded-[2rem] border border-slate-200 shadow-sm">
               <div className="flex items-center justify-between mb-4">
                 <h3 className="font-black flex items-center gap-2 text-slate-900 text-base"><MapIcon className="w-4 h-4 text-blue-600" />실시간 위치 가이드</h3>
-                <button 
-                  onClick={resetToDailyView}
-                  className="p-1.5 bg-slate-50 hover:bg-blue-50 text-slate-400 hover:text-blue-600 rounded-lg transition-all group"
-                  title="하루 동선 한눈에 보기"
-                >
-                  <RotateCcw className="w-3.5 h-3.5 group-hover:rotate-[-45deg] transition-transform" />
-                </button>
+                <div className="flex items-center gap-1">
+                  <button 
+                    onClick={() => setIsModalOpen(true)}
+                    className="p-1.5 bg-blue-50 hover:bg-blue-600 text-blue-600 hover:text-white rounded-lg transition-all group"
+                    title="전체 여정 지도 보기"
+                  >
+                    <Globe className="w-3.5 h-3.5 transition-transform group-hover:scale-110" />
+                  </button>
+                  <button 
+                    onClick={resetToDailyView}
+                    className="p-1.5 bg-slate-50 hover:bg-blue-50 text-slate-400 hover:text-blue-600 rounded-lg transition-all group"
+                    title="하루 동선 한눈에 보기"
+                  >
+                    <RotateCcw className="w-3.5 h-3.5 group-hover:rotate-[-45deg] transition-transform" />
+                  </button>
+                </div>
               </div>
-              <div style={{ height: '350px', width: '100%', borderRadius: '1.5rem', overflow: 'hidden' }}>
+              <div style={{ height: '300px', width: '100%', borderRadius: '1.5rem', overflow: 'hidden' }}>
                 <MapContainer center={mapConfig.center} zoom={mapConfig.zoom} style={{ height: '100%', width: '100%' }} scrollWheelZoom={false}>
                   <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
                   <MapController center={mapConfig.center} zoom={mapConfig.zoom} bounds={mapConfig.bounds} forceFly={mapConfig.forceFly} />
                   {currentDayEvents.filter(e => e.Lat && e.Lng).map((event, i, arr) => {
                     const isLive = currentStatus.activeEvent?.Activity === event.Activity && Number(currentStatus.currentDay) === selectedDay;
-                    // 중복 좌표 확인 및 미세 오프셋 적용 (겹침 방지)
                     let lat = event.Lat;
                     let lng = event.Lng;
                     const duplicates = arr.slice(0, i).filter(prev => prev.Lat === event.Lat && prev.Lng === event.Lng).length;
@@ -448,17 +707,58 @@ export default function App() {
                   {dayPathPoints.length > 1 && <Polyline positions={dayPathPoints} color="#2563eb" weight={3} opacity={0.5} dashArray="5, 10" />}
                 </MapContainer>
               </div>
-              <div className="mt-6">
-                <button 
-                  onClick={() => setIsModalOpen(true)}
-                  className="w-full p-5 bg-slate-900 rounded-2xl text-white shadow-lg hover:bg-slate-800 transition-all flex items-center justify-between group"
-                >
-                  <div className="text-left">
-                    <p className="text-[8px] font-black uppercase tracking-[0.2em] opacity-50 mb-1">Open Grand Map</p>
-                    <p className="text-xl font-black tracking-tighter">전체 여정 보기</p>
+            </div>
+
+            <div className="bg-amber-50 border border-amber-200 rounded-[2rem] p-6 shadow-sm">
+              <div className="flex items-center justify-between mb-4 border-b border-amber-200 pb-3">
+                <h3 className="text-lg font-black text-amber-900 flex items-center gap-2">
+                  ⭐ {currentCityName} Must-Go
+                </h3>
+                <span className="text-[9px] font-black bg-amber-200 text-amber-800 px-2 py-0.5 rounded-full uppercase tracking-tighter">{currentCityEssentials.length} Items</span>
+              </div>
+              
+              <div className="space-y-5 max-h-[600px] overflow-y-auto no-scrollbar pr-1">
+                {currentCityEssentials.length > 0 ? (
+                  currentCityEssentials.map((item, i) => (
+                    <div key={i} className="bg-white/60 hover:bg-white transition-all rounded-2xl p-4 border border-amber-100 shadow-sm group">
+                      <div className="flex justify-between items-start mb-2">
+                        <h4 className="font-black text-amber-900 text-sm leading-tight group-hover:text-blue-600 transition-colors">{item.name}</h4>
+                        <span className={cn(
+                          "text-[7px] font-black uppercase px-1.5 py-0.5 rounded shrink-0 ml-2",
+                          item.type === 'Food' ? "bg-orange-100 text-orange-700" : "bg-emerald-100 text-emerald-700"
+                        )}>{item.type}</span>
+                      </div>
+                      <p className="text-[10px] text-amber-800/70 leading-relaxed mb-4 font-medium">{item.desc}</p>
+                      <div className="flex flex-wrap gap-1.5">
+                        {item.links.maps && (
+                          <a href={item.links.maps} target="_blank" rel="noreferrer" className="flex items-center gap-1 text-[8px] font-black bg-white border border-slate-200 text-slate-600 px-2 py-1 rounded-lg hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all">
+                            <MapIcon className="w-2.5 h-2.5" /> Google Maps
+                          </a>
+                        )}
+                        {item.links.blog && (
+                          <a href={item.links.blog} target="_blank" rel="noreferrer" className="flex items-center gap-1 text-[8px] font-black bg-white border border-slate-200 text-slate-600 px-2 py-1 rounded-lg hover:bg-emerald-600 hover:text-white hover:border-emerald-600 transition-all">
+                            <ExternalLink className="w-2.5 h-2.5" /> Naver Blog
+                          </a>
+                        )}
+                        {item.links.official && (
+                          <a href={item.links.official} target="_blank" rel="noreferrer" className="flex items-center gap-1 text-[8px] font-black bg-white border border-slate-200 text-slate-600 px-2 py-1 rounded-lg hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-all">
+                            <Globe className="w-2.5 h-2.5" /> Official
+                          </a>
+                        )}
+                        {item.links.search && (
+                          <a href={item.links.search} target="_blank" rel="noreferrer" className="flex items-center gap-1 text-[8px] font-black bg-white border border-slate-200 text-slate-600 px-2 py-1 rounded-lg hover:bg-blue-400 hover:text-white hover:border-blue-400 transition-all">
+                            <LinkIcon className="w-2.5 h-2.5" /> More Info
+                          </a>
+                        )}
+                      </div>
+                    </div>
+                  ))
+                ) : (
+                  <div className="text-center py-10">
+                    <Info className="w-8 h-8 text-amber-200 mx-auto mb-2" />
+                    <p className="text-[11px] text-amber-700 italic font-bold">이 지역의 필수 정보가<br/>곧 업데이트될 예정입니다.</p>
                   </div>
-                  <ArrowRight className="w-6 h-6 text-blue-500 group-hover:translate-x-1 transition-transform" />
-                </button>
+                )}
               </div>
             </div>
           </div>
