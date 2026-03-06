@@ -1,10 +1,7 @@
-Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,PlanB,Transit
-2026-04-13,11,08:30,09:30,🌅 기상 및 호텔 조식,Milan,Food,0,,,,호텔 내 조식으로 여유로운 시작,45.4862,9.2025,,도보
-2026-04-13,11,09:30,12:00,🎨 브레라 지구(Brera) 산책 & 미술관,Milan,Sightseeing,15,"https://www.google.com/maps/place/Pinacoteca+di+Brera/@45.4715,9.1885,17z/",,,밀라노에서 가장 예술적인 거리 탐방 및 브레라 미술관 외관 관람,45.4715,9.1885,미술관 내부 관람,메트로 M2
-2026-04-13,11,12:00,13:30,🍴 점심: Brera 근처 로컬 Trattoria,Milan,Food,35,,,,현지인들이 즐겨 찾는 브레라 지구의 고풍스러운 식당에서 파스타,45.4715,9.1885,Pandenus Brera 추천,도보
-2026-04-13,11,13:30,15:30,🏰 스포르체스코 성 & 셈피오네 공원,Milan,Sightseeing,0,"https://www.google.com/maps/place/Sforzesco+Castle/@45.4705,9.1793,17z/",,,레오나르도 다 빈치가 참여한 역사적 성과 넓은 공원 휴식,45.4705,9.1793,평화의 문 사진 촬영,도보 10분
-2026-04-13,11,15:30,17:30,☕ 스타벅스 리저브 로스터리 밀라노,Milan,Sightseeing,20,"https://www.google.com/maps/place/Starbucks+Reserve+Roastery/@45.4655,9.1865,17z/",,,구 우체국 건물을 개조한 세계에서 가장 아름다운 스타벅스 중 하나,45.4655,9.1865,인근 Princi 베이커리,도보 15분
-2026-04-13,11,17:30,19:00,👗 몬테 나폴레오네 쇼핑 거리,Milan,Sightseeing,0,"https://www.google.com/maps/place/Via+Monte+Napoleone/@45.4685,9.1945,17z/",,,세계 패션의 중심지 명품 거리 윈도우 쇼핑,45.4685,9.1945,라 리나센테 백화점 루프탑,도보
-2026-04-13,11,19:00,21:30,🍴 저녁: Navigli 아페리티보 뷔페,Navigli,Food,30,"https://www.google.com/maps/place/Navigli/@45.4525,9.1755,17z/",,,음료 한 잔 가격으로 즐기는 밀라노식 저녁 뷔페 문화,45.4525,9.1755,Mag Café 추천,메트로 M2
-2026-04-13,11,21:30,22:30,🌃 중앙역 야경 산책 및 복귀,Milan,Rest,0,,,,장엄한 밀라노 중앙역 건축물 감상 후 숙소 복귀,45.4862,9.2025,,메트로/도보
-2026-04-13,11,22:30,23:59,🛌 숙소 휴식 및 베네치아 이동 준비,Milan,Rest,0,,,,이탈리아 제2의 도시에서의 마지막 밤,45.4862,9.2025,,도보
+Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng
+2026-04-13,11,09:30,12:00,🎨 브레라 지구(Brera) 산책,Milan,Sightseeing,0,https://www.google.com/maps/search/?api=1&query=Brera+District+Milan,,,예술적인 거리 탐방,45.4715,9.1885
+2026-04-13,11,12:30,14:00,🍴 점심: Ratanà (모던 밀라네제),Milan,Food,55,https://www.google.com/maps/search/?api=1&query=Ratana+Milan,,https://www.ratana.it/,현대적 리조또 미식,45.4855,9.1895
+2026-04-13,11,14:30,17:00,🏰 스포르체스코 성 & 공원 휴식,Milan,Sightseeing,0,https://www.google.com/maps/search/?api=1&query=Sforzesco+Castle,,,역사적 성과 공원 산책,45.4705,9.1793
+2026-04-13,11,17:30,19:00,☕ 스타벅스 리저브 로스터리,Milan,Sightseeing,15,https://www.google.com/maps/search/?api=1&query=Starbucks+Reserve+Roastery+Milan,,https://www.starbucksreserve.com/en-us/locations/milan,세계에서 가장 아름다운 스타벅스,45.4655,9.1865
+2026-04-13,11,19:30,21:30,🍴 저녁: 나빌리(Navigli) 아페리티보,Milan,Food,40,https://www.google.com/maps/search/?api=1&query=Navigli+Milan,,,운하 야경과 아페리티보 문화,45.4525,9.1755
+2026-04-13,11,22:00,23:59,🛌 숙소 복귀 및 휴식,Milan,Rest,0,https://www.google.com/maps/search/?api=1&query=43+Station+Hotel+Milan,,,연박 숙소 휴식,45.4847,9.2045

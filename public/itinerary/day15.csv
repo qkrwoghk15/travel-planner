@@ -1,10 +1,7 @@
-Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,PlanB,Transit
-2026-04-17,15,08:30,09:00,🚆 볼로냐 역 이동 및 체크아웃,Bologna,Transport,0,,,,피렌체행 열차 탑승을 위한 이동,44.5058,11.3418,,도보
-2026-04-17,15,09:00,10:00,🚆 기차 이동 (볼로냐 -> 피렌체),Bologna -> Florence,Transport,25,"https://www.google.com/maps/place/Firenze+Santa+Maria+Novella/@43.7765,11.2478,17z/",,,피렌체 산타 마리아 노벨라 역 도착,43.7775,11.2515,,Italo/Frecciarossa
-2026-04-17,15,10:00,11:30,🏠 [체크인] Plus Florence,Florence,Accommodation,150,"https://www.google.com/maps/place/Plus+Florence/@43.7800,11.2550,17z/",,,수영장과 파노라마 루프탑 바를 갖춘 고평점 숙소. 짐 보관 후 이동,43.7800,11.2550,짐 보관만 진행,도보 10분
-2026-04-17,15,11:30,13:30,🍴 점심: Mercato Centrale (중앙시장),Florence,Food,20,"https://www.google.com/maps/place/Mercato+Centrale+Firenze/@43.7765,11.2555,17z/",,,1층 시장 구경 및 2층 프리미엄 푸드코트에서 다양한 피렌체 미식 체험,43.7765,11.2555,Trattoria ZaZa (인근),도보
-2026-04-17,15,13:30,15:30,🛍️ 산 로렌초 가죽 시장 & 가죽 쇼핑,Florence,Sightseeing,0,"https://www.google.com/maps/place/San+Lorenzo+Market/@43.7755,11.2545,17z/",,,피렌체의 상징 가죽 제품 구경 및 쇼핑,43.7755,11.2545,메디치 예배당 관람,도보
-2026-04-17,15,15:30,18:30,🎨 우피치 미술관 (Uffizi Gallery),Florence,Sightseeing,25,"https://www.google.com/maps/place/Uffizi+Gallery/@43.7677,11.2553,17z/",,,보티첼리, 다빈치 등 르네상스 걸작들의 집합소 (사전예약 필수),43.7677,11.2553,베키오 다리 산책,도보
-2026-04-17,15,18:30,21:00,🍴 저녁: Regina Bistecca (티본 스테이크),Florence,Food,80,"https://www.google.com/maps/place/Regina+Bistecca/@43.7735,11.2565,17z/",,,피렌체 최고의 평점을 자랑하는 인생 티본 스테이크 명소. 품격 있는 미식,43.7735,11.2565,Buca Lapi 추천,도보
-2026-04-17,15,21:00,22:30,🍹 Plus Florence 루프탑 바,Florence,Sightseeing,15,,,,두오모 쿠폴라가 보이는 숙소 루프탑에서 칵테일 한 잔,43.7800,11.2550,,도보
-2026-04-17,15,22:30,23:59,🛌 숙소 휴식,Florence,Rest,0,,,,르네상스의 도시에서의 첫날 마무리,43.7800,11.2550,,도보
+Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng
+2026-04-17,15,09:00,10:00,🚆 기차 이동 (볼로냐 -> 피렌체),Bologna -> Florence,Transport,25,https://www.google.com/maps/search/?api=1&query=Firenze+SMN,,,피렌체 SMN 역 도착,43.7775,11.2515
+2026-04-17,15,11:30,13:30,🍴 점심: Mercato Centrale,Florence,Food,20,https://www.google.com/maps/search/?api=1&query=Mercato+Centrale+Firenze,,https://www.mercatocentrale.it/firenze/,중앙시장 미식 체험,43.7765,11.2555
+2026-04-17,15,14:00,15:00,🏠 [체크인] Plus Florence,Florence,Accommodation,150,https://www.google.com/maps/search/?api=1&query=Plus+Florence,https://www.plus-florence.com/,https://www.plus-florence.com/,수영장 있는 고평점 숙소,43.78,11.255
+2026-04-17,15,15:30,18:00,🎨 우피치 미술관 관람,Florence,Sightseeing,25,https://www.google.com/maps/search/?api=1&query=Uffizi+Gallery,https://www.uffizi.it/,https://www.uffizi.it/,르네상스 예술의 정수,43.7677,11.2553
+2026-04-17,15,18:30,21:00,🍴 저녁: Regina Bistecca,Florence,Food,80,https://www.google.com/maps/search/?api=1&query=Regina+Bistecca+Florence,,https://www.reginabistecca.com/,인생 티본 스테이크,43.7735,11.2565
+2026-04-17,15,21:00,23:59,🛌 숙소 복귀 및 휴식,Florence,Rest,0,https://www.google.com/maps/search/?api=1&query=Plus+Florence,,,피렌체에서의 첫날 마무리,43.78,11.255

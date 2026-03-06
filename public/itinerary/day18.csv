@@ -1,10 +1,4 @@
-Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,PlanB,Transit
-2026-04-20,18,07:30,08:30,🌅 기상 및 체크아웃 준비,Rome,Rest,0,,,,로마에서의 마지막 아침. 짐은 숙소에 보관,41.9020,12.4920,,도보
-2026-04-20,18,08:30,12:00,⛪ 바티칸 박물관 & 성 베드로 대성당,Vatican City,Sightseeing,25,"https://www.google.com/maps/place/Vatican+Museums/@41.9065,12.4536,17z/",,,천장화 '천지창조'와 세계 최대 성당 관람 (사전예약 필수),41.9065,12.4534,산탄젤로 성 관람,메트로 A선
-2026-04-20,18,12:00,13:30,🍴 점심: Hosteria Grappolo d'Oro,Rome,Food,35,"https://www.google.com/maps/search/Hosteria+Grappolo+d'Oro+Rome/","","","정통 로마 요리 코스를 합리적으로 즐기는 슬로푸드 맛집,41.8965,12.4735,La Montecarlo 피자,도보
-2026-04-20,18,13:30,15:30,🛍️ 로마 시내 마지막 쇼핑 (코르소 거리),Rome,Sightseeing,0,"https://www.google.com/maps/place/Via+del+Corso/@41.9057,12.4823,17z/",,,가죽 장갑, 이탈리아 브랜드 등 귀국 전 마지막 선물 쇼핑,41.9057,12.4823,포폴로 광장 산책,도보
-2026-04-20,18,15:30,17:30,🍴 저녁: 로마 마지막 미식 (Supplì & Wine),Rome,Food,30,"https://www.google.com/maps/place/Suppl%C3%AC+Roma/@41.8915,12.4715,17z/",,,로마식 튀김 주먹밥 Supplì와 함께 즐기는 마지막 로컬 와인,41.8915,12.4715,Campo de' Fiori 시장,도보
-2026-04-20,18,17:30,18:30,🚆 테르미니 역 이동 및 짐 찾기,Rome Termini,Transport,0,,,,숙소에서 보관 중인 짐을 찾고 공항 열차 승강장 이동,41.9028,12.4964,,도보
-2026-04-20,18,18:30,19:10,🚆 레오나르도 익스프레스 (공항 이동),Termini -> FCO,Transport,14,"https://www.google.com/maps/place/Aeroporto+Internazionale+di+Rome+Fiumicino/@41.7999,12.2462,17z/",,,공항까지 논스톱 직통 열차로 이동,41.8003,12.2389,공항 버스 테라비전,열차
-2026-04-20,18,19:10,21:15,🛫 FCO 공항 체크인 및 면세점 구경,Rome FCO,Transport,0,,,,항공사 체크인 후 마지막 면세 쇼핑 및 휴식,41.8003,12.2389,,도보
-2026-04-20,18,21:15,23:59,🛫 FCO 공항 출발 (AF264),Rome -> Incheon,Transport,0,,,,정들었던 유럽을 뒤로하고 귀국행 비행기 탑승,41.8003,12.2389,,비행기
+Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng
+2026-04-20,18,08:30,12:00,⛪ 바티칸 박물관,Vatican City,Sightseeing,25,https://www.google.com/maps/search/?api=1&query=Vatican+Museums,https://tickets.museivaticani.va/,https://www.museivaticani.va/,세계 최대 박물관 투어,41.9065,12.4534
+2026-04-20,18,18:30,19:10,🚆 레오나르도 익스프레스 (공항 이동),Termini -> FCO,Transport,14,https://www.google.com/maps/search/?api=1&query=Fiumicino+Airport,,,공항 직통 열차 이동,41.8003,12.2389
+2026-04-20,18,21:15,23:59,🛫 로마 출발 (AF264),Rome -> Incheon,Transport,0,https://www.google.com/maps/search/?api=1&query=Fiumicino+Airport,,,귀국행 비행기 탑승,41.8003,12.2389

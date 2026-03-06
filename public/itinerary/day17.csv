@@ -1,10 +1,7 @@
-Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,PlanB,Transit
-2026-04-19,17,08:00,08:30,🚆 피렌체 역 이동 및 체크아웃,Florence,Transport,0,,,,로마행 고속열차 탑승을 위한 이동,43.7775,11.2515,,도보
-2026-04-19,17,08:30,10:10,🚆 기차 이동 (피렌체 -> 로마),Florence -> Rome,Transport,35,"https://www.google.com/maps/place/Roma+Termini/@41.9009,12.5018,17z/",,,이탈리아의 수도 로마 테르미니 역 도착,41.9028,12.4964,,Italo/Frecciarossa
-2026-04-19,17,10:10,11:30,🏠 [체크인] The RomeHello,Rome,Accommodation,180,"https://www.google.com/maps/place/The+RomeHello/@41.9020,12.4920,17z/",,,로마에서 가장 힙하고 평점 높은 숙소. 짐 보관 후 바로 이동,41.9020,12.4920,짐 보관만 진행,도보 10분
-2026-04-19,17,11:30,13:00,🍴 점심: Bonci Pizzarium (조각 피자),Rome,Food,20,"https://www.google.com/maps/place/Bonci+Pizzarium/@41.9077,12.4485,17z/",,,넷플릭스 '셰프의 테이블' 출연. 로마 최고의 프리미엄 조각 피자,41.9077,12.4485,Alice Pizza,메트로 A선
-2026-04-19,17,13:00,16:00,🏛️ 콜로세움 & 포로 로마노,Rome,Sightseeing,18,"https://www.google.com/maps/place/Colosseum/@41.8902,12.4922,17z/",,,고대 로마의 영광을 상징하는 거대 원형 경기장 관람 (사전예약 필수),41.8902,12.4922,개선문 사진 촬영,메트로 B선
-2026-04-19,17,16:00,18:30,⛪ 판테온 & 나보나 광장,Rome,Sightseeing,5,"https://www.google.com/maps/place/Pantheon/@41.8986,12.4769,17z/",,,인류 건축의 기적 판테온과 분수가 아름다운 나보나 광장 산책,41.8986,12.4769,타짜도로 커피 시식,도보
-2026-04-19,17,18:30,21:00,🍴 저녁: Roscioli Salumeria,Rome,Food,65,"https://www.google.com/maps/place/Roscioli+Salumeria+con+Cucina/@41.8945,12.4745,17z/",,,로마에서 단 한 끼를 먹는다면 이곳. 정통 카르보나라의 정수,41.8945,12.4745,Da Enzo al 29 추천,도보
-2026-04-19,17,21:00,22:30,⛲ 트레비 분수 & 스페인 계단 야경,Rome,Sightseeing,0,"https://www.google.com/maps/place/Trevi+Fountain/@41.9009,12.4833,17z/",,,밤에 더 빛나는 트레비 분수에 동전 던지기,41.9009,12.4833,폼피 티라미수 시식,도보
-2026-04-19,17,22:30,23:59,🛌 숙소 복귀 및 휴식,Rome,Rest,0,,,,영원의 도시에서의 강렬한 첫날 마무리,41.9020,12.4920,,도보/메트로
+Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng
+2026-04-19,17,09:00,10:40,🚆 기차 이동 (피렌체 -> 로마),Florence -> Rome,Transport,35,https://www.google.com/maps/search/?api=1&query=Roma+Termini,,,로마 테르미니 역 도착,41.9028,12.4964
+2026-04-19,17,10:10,11:30,🏠 [체크인] The RomeHello,Rome,Accommodation,180,https://www.google.com/maps/search/?api=1&query=The+RomeHello+Rome,https://www.theromehello.it/,https://www.theromehello.it/,테르미니 역 근처 최고 평점 숙소,41.902,12.492
+2026-04-19,17,11:30,13:00,🍴 점심: Bonci Pizzarium (조각 피자),Rome,Food,20,https://www.google.com/maps/search/?api=1&query=Bonci+Pizzarium+Rome,,https://www.bonci.it/,로마 최고의 조각 피자,41.9077,12.4485
+2026-04-19,17,13:00,16:00,🏛️ 콜로세움 관람,Rome,Sightseeing,18,https://www.google.com/maps/search/?api=1&query=Colosseum,https://parcocolosseo.it/,https://parcocolosseo.it/,고대 로마 유적 투어,41.8902,12.4922
+2026-04-19,17,18:30,21:00,🍴 저녁: Roscioli (카르보나라),Rome,Food,65,https://www.google.com/maps/search/?api=1&query=Roscioli+Salumeria+Rome,,https://www.salumeriaroscioli.com/,정통 카르보나라의 정수,41.8945,12.4745
+2026-04-19,17,22:00,23:59,🛌 숙소 복귀 및 휴식,Rome,Rest,0,https://www.google.com/maps/search/?api=1&query=The+RomeHello+Rome,,,로마에서의 첫날 휴식,41.902,12.492

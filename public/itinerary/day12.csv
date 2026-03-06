@@ -1,10 +1,7 @@
-Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,PlanB,Transit
-2026-04-14,12,07:30,08:30,🚆 밀라노 중앙역 이동 및 간단한 조식,Milan Centrale,Transport,10,,,,베네치아행 열차 탑승 전 역내 카페 이용,45.4858,9.2039,,도보
-2026-04-14,12,08:30,11:00,🚆 기차 이동 (밀라노 -> 베네치아),Milan -> Venice,Transport,45,"https://www.google.com/maps/place/Venezia+Santa+Lucia/@45.4411,12.3210,17z/",,,베네치아 산타 루치아 본섬 역 도착,45.4411,12.3210,,Italo/Frecciarossa
-2026-04-14,12,11:00,12:00,🏠 [체크인] Combo Venezia,Venice,Accommodation,180,"https://www.google.com/maps/place/Combo+Venezia/@45.4425,12.3385,17z/",,,12세기 수도원을 개조한 감성 숙소. 짐 보관 후 바로 이동,45.4425,12.3385,짐 보관만 진행,바포레토/도보
-2026-04-14,12,12:00,13:30,🍴 점심: Bar All'Arco (치케티 미식),Venice,Food,25,"https://www.google.com/maps/place/Bar+All'Arco/@45.4385,12.3345,17z/",,,베네치아 현지인들이 가장 사랑하는 치케티 바. 서서 즐기는 낭만,45.4385,12.3345,인근 Cantina Do Mori,도보
-2026-04-14,12,13:30,15:30,🛍️ 리알토 시장 & 폰다코 데이 테데스키,Venice,Sightseeing,0,"https://www.google.com/maps/place/Rialto+Market/@45.4389,12.3361,17z/",,,활기찬 수산시장 구경 및 백화점 루프탑에서 베네치아 전경 감상 (무료예약필수),45.4389,12.3361,리알토 다리 사진 촬영,도보 5분
-2026-04-14,12,15:30,18:30,⛪ 산 마르코 광장 & 대성당,Venice,Sightseeing,20,"https://www.google.com/maps/place/Piazza+San+Marco/@45.4344,12.3388,17z/",,,세계에서 가장 아름다운 거실. 대성당 내부 및 광장 산책,45.4344,12.3388,탄식의 다리 관람,도보
-2026-04-14,12,18:30,20:30,🍴 저녁: Trattoria Antiche Carampane,Venice,Food,75,"https://www.google.com/maps/place/Trattoria+Antiche+Carampane/@45.4380,12.3315,17z/",,,베네치아 정통 해산물 미식의 끝판왕. 예약 필수,45.4380,12.3315,Osteria alle Testiere 추천,도보
-2026-04-14,12,20:30,22:00,🛶 심야 바포레토 투어 (대운하),Venice,Sightseeing,10,,,,바포레토 1번 노선을 타고 조명이 켜진 대운하의 낭만 만끽,45.4411,12.3210,,바포레토
-2026-04-14,12,22:00,23:59,🛌 숙소 복귀 및 휴식,Venice,Rest,0,,,,본섬 수도원 숙소의 고요한 밤,45.4425,12.3385,,도보
+Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng
+2026-04-14,12,08:30,11:00,🚆 기차 이동 (밀라노 -> 베네치아),Milan -> Venice,Transport,45,https://www.google.com/maps/search/?api=1&query=Venezia+Santa+Lucia,,,베네치아 본섬 역 도착,45.4411,12.321
+2026-04-14,12,11:30,12:30,🏠 [체크인] Combo Venezia,Venice,Accommodation,180,https://www.google.com/maps/search/?api=1&query=Combo+Venezia,https://www.combovenezia.it/,https://www.combovenezia.it/,수도원 개조 감성 숙소,45.4425,12.3385
+2026-04-14,12,13:00,14:30,🍴 점심: Bar All'Arco (치케티),Venice,Food,25,https://www.google.com/maps/search/?api=1&query=Bar+All+Arco+Venice,,,현지인 최애 치케티 바,45.4385,12.3345
+2026-04-14,12,15:00,18:00,🛶 본섬 탐방 & 폰다코 루프탑,Venice,Sightseeing,0,https://www.google.com/maps/search/?api=1&query=Piazza+San+Marco,,,베네치아 본섬 정복,45.4344,12.3388
+2026-04-14,12,18:30,20:30,🍴 저녁: Trattoria Antiche Carampane,Venice,Food,75,https://www.google.com/maps/search/?api=1&query=Antiche+Carampane+Venice,https://www.antichecarampane.it/,https://www.antichecarampane.it/,정통 해산물 미식의 정수,45.438,12.3315
+2026-04-14,12,21:00,23:59,🛌 숙소 복귀 및 휴식,Venice,Rest,0,https://www.google.com/maps/search/?api=1&query=Combo+Venezia,,,물의 도시 야경 감상,45.4425,12.3385

@@ -1,9 +1,6 @@
-Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,PlanB,Transit
-2026-04-18,16,08:30,09:30,🌅 기상 및 호텔 조식,Florence,Food,0,,,,든든한 조식 후 피렌체 전경을 보러 이동,43.7800,11.2550,,도보
-2026-04-18,16,09:30,12:00,⛪ 두오모 쿠폴라 등정 (Brunelleschi's Dome),Florence,Sightseeing,30,"https://www.google.com/maps/place/Cattedrale+di+Santa+Maria+del+Fiore/@43.7731,11.2560,17z/",,,463개의 계단을 올라 피렌체 시내를 한눈에 조망 (사전예약 필수),43.7731,11.2560,조토의 종탑 등정,도보
-2026-04-18,16,12:00,13:30,🍴 점심: All'Antico Vinaio (샌드위치),Florence,Food,15,"https://www.google.com/maps/place/All'Antico+Vinaio/@43.7685,11.2575,17z/",,,줄 서서 먹는 전설적인 피렌체식 샌드위치(스키아차타). 길거리 미식의 정수,43.7685,11.2575,I' Girone De' Ghiotti,도보
-2026-04-18,16,13:30,15:30,🧴 산타 마리아 노벨라 약국 & 쇼핑,Florence,Sightseeing,0,"https://www.google.com/maps/place/Officina+Profumo-Farmaceutica+di+Santa+Maria+Novella/@43.7745,11.2485,17z/",,,800년 역사의 세계에서 가장 오래된 약국. 고풍스러운 인테리어와 향수 쇼핑,43.7745,11.2485,산타 마리아 노벨라 성당 관람,도보
-2026-04-18,16,15:30,18:00,🌅 미켈란젤로 언덕 일몰 산책,Florence,Sightseeing,0,"https://www.google.com/maps/place/Piazzale+Michelangelo/@43.7629,11.2651,17z/",,,피렌체 최고의 뷰포인트. 일몰과 함께 버스킹 음악 즐기기,43.7629,11.2651,산 미니아토 알 몬테 성당,도보/버스 12번
-2026-04-18,16,18:30,20:30,🍴 저녁: Trattoria Sostanza (버터 치킨),Florence,Food,55,"https://www.google.com/maps/search/Trattoria+Sostanza+Florence/","","","예약 전쟁을 뚫어야 하는 피렌체 No.1 미식. 지글지글한 버터 치킨은 필수,43.7735,11.2465,Osteria Santo Spirito,도보
-2026-04-18,16,20:30,22:00,🌃 베키오 다리 야경 산책,Florence,Sightseeing,0,"https://www.google.com/maps/place/Ponte+Vecchio/@43.7679,11.2532,17z/",,,조명이 켜진 베키오 다리와 아르노 강의 로맨틱한 분위기,43.7679,11.2532,인근 바에서 젤라또,도보
-2026-04-18,16,22:00,23:59,🛌 숙소 복귀 및 휴식,Florence,Rest,0,,,,로마 이동을 위한 짐 정리 및 휴식,43.7800,11.2550,,도보
+Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng
+2026-04-18,16,09:30,12:00,⛪ 두오모 쿠폴라 등정,Florence,Sightseeing,30,https://www.google.com/maps/search/?api=1&query=Duomo+di+Milano,https://www.duomomilano.it/,https://www.duomomilano.it/,피렌체 시내 조망,43.7731,11.256
+2026-04-18,16,12:00,13:30,🍴 점심: All'Antico Vinaio,Florence,Food,15,https://www.google.com/maps/search/?api=1&query=All+Antico+Vinaio+Florence,,https://www.allanticovinaio.com/,전설적인 샌드위치 미식,43.7685,11.2575
+2026-04-18,16,15:30,18:00,🌅 미켈란젤로 언덕 일몰,Florence,Sightseeing,0,https://www.google.com/maps/search/?api=1&query=Piazzale+Michelangelo,,,피렌체 일몰 명소,43.7629,11.2651
+2026-04-18,16,18:30,20:30,🍴 저녁: Trattoria Sostanza,Florence,Food,55,https://www.google.com/maps/search/?api=1&query=Trattoria+Sostanza+Florence,,,인생 버터 치킨 미식,43.7735,11.2465
+2026-04-18,16,21:00,23:59,🛌 숙소 복귀 및 휴식,Florence,Rest,0,https://www.google.com/maps/search/?api=1&query=Plus+Florence,,,연박 숙소 휴식,43.78,11.255

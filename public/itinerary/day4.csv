@@ -1,8 +1,6 @@
-Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,PlanB,Transit
-2026-04-06,4,08:00,08:30,🔑 [체크아웃] Hôtel Adèle & Jules,Paris,Accommodation,0,,,,체크아웃 후 Gare de Lyon 역 이동,48.8719,2.3456,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,도보 및 로컬 교통
-2026-04-06,4,09:00,11:00,🚆 TGV 탑승 (파리 -> 리옹),Paris -> Lyon,Transport,45,"https://www.google.com/maps/place/Gare+de+Lyon+Part-Dieu/@45.7605,4.8599,17z/",,,미식의 도시 리옹 파르디외 역 도착,45.7606,4.8594,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,현지 교통 이용
-2026-04-06,4,11:30,13:30,🍴 점심: Halles de Lyon Paul Bocuse 시장,Lyon,Food,30,"https://www.google.com/maps/place/Les+Halles+de+Lyon+Paul+Bocuse/@45.7623,4.8511,17z/",,,역에서 버스 C3 노선 탑승 후 5분,45.7623,4.8519,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,도보 이동
-2026-04-06,4,14:00,15:00,🏠 [체크인] Hôtel Vaubecour (리옹 프레스킬),Lyon,Accommodation,120,"https://www.google.com/maps/place/Pullman+Lyon/@45.7596,4.8585,17z/",,,리옹 최고의 안전 지구 프레스킬 위치. 로컬 감성의 고품격 부티크 호텔,45.7596,4.8585,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,로컬 교통
-2026-04-06,4,15:30,18:00,🚶 프레스킬(Presqu'île) 지구 탐방,Lyon,Sightseeing,0,"https://www.google.com/maps/place/Place+Bellecour/@45.7578,4.8321,17z/",,,벨쿠르 광장에서 테로 광장까지 이어지는 리옹의 심장부 산책 및 아케이드 쇼핑,45.7578,4.8321,우천 시 Grand Hôtel-Dieu 실내 쇼핑몰 이용,숙소에서 도보 10분
-2026-04-06,4,18:30,20:00,🍴 저녁: Bouchon Tupin (정통 부숑),Lyon,Food,35,"https://www.google.com/maps/place/Bouchon+Tupin/@45.7624,4.8344,17z/",,,리옹 정통 요리의 현대적 재해석,45.7624,4.8344,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,숙소 복귀 이동
-2026-04-06,4,20:30,23:59,🛌 숙소 복귀 및 휴식,Lyon,Rest,0,,,,리옹 부숑 미식 후 프레스킬 안전 지구 숙소 복귀,45.7596,4.8585,야간 큰길 위주 이동,식당에서 도보 15분
+Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng
+2026-04-06,4,08:00,08:30,🔑 [체크아웃] Hôtel Astra Opéra,Paris,Accommodation,0,https://www.google.com/maps/search/?api=1&query=Hotel+Astra+Opera+Paris,,,체크아웃 후 Gare de Lyon 역 이동,48.8732,2.3295
+2026-04-06,4,09:00,11:00,🚆 TGV 탑승 (파리 -> 리옹),Paris -> Lyon,Transport,45,https://www.google.com/maps/search/?api=1&query=Gare+de+Lyon+Part-Dieu,,,미식의 도시 리옹 파르디외 역 도착,45.7606,4.8594
+2026-04-06,4,11:30,13:30,🍴 점심: Halles de Lyon Paul Bocuse 시장,Lyon,Food,30,https://www.google.com/maps/search/?api=1&query=Les+Halles+de+Lyon+Paul+Bocuse,,https://www.halles-de-lyon-paulbocuse.com/,리옹 미식의 성지 시장 구경 및 점심,45.7623,4.8519
+2026-04-06,4,14:00,15:00,🏠 [체크인] Hôtel Vaubecour,Lyon,Accommodation,150,https://www.google.com/maps/search/?api=1&query=Hotel+Vaubecour+Lyon,https://www.hotelvaubecour-lyon.com/,https://www.hotelvaubecour-lyon.com/,리옹 프레스킬 중심가 가성비 숙소,45.7596,4.8585
+2026-04-06,4,18:30,20:00,🍴 저녁: Bouchon Tupin,Lyon,Food,35,https://www.google.com/maps/search/?api=1&query=Bouchon+Tupin+Lyon,https://www.bouchon-tupin.com/,https://www.bouchon-tupin.com/,리옹 정통 요리의 현대적 재해석,45.7624,4.8344

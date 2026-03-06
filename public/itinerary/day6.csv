@@ -1,8 +1,8 @@
-Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,PlanB,Transit
-2026-04-08,6,08:30,09:00,🔑 [체크아웃] Pullman Lyon,Lyon,Accommodation,0,,,,체크아웃 후 스위스행 열차 탑승,45.7596,4.8585,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,도보 및 로컬 교통
-2026-04-08,6,09:00,13:30,🚆 기차 이동 (리옹 -> 체르마트),Lyon -> Zermatt,Transport,85,"https://www.google.com/maps/place/Zermatt/@46.0207,7.7491,17z/",,,비스프 환승 후 산악 열차 등정,46.0207,7.7491,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,현지 교통 이용
-2026-04-08,6,13:30,14:30,🏠 [체크인] Zermatt Youth Hostel (개인실),Zermatt,Accommodation,160,"https://www.google.com/maps/place/Zermatt+Youth+Hostel/@46.0150,7.7460,17z/",,,마터호른 뷰가 보이는 프라이빗 룸,46.0150,7.7460,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,도보 이동
-2026-04-08,6,14:30,15:10,🚆 [이동] 고르너그라트 열차역 이동,Zermatt GGB,Transport,0,"https://www.google.com/maps/place/Gornergrat+Bahn/@46.0238,7.7487,17z/",,,숙소에서 역전 GGB 승강장으로 전기버스/도보 이동,46.0238,7.7487,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,로컬 교통
-2026-04-08,6,15:10,18:00,🏔️ 고르너그라트 전망대 (산악열차),Gornergrat,Sightseeing,90,"https://www.google.com/maps/place/Gornergrat/@45.9832,7.7846,17z/",,,33분 소요 톱니바퀴 열차 등정 후 절경 감상,45.9833,7.7833,가시거리 불량 시 체르마트 박물관(Zermatlantis) 및 몬테 로사 스파,숙소 복귀 이동
-2026-04-08,6,18:30,20:00,🍴 저녁: Restaurant DuPont (가성비 퐁뒤),Zermatt,Food,40,https://www.google.com/maps/search/Restaurant+DuPont+Zermatt/,,,전망대 하산 후 마을 중심 퐁뒤 미식,46.0190,7.7490,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,도보 및 로컬 교통
-2026-04-08,6,20:30,23:59,🛌 숙소 복귀 및 휴식,Zermatt,Rest,0,,,,개인실에서 마터호른 감상,46.0150,7.7460,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,도보 및 로컬 교통
+Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng
+2026-04-08,6,08:30,09:00,🔑 [체크아웃] Hôtel Vaubecour,Lyon,Accommodation,0,https://www.google.com/maps/search/?api=1&query=Hotel+Vaubecour+Lyon,,,체크아웃 후 스위스행 열차 탑승,45.7596,4.8585
+2026-04-08,6,09:00,13:30,🚆 기차 이동 (리옹 -> 체르마트),Lyon -> Zermatt,Transport,85,https://www.google.com/maps/search/?api=1&query=Zermatt+Station,,,비스프 환승 후 산악 열차 등정,46.0207,7.7491
+2026-04-08,6,13:30,14:30,🏠 [체크인] Zermatt Youth Hostel,Zermatt,Accommodation,160,https://www.google.com/maps/search/?api=1&query=Zermatt+Youth+Hostel,https://www.youthhostel.ch/en/hostels/zermatt/,https://www.youthhostel.ch/en/hostels/zermatt/,마터호른 뷰가 보이는 프라이빗 룸,46.015,7.746
+2026-04-08,6,14:30,15:10,🚆 [이동] 고르너그라트 열차역 이동,Zermatt GGB,Transport,0,https://www.google.com/maps/search/?api=1&query=Gornergrat+Bahn,,,역전 GGB 승강장으로 이동,46.0238,7.7487
+2026-04-08,6,15:10,18:00,🏔️ 고르너그라트 전망대,Gornergrat,Sightseeing,90,https://www.google.com/maps/search/?api=1&query=Gornergrat,,https://www.gornergrat.ch/,33분 소요 톱니바퀴 열차 등정 후 절경 감상,45.9833,7.7833
+2026-04-08,6,18:30,20:00,🍴 저녁: Restaurant DuPont,Zermatt,Food,40,https://www.google.com/maps/search/?api=1&query=Restaurant+DuPont+Zermatt,,https://www.dupont-zermatt.ch/,전망대 하산 후 마을 중심 퐁뒤 미식,46.019,7.749
+2026-04-08,6,20:30,23:59,🛌 숙소 복귀 및 휴식,Zermatt,Rest,0,https://www.google.com/maps/search/?api=1&query=Zermatt+Youth+Hostel,,,개인실에서 마터호른 감상,46.015,7.746

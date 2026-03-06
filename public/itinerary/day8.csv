@@ -1,8 +1,7 @@
-Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,PlanB,Transit
-2026-04-10,8,08:30,09:00,🔑 [체크아웃] Zermatt Youth Hostel,Zermatt,Accommodation,0,,,,체크아웃 후 인터라켄행 열차 탑승,46.0150,7.7460,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,도보 및 로컬 교통
-2026-04-10,8,09:00,11:30,🚆 기차 이동 (체르마트 -> 인터라켄),Zermatt -> Interlaken,Transport,55,"https://www.google.com/maps/place/Interlaken+Ost/@46.6904,7.8691,17z/",,,인터라켄 동역 도착 및 짐 보관,46.6841,7.8643,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,현지 교통 이용
-2026-04-10,8,11:30,13:30,🍴 점심: Little Thai (가성비 맛집),Interlaken,Food,25,https://www.google.com/maps/search/Little+Thai+Interlaken/,,,인터라켄 동역 도보 10분 아시아 미식,46.6825,7.8535,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,도보 이동
-2026-04-10,8,14:00,15:00,🏠 [체크인] Backpackers Villa (프라이빗 룸),Interlaken,Accommodation,180,"https://www.google.com/maps/place/Backpackers+Villa+Sonnenhof/@46.6854,7.8614,17z/",,,3일 거점 숙소 프라이빗 룸 체크인,46.6854,7.8614,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,로컬 교통
-2026-04-10,8,15:30,18:00,⛴️ 브리엔츠 호수 유람선,Interlaken,Sightseeing,40,"https://www.google.com/maps/place/Interlaken+Ost+See/@46.6915,7.8705,17z/",,,동역 앞 선착장에서 에메랄드빛 유람선 체험,46.6915,7.8705,비 올 때 베른(Bern) 시내 구시가지 아케이드 쇼핑 및 투어,숙소 복귀 이동
-2026-04-10,8,18:30,20:00,🍴 저녁: Hüsi Bierhaus (로컬 펍),Interlaken,Food,35,https://www.google.com/maps/search/Hüsi+Bierhaus+Interlaken/,,,스위스 수제 맥주와 정통 뢰스티 요리의 정수,46.6850,7.8550,현지 기상/상황에 따른 유동적 휴식 및 인근 카페 미식,도보 및 로컬 교통
-2026-04-10,8,20:30,23:59,🛌 숙소 복귀 및 휴식,Interlaken,Rest,0,,,,인터라켄 호수 야경 감상 후 숙소 복귀,46.6854,7.8614,조용한 마을 산책,식당에서 도보 10분
+Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng
+2026-04-10,8,08:30,09:00,🔑 [체크아웃] Zermatt Youth Hostel,Zermatt,Accommodation,0,https://www.google.com/maps/search/?api=1&query=Zermatt+Youth+Hostel,,,체크아웃 후 인터라켄 이동,46.015,7.746
+2026-04-10,8,09:00,11:30,🚆 기차 이동 (체르마트 -> 인터라켄),Zermatt -> Interlaken,Transport,55,https://www.google.com/maps/search/?api=1&query=Interlaken+Ost,,,인터라켄 동역 도착 및 짐 보관,46.6841,7.8643
+2026-04-10,8,11:30,13:30,🍴 점심: Little Thai,Interlaken,Food,25,https://www.google.com/maps/search/?api=1&query=Little+Thai+Interlaken,,https://www.littlethai.ch/,인터라켄 동역 도보 10분 아시아 미식,46.6825,7.8535
+2026-04-10,8,14:00,15:00,🏠 [체크인] Backpackers Villa,Interlaken,Accommodation,180,https://www.google.com/maps/search/?api=1&query=Backpackers+Villa+Interlaken,https://www.villa.ch/,https://www.villa.ch/,인터라켄 거점 숙소 체크인,46.6854,7.8614
+2026-04-10,8,15:30,18:00,⛴️ 브리엔츠 호수 유람선,Interlaken,Sightseeing,40,https://www.google.com/maps/search/?api=1&query=Interlaken+Ost+See,,https://www.bls.ch/en/freizeit-und-urlaub/schifffahrt,에메랄드빛 유람선 체험,46.6915,7.8705
+2026-04-10,8,18:30,20:00,🍴 저녁: Hüsi Bierhaus,Interlaken,Food,35,https://www.google.com/maps/search/?api=1&query=Husi+Bierhaus+Interlaken,,https://www.huesibierhaus.com/,스위스 맥주와 뢰스티 요리,46.685,7.855

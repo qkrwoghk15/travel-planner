@@ -1,10 +1,7 @@
-Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,PlanB,Transit
-2026-04-15,13,08:30,09:00,🚆 베네치아 역 이동 및 체크아웃,Venice,Transport,0,,,,물 위에서의 마지막 아침 산책 후 역 이동,45.4411,12.3210,,도보/바포레토
-2026-04-15,13,09:00,10:30,🚆 기차 이동 (베네치아 -> 볼로냐),Venice -> Bologna,Transport,25,"https://www.google.com/maps/place/Bologna+Centrale/@44.5058,11.3418,17z/",,,이탈리아 미식의 심장 볼로냐 중앙역 도착,44.5058,11.3418,,Italo/Frecciarossa
-2026-04-15,13,10:30,11:30,🏠 [체크인] Combo Bologna,Bologna,Accommodation,120,"https://www.google.com/maps/place/Combo+Bologna/@44.5080,11.3420,17z/",,,역 도보 5분 힙한 감성의 깔끔한 개인실 체크인,44.5080,11.3420,짐 보관 후 바로 이동,도보 5분
-2026-04-15,13,11:30,13:30,🍴 점심: Osteria dell'Orsa (라구 파스타),Bologna,Food,25,"https://www.google.com/maps/search/Osteria+dell'Orsa+Bologna/","","","원조 볼로네제 라구 파스타를 줄 서서 먹는 집. 합석의 묘미,44.4965,11.3485,Trattoria dal Biassanot,도보
-2026-04-15,13,13:30,15:30,⛪ 마조레 광장 & 넵튠 분수,Bologna,Sightseeing,0,"https://www.google.com/maps/place/Piazza+Maggiore/@44.4938,11.3430,17z/",,,볼로냐의 거실 마조레 광장과 상징적인 넵튠 분수 관람,44.4938,11.3430,산 페트로니오 성당 내부,도보 10분
-2026-04-15,13,15:30,18:30,🚶 산 루카 회랑(Portico di San Luca) 하이킹,Bologna,Sightseeing,0,"https://www.google.com/maps/place/Sanctuary+of+the+Madonna+di+San+Luca/@44.4791,11.2962,17z/",,,세계에서 가장 긴 666개 아치의 회랑을 따라 언덕 위 성당까지 걷기,44.4791,11.2962,미니트레인 탑승,도보/버스
-2026-04-15,13,18:30,20:30,🍴 저녁: Quadrilatero 미식 지구 투어,Bologna,Food,45,"https://www.google.com/maps/search/Quadrilatero+Bologna/","","","Tamburini에서 샤르쿠트리 시식 및 로컬 와인 한 잔,44.4935,11.3445,Mercato di Mezzo,도보
-2026-04-15,13,20:30,22:00,🌃 두 개의 탑(Le Due Torri) 야경,Bologna,Sightseeing,0,"https://www.google.com/maps/place/Two+Towers/@44.4942,11.3468,17z/",,,밤에 보는 볼로냐의 기울어진 탑은 더욱 신비로운 분위기,44.4942,11.3468,인근 바에서 젤라또,도보
-2026-04-15,13,22:00,23:59,🛌 숙소 복귀 및 휴식,Bologna,Rest,0,,,,미식의 도시에서의 든든한 마무리,44.5080,11.3420,,도보
+Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng
+2026-04-15,13,09:00,10:30,🚆 기차 이동 (베네치아 -> 볼로냐),Venice -> Bologna,Transport,25,https://www.google.com/maps/search/?api=1&query=Bologna+Centrale,,,볼로냐 중앙역 도착,44.5058,11.3418
+2026-04-15,13,11:30,13:30,🍴 점심: Osteria dell'Orsa (라구),Bologna,Food,25,https://www.google.com/maps/search/?api=1&query=Osteria+dell+Orsa+Bologna,,https://www.osteriadellorsa.it/,원조 라구 파스타 성지,44.4965,11.3485
+2026-04-15,13,14:00,15:00,🏠 [체크인] Combo Bologna,Bologna,Accommodation,120,https://www.google.com/maps/search/?api=1&query=Combo+Bologna,https://www.combobologna.it/,https://www.combobologna.it/,힙한 감성의 개인실 체크인,44.508,11.342
+2026-04-15,13,15:00,18:00,⛪ 마조레 광장 & 포르티코 산책,Bologna,Sightseeing,0,https://www.google.com/maps/search/?api=1&query=Piazza+Maggiore,,,UNESCO 회랑 탐방,44.4938,11.343
+2026-04-15,13,18:30,20:00,🍴 저녁: Quadrilatero 미식 지구 투어,Bologna,Food,35,https://www.google.com/maps/search/?api=1&query=Tamburini+Bologna,,http://www.tamburini.com/,전통 델리 미식 체험,44.4935,11.3445
+2026-04-15,13,20:30,23:59,🛌 숙소 복귀 및 휴식,Bologna,Rest,0,https://www.google.com/maps/search/?api=1&query=Combo+Bologna,,,볼로냐에서의 밤,44.508,11.342

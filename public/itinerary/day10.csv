@@ -1,13 +1,7 @@
-Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,PlanB,Transit
-2026-04-12,10,07:00,08:00,🌅 기상 및 인터라켄 조식,Interlaken,Food,0,,,,스위스에서의 마지막 조식 및 체크아웃 준비,46.6854,7.8614,숙소 내 간단한 식사,도보
-2026-04-12,10,08:00,08:30,🚆 인터라켄 동역 이동,Interlaken Ost,Transport,0,"https://www.google.com/maps/place/Interlaken+Ost/@46.6904,7.8691,17z/",,,밀라노행 열차 탑승을 위한 역 이동,46.6904,7.8691,일찍 도착 시 역내 카페 이용,도보 10분
-2026-04-12,10,08:30,11:30,🚆 기차 이동 (인터라켄 -> 밀라노),Interlaken -> Milan,Transport,85,"https://www.google.com/maps/place/Milano+Centrale/@45.4858,9.2039,17z/",,,도모도솔라 구간의 환상적인 알프스 뷰 감상,45.4858,9.2039,지연 시 다음 열차 이용,TGV/EuroCity
-2026-04-12,10,11:30,12:15,🏠 [체크인] 43 Station Hotel,Milan Centrale,Accommodation,150,"https://www.google.com/maps/place/43+Station+Hotel/@45.4862,9.2025,17z/",,,역 도보 3분 가성비 최고 호텔. 짐 보관 또는 얼리 체크인,45.4862,9.2025,짐 보관 후 즉시 이동,도보 3분
-2026-04-12,10,12:15,12:45,🚇 두오모 이동 (메트로 M3),Centrale -> Duomo,Transport,2,,,,밀라노의 심장부로 이동,45.4642,9.1919,,메트로 M3선
-2026-04-12,10,12:45,13:30,🍴 점심: Luini (판제로티),Milan,Food,15,"https://www.google.com/maps/place/Luini/@45.4646,9.1916,17z/",,,밀라노 No.1 길거리 미식. 치즈와 토마토가 든 튀김 빵,45.4646,9.1916,Spontini 피자 (인근),도보
-2026-04-12,10,13:30,15:00,🛍️ Peck 미식 쇼핑,Milan,Food,50,"https://www.google.com/maps/place/Peck/@45.4635,9.1875,17z/",,,140년 전통의 프리미엄 식품관. 보르디예 버터와 치즈 탐방,45.4635,9.1875,갤러리아 구경,도보 5분
-2026-04-12,10,15:00,17:30,⛪ 두오모 루프탑 & 테라스,Milan,Sightseeing,25,"https://www.google.com/maps/place/Duomo+di+Milano/@45.4642,9.1919,17z/",,,엘리베이터로 등정하여 첨탑 사이를 걷는 특별한 경험,45.4642,9.1919,비 올 시 노베첸토 미술관,도보
-2026-04-12,10,17:30,18:30,🚶 가리발디 지구 이동 및 산책,Milan,Sightseeing,0,,,,밀라노의 현대적인 건축물(보스코 베르티칼레) 감상,45.4855,9.1895,,메트로 M2/M3 이용
-2026-04-12,10,18:30,20:30,🍴 저녁: Ratanà (모던 밀라네제),Milan,Food,65,"https://www.google.com/maps/place/Ratan%C3%A0/@45.4855,9.1895,17z/",,,밀라노 정통 오소부코와 샤프란 리조또의 현대적 조화,45.4855,9.1895,Stendhal Brera 추천,도보
-2026-04-12,10,20:30,22:00,🍷 나빌리 운하 야경 투어,Navigli,Sightseeing,20,"https://www.google.com/maps/place/Navigli/@45.4525,9.1755,17z/",,,운하를 따라 즐기는 밀라노식 아페리티보 문화 체험,45.4525,9.1755,숙소 인근 바 이용,메트로 M2
-2026-04-12,10,22:30,23:59,🛌 숙소 복귀 및 휴식,Milan,Rest,0,,,,이탈리아 첫날 일정을 완벽하게 마무리,45.4862,9.2025,,도보/메트로
+Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng
+2026-04-12,10,08:30,11:30,🚆 기차 이동 (인터라켄 -> 밀라노),Interlaken -> Milan,Transport,85,https://www.google.com/maps/search/?api=1&query=Milano+Centrale,,,도모도솔라 구간 기차 이동,45.4858,9.2039
+2026-04-12,10,11:45,12:30,🏠 [체크인] 43 Station Hotel,Milan,Accommodation,150,https://www.google.com/maps/search/?api=1&query=43+Station+Hotel+Milan,https://www.43stationhotel.com/,https://www.43stationhotel.com/,중앙역 도보 3분 가성비 숙소,45.4862,9.2025
+2026-04-12,10,13:00,14:30,🍴 점심: Luini (판제로티),Milan,Food,15,https://www.google.com/maps/search/?api=1&query=Luini+Milan,,https://www.luini.it/,밀라노 최고의 길거리 미식,45.4646,9.1916
+2026-04-12,10,14:30,17:30,⛪ 밀라노 두오모 루프탑 & Peck 쇼핑,Milan,Sightseeing,25,https://www.google.com/maps/search/?api=1&query=Duomo+di+Milano,https://www.duomomilano.it/,https://www.duomomilano.it/,두오모 테라스 및 Peck 쇼핑,45.4642,9.1919
+2026-04-12,10,18:30,20:30,🍴 저녁: Ratanà (오소부코),Milan,Food,65,https://www.google.com/maps/search/?api=1&query=Ratana+Milan,https://www.ratana.it/,https://www.ratana.it/,밀라노 정통 오소부코 미식,45.4855,9.1895
+2026-04-12,10,21:00,23:59,🛌 숙소 복귀 및 휴식,Milan,Rest,0,https://www.google.com/maps/search/?api=1&query=43+Station+Hotel+Milan,,,밀라노 중심가 개인실 휴식,45.4862,9.2025
