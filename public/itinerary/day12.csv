@@ -1,7 +1,6 @@
 Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,Transit,PlanB
-2026-04-14,12,00:00,08:34,수면 (야간열차),Nightjet Train,Accommodation,0,"https://www.google.com/maps/search/?api=1&query=45.44,12.32",,,08:34 베네치아 도착,45.4411,12.3211,기차,
-2026-04-14,12,08:34,11:30,체크인/광장,Hotel Palazzo Giovanelli,Accommodation,230,"https://www.google.com/maps/search/?api=1&query=45.44,12.32",,,베네치아 1박 2일 (체크인 15:00) 짐보관,45.4415,12.3285,바포레토,
-2026-04-14,12,11:30,13:30,점심: 알 티몬,Al Timon,Food,50,"https://www.google.com/maps/search/?api=1&query=45.44,12.33",,,치케티와 스프리츠,45.4451,12.3311,도보,
-2026-04-14,12,13:30,18:30,비엔날레/부라노,Venice Biennale,Sightseeing,30,"https://www.google.com/maps/search/?api=1&query=45.42,12.35",,,현대미술 또는 부라노 섬,45.4285,12.3575,바포레토,
-2026-04-14,12,18:30,19:30,저녁: 카람파네,Antiche Carampane,Food,80,"https://www.google.com/maps/search/?api=1&query=45.43,12.33",,,정통 해산물 맛집,45.4385,12.3311,도보,
-2026-04-14,12,19:30,23:59,곤돌라 야경,Grand Canal,Sightseeing,80,"https://www.google.com/maps/search/?api=1&query=45.43,12.33",,,낭만적인 곤돌라,45.4345,12.3385,곤돌라,
+2026-04-14,12,09:00,11:30,스트라호프 도서관,Strahov Library,Sightseeing,10,"https://www.google.com/maps/search/?api=1&query=50.0865,14.3895",,,세계에서 가장 아름다운 도서관,50.0865,14.3895,도보,
+2026-04-14,12,11:30,13:30,점심 식사: 카페 사보이,Cafe Savoy,Food,45,"https://www.google.com/maps/search/?api=1&query=50.0805,14.4065",,,화려한 카페에서의 정시 런치,50.0805,14.4065,도보,
+2026-04-14,12,14:44,18:49,빈 이동 (Railjet),Vienna Hbf,Transport,40,"https://www.google.com/maps/search/?api=1&query=48.1855,16.3775",,,Prague ➔ Vienna 이동,48.1855,16.3775,기차: Railjet,
+2026-04-14,12,18:49,20:30,저녁 식사: 빈 슈니첼,Vienna Hbf,Food,35,"https://www.google.com/maps/search/?api=1&query=48.1855,16.3775",,,이동 전 든든한 로컬 슈니첼,48.1855,16.3775,도보,
+2026-04-14,12,21:27,23:59,야간열차 탑승 (취침),Nightjet,Transport,150,"https://www.google.com/maps/search/?api=1&query=48.1855,16.3775",,,Vienna ➔ Venice (NJ 40466),48.1855,16.3775,기차: Nightjet,

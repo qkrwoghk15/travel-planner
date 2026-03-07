@@ -1,7 +1,6 @@
 Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,Transit,PlanB
-2026-04-10,8,00:00,08:30,수면,iQ Hotel Munchen,Accommodation,0,"https://www.google.com/maps/search/?api=1&query=48.13,11.56",,,,48.1385,11.5625,,
-2026-04-10,8,08:30,11:30,BMW 박물관,BMW Museum,Sightseeing,20,"https://www.google.com/maps/search/?api=1&query=48.17,11.55",,,미래지향적 자동차 전시,48.1765,11.5595,메트로,
-2026-04-10,8,11:30,13:30,점심: 바바리안 파인,Weinhaus Neuner,Food,50,"https://www.google.com/maps/search/?api=1&query=48.13,11.56",,,고급 독일 요리,48.1385,11.5685,메트로,
-2026-04-10,8,13:30,18:30,영국 정원/궁전,Englischer Garten,Sightseeing,0,"https://www.google.com/maps/search/?api=1&query=48.15,11.59",,,도심 속 거대 공원 힐링,48.1525,11.5915,도보,
-2026-04-10,8,18:30,19:30,저녁: 테레사 그릴,Theresa Grill,Food,60,"https://www.google.com/maps/search/?api=1&query=48.14,11.57",,,참나무 장작 그릴 스테이크,48.1495,11.5775,도보,
-2026-04-10,8,19:30,23:59,휴식,iQ Hotel Munchen,Accommodation,0,"https://www.google.com/maps/search/?api=1&query=48.13,11.56",,,,48.1385,11.5625,도보,
+2026-04-10,8,07:30,12:30,뮌헨 이동,Munich Hbf,Transport,70,"https://www.google.com/maps/search/?api=1&query=48.1402,11.5583",,,Interlaken ➔ Basel ➔ Munich,48.1402,11.5583,기차: ICE 372,
+2026-04-10,8,12:30,14:00,점심 식사: 아우구스티너,Augustiner,Food,35,"https://www.google.com/maps/search/?api=1&query=48.1385,11.5725",,,현지인 1위 맥주집 정시 런치,48.1385,11.5725,도보,
+2026-04-10,8,14:00,15:30,숙소 체크인,iQ Hotel Munchen,Accommodation,130,"https://www.google.com/maps/search/?api=1&query=48.1385,11.5625",https://www.iqhotelmunich.com/,,뮌헨 2박 3일 시작,48.1385,11.5625,도보,
+2026-04-10,8,15:30,18:30,마리엔플라츠 & 시장,Viktualienmarkt,Sightseeing,0,"https://www.google.com/maps/search/?api=1&query=48.1351,11.5763",,,신시청사 인형극 및 시장 구경,48.1351,11.5763,도보,
+2026-04-10,8,18:30,20:30,저녁 식사: 호프브로이,Hofbräuhaus,Food,45,"https://www.google.com/maps/search/?api=1&query=48.1375,11.5805",,,세계 최고 맥주홀의 학센 디너,48.1375,11.5805,도보,

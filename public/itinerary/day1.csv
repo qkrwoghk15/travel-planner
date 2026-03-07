@@ -1,7 +1,8 @@
 Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,Transit,PlanB
-2026-04-03,1,00:00,10:10,인천공항 대기,인천공항 (ICN),Transport,0,"https://www.google.com/maps/search/?api=1&query=37.46,126.44",,,티웨이 TW0401 탑승 대기,37.4602,126.4407,도보,
-2026-04-03,1,10:10,18:10,파리행 비행 (TW0401),Charles de Gaulle (CDG),Transport,0,"https://www.google.com/maps/search/?api=1&query=49.0,2.54",,,총 15시간 비행 (기내식으로 점심/저녁 해결),49.0097,2.5479,비행기,기내식
-2026-04-03,1,18:10,19:30,입국 및 짐 찾기,Paris (CDG),Transport,0,"https://www.google.com/maps/search/?api=1&query=49.0,2.54",,,입국 심사 및 수하물 수령,49.0097,2.5479,도보,
-2026-04-03,1,19:30,20:45,시내 이동,Cler Hôtel,Transport,15,"https://www.google.com/maps/search/?api=1&query=48.85,2.3",,,RER B ➔ Metro 8호선,48.8575,2.3055,기차,택시 (€65)
-2026-04-03,1,20:45,21:30,체크인,Cler Hôtel,Accommodation,180,"https://www.google.com/maps/search/?api=1&query=48.85,2.3",,,파리 3박 4일 숙박 시작 (체크인 15:00/체크아웃 11:30),48.8575,2.3055,도보,
-2026-04-03,1,21:30,23:59,늦은 저녁/야경,에펠탑,Food,30,"https://www.google.com/maps/search/?api=1&query=48.85,2.29",,,화이트 에펠 관람 및 로컬 푸드,48.8584,2.2945,도보,
+2026-04-03,1,06:00,08:00,인천공항 도착 및 탑승 수속,인천공항 (ICN),Transport,0,"https://www.google.com/maps/search/?api=1&query=37.4602,126.4407",,,티웨이항공 카운터 체크인,37.4602,126.4407,도보,
+2026-04-03,1,08:00,10:10,출국 수속 및 면세품 수령,인천공항 면세구역,Transport,0,"https://www.google.com/maps/search/?api=1&query=37.4602,126.4407",,,보안 검색 및 면세 인도장 방문,37.4602,126.4407,도보,
+2026-04-03,1,10:10,18:10,파리행 비행 (티웨이 TW0401),Charles de Gaulle (CDG),Transport,0,"https://www.google.com/maps/search/?api=1&query=49.0097,2.5479",,,총 15시간 비행 (기내식 해결),49.0097,2.5479,비행기,
+2026-04-03,1,18:10,19:30,파리 입국 및 수하물 수령,Charles de Gaulle (CDG),Transport,0,"https://www.google.com/maps/search/?api=1&query=49.0097,2.5479",,,입국 심사 후 이동 준비,49.0097,2.5479,도보,
+2026-04-03,1,19:30,20:30,파리 시내 숙소 이동,Cler Hôtel,Transport,15,"https://www.google.com/maps/search/?api=1&query=48.8575,2.3055",,,RER B(Châtelet) ➔ M8(École Militaire),48.8575,2.3055,기차: CDG ➔ École Militaire,택시 (€65)
+2026-04-03,1,20:30,21:30,숙소 체크인,Cler Hôtel,Accommodation,180,"https://www.google.com/maps/search/?api=1&query=48.8575,2.3055",https://www.clerhotel.com/,,파리 3박 4일 숙박 시작,48.8575,2.3055,도보,
+2026-04-03,1,21:30,23:59,저녁 식사: 뤼 클레르 미식 거리,Rue Cler Food Street,Food,45,"https://www.google.com/maps/search/?api=1&query=48.8584,2.2945",,,숙소 인근 비스트로 석식,48.8584,2.2945,도보,

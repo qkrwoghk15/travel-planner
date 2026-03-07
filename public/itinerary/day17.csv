@@ -1,7 +1,7 @@
 Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,Transit,PlanB
-2026-04-19,17,00:00,08:30,수면,The RomeHello,Accommodation,0,"https://www.google.com/maps/search/?api=1&query=41.9,12.49",,,,41.9035,12.4945,,
-2026-04-19,17,08:30,11:30,보르게세 미술관,Borghese Gallery,Sightseeing,15,"https://www.google.com/maps/search/?api=1&query=41.91,12.49",,,베르니니 조각상 (예약 필수),41.9145,12.4925,버스,
-2026-04-19,17,11:30,13:30,점심: 아르만도,Armando al Pantheon,Food,60,"https://www.google.com/maps/search/?api=1&query=41.89,12.47",,,미슐랭 전통 식당,41.8995,12.4765,도보,
-2026-04-19,17,13:30,18:30,쇼핑/스페인 계단,Spanish Steps,Sightseeing,0,"https://www.google.com/maps/search/?api=1&query=41.9,12.48",,,폼피 티라미수와 쇼핑,41.9055,12.4825,도보,
-2026-04-19,17,18:30,19:30,저녁: 토나렐로,Tonnarello,Food,40,"https://www.google.com/maps/search/?api=1&query=41.88,12.46",,,로만 파스타 종결,41.8895,12.4695,트램,
-2026-04-19,17,19:30,23:59,휴식,The RomeHello,Accommodation,0,"https://www.google.com/maps/search/?api=1&query=41.9,12.49",,,,41.9035,12.4945,도보,
+2026-04-19,17,08:30,11:30,바티칸 박물관 & 성당,Vatican City,Sightseeing,35,"https://www.google.com/maps/search/?api=1&query=41.9065,12.4535",,,시스티나 성당 천장화 관람,41.9065,12.4535,메트로: Ottaviano,
+2026-04-19,17,11:30,13:30,점심 식사: 본치 피자,Bonci Pizzarium,Food,30,"https://www.google.com/maps/search/?api=1&query=41.9075,12.4511",,,인생 조각 피자 런치 (11:30),41.9075,12.4511,도보,
+2026-04-19,17,13:30,16:30,보르게세 동물원 & 숲,Bioparco,Sightseeing,25,"https://www.google.com/maps/search/?api=1&query=41.9175,12.4855",,,도심 속 오아시스 동물원 산책,41.9175,12.4855,트램: 19번,
+2026-04-19,17,16:30,18:30,보르게세 미술관,Borghese Gallery,Sightseeing,15,"https://www.google.com/maps/search/?api=1&query=41.9145,12.4925",,,베르니니 조각의 정수 (예약 필수),41.9145,12.4925,도보,
+2026-04-19,17,18:30,20:30,저녁 식사: 다 엔조,Da Enzo al 29,Food,55,"https://www.google.com/maps/search/?api=1&query=41.8885,12.4775",,,트라스테베레 최고 핫플 (18:30 오픈런),41.8885,12.4775,도보,
+2026-04-19,17,20:30,23:59,트레비 분수 야경,Trevi Fountain,Sightseeing,0,"https://www.google.com/maps/search/?api=1&query=41.9005,12.4835",,,재방문을 기원하는 동전 던지기,41.9005,12.4835,도보,

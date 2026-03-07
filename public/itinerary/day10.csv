@@ -1,7 +1,6 @@
 Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,Transit,PlanB
-2026-04-12,10,00:00,08:30,수면,Prague Marriott,Accommodation,0,"https://www.google.com/maps/search/?api=1&query=50.08,14.43",,,,50.0885,14.4315,,
-2026-04-12,10,08:30,11:30,프라하 성,Prague Castle,Sightseeing,15,"https://www.google.com/maps/search/?api=1&query=50.09,14.4",,,세계 최대 고성 단지,50.0905,14.4005,트램,
-2026-04-12,10,11:30,13:30,점심: 나셰 마소,Naše Maso,Food,25,"https://www.google.com/maps/search/?api=1&query=50.09,14.42",,,정육점 햄버거와 육회,50.0905,14.4275,도보,
-2026-04-12,10,13:30,18:30,페트린 언덕,Petrin,Sightseeing,10,"https://www.google.com/maps/search/?api=1&query=50.08,14.39",,,"푸니쿨라, 전경 감상",50.0825,14.3965,푸니쿨라,
-2026-04-12,10,18:30,19:30,저녁: 미슐랭 Field,Field,Food,100,"https://www.google.com/maps/search/?api=1&query=50.09,14.42",,,파인다이닝 (18:30 예약 필수),50.0925,14.4215,도보,
-2026-04-12,10,19:30,23:59,카를교 야경,Charles Bridge,Sightseeing,0,"https://www.google.com/maps/search/?api=1&query=50.08,14.41",,,야경 감상 후 귀가,50.0865,14.4115,도보,
+2026-04-12,10,07:43,11:30,프라하 이동,Prague hl.n.,Transport,45,"https://www.google.com/maps/search/?api=1&query=50.0835,14.4345",,,ALEX 열차 국경 횡단 여행,50.0835,14.4345,기차: ALEX 353,
+2026-04-12,10,11:30,13:30,점심 식사: 기차 피크닉,Train Picnic,Food,20,"https://www.google.com/maps/search/?api=1&query=50.0835,14.4345",,,이동 중 로컬 샌드위치 런치,50.0835,14.4345,기차,
+2026-04-12,10,13:30,15:30,숙소 체크인,Prague Marriott,Accommodation,150,"https://www.google.com/maps/search/?api=1&query=50.0885,14.4315",,,프라하 2박 3일 시작,50.0885,14.4315,도보,
+2026-04-12,10,15:30,18:30,구시가지 광장 & 천문 시계,Old Town Square,Sightseeing,0,"https://www.google.com/maps/search/?api=1&query=50.0875,14.4205",,,중세의 향기가 담긴 시계 쇼 관람,50.0875,14.4205,도보,
+2026-04-12,10,18:30,20:30,저녁 식사: 로칼,Lokál,Food,35,"https://www.google.com/maps/search/?api=1&query=50.0905,14.4265",,,가장 신선한 필스너와 굴라시,50.0905,14.4265,도보,

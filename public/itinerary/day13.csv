@@ -1,7 +1,7 @@
 Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,Transit,PlanB
-2026-04-15,13,00:00,08:30,수면,Hotel Palazzo Giovanelli,Accommodation,0,"https://www.google.com/maps/search/?api=1&query=45.44,12.32",,,베네치아 체크아웃 (11:00),45.4415,12.3285,,
-2026-04-15,13,08:30,11:30,피렌체 이동,Florence S.M.N,Transport,30,"https://www.google.com/maps/search/?api=1&query=43.77,11.24",,,고속열차 이동,43.7765,11.2478,기차,
-2026-04-15,13,11:30,13:30,점심: 카살링가,Trattoria Casalinga,Food,40,"https://www.google.com/maps/search/?api=1&query=43.76,11.24",,,도착 직후 정통 가정식,43.7675,11.2485,도보,
-2026-04-15,13,13:30,18:30,우피치 미술관,Uffizi Gallery,Sightseeing,30,"https://www.google.com/maps/search/?api=1&query=43.76,11.25",,,피렌체 2박 3일 체크인 (14:00) 후 미술관,43.7677,11.2553,도보,
-2026-04-15,13,18:30,19:30,저녁: 부카 라피,Buca Lapi,Food,95,"https://www.google.com/maps/search/?api=1&query=43.77,11.25",,,피렌체 1티어 티본 스테이크,43.7725,11.2515,도보,
-2026-04-15,13,19:30,23:59,두오모 야경,Hotel Spadai,Accommodation,220,"https://www.google.com/maps/search/?api=1&query=43.77,11.25",,,두오모 산책 후 휴식,43.7735,11.2555,도보,
+2026-04-15,13,08:34,11:30,베네치아 도착 및 광장,Venezia S. Lucia,Transport,0,"https://www.google.com/maps/search/?api=1&query=45.4411,12.3211",,,산 마르코 대성당 및 종탑 관람,45.4411,12.3211,기차 ➔ 바포레토,
+2026-04-15,13,11:30,13:30,점심 식사: 알 티몬,Al Timon,Food,55,"https://www.google.com/maps/search/?api=1&query=45.4451,12.3311",,,배 위에서 즐기는 치케티와 와인,45.4451,12.3311,도보,
+2026-04-15,13,13:30,15:00,숙소 체크인,Hotel Giovanelli,Accommodation,230,"https://www.google.com/maps/search/?api=1&query=45.4415,12.3285",,,베네치아 1박 2일 시작,45.4415,12.3285,바포레토,
+2026-04-15,13,15:00,18:00,비엔날레 자르디니,Giardini Biennale,Sightseeing,30,"https://www.google.com/maps/search/?api=1&query=45.4285,12.3575",,,현대 미술 축제 관람,45.4285,12.3575,바포레토,
+2026-04-15,13,18:30,20:30,저녁 식사: 안티케 카람파네,Antiche Carampane,Food,85,"https://www.google.com/maps/search/?api=1&query=45.4385,12.3311",,,현지인 1위 해산물 레스토랑,45.4385,12.3311,도보,
+2026-04-15,13,20:30,23:59,곤돌라 야경 투어,Grand Canal,Sightseeing,80,"https://www.google.com/maps/search/?api=1&query=45.4345,12.3385",,,낭만적인 대운하 마무리,45.4345,12.3385,곤돌라,

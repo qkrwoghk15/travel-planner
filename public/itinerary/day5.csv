@@ -1,7 +1,7 @@
 Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,Transit,PlanB
-2026-04-07,5,00:00,08:00,수면,Hôtel La Résidence,Accommodation,0,"https://www.google.com/maps/search/?api=1&query=45.75,4.83",,,리옹 체크아웃 (12:00),45.7555,4.8325,,
-2026-04-07,5,08:00,11:30,인터라켄 이동,Interlaken Ost,Transport,85,"https://www.google.com/maps/search/?api=1&query=46.69,7.86",,,제네바 환승,46.6904,7.8692,기차,
-2026-04-07,5,11:30,13:30,점심: 퐁뒤 빌라,Fondue Villa,Food,65,"https://www.google.com/maps/search/?api=1&query=46.68,7.85",,,인터라켄 도착 후 바로 점심,46.6835,7.8515,도보,
-2026-04-07,5,13:30,18:30,유람선/하더쿨름,Lake Brienz,Sightseeing,35,"https://www.google.com/maps/search/?api=1&query=46.69,7.86",,,"체크인 (2박 3일, 15:00) 후 유람선",46.6904,7.8692,유람선,
-2026-04-07,5,18:30,19:30,저녁: 하더쿨름,Harder Kulm,Food,55,"https://www.google.com/maps/search/?api=1&query=46.69,7.85",,,일몰 전망 식사,46.6975,7.8555,푸니쿨라,
-2026-04-07,5,19:30,23:59,휴식,Hotel Interlaken,Accommodation,0,"https://www.google.com/maps/search/?api=1&query=46.68,7.86",,,호텔 복귀,46.6865,7.8635,도보,
+2026-04-07,5,09:00,11:30,생탄투안 시장,Marché Saint-Antoine,Sightseeing,0,"https://www.google.com/maps/search/?api=1&query=45.7615,4.8305",,,강변 노천 시장 산책,45.7615,4.8305,도보,
+2026-04-07,5,11:30,13:30,점심 식사: 르 부숑 데 피유,Le Bouchon des Filles,Food,45,"https://www.google.com/maps/search/?api=1&query=45.7685,4.8315",,,현대적 부숑 런치,45.7685,4.8315,도보,
+2026-04-07,5,13:30,16:00,비외 리옹 비밀 통로 탐험,Traboules of Old Lyon,Sightseeing,0,"https://www.google.com/maps/search/?api=1&query=45.7625,4.8275",,,르네상스 트라불 걷기,45.7625,4.8275,도보,
+2026-04-07,5,16:00,18:00,갈로 로마 극장 유적,Théâtre Gallo Romain,Sightseeing,0,"https://www.google.com/maps/search/?api=1&query=45.7595,4.8205",,,고대 로마 원형 극장 관람,45.7595,4.8205,푸니쿨라,
+2026-04-07,5,18:30,20:00,저녁 식사: 카페 데 페데라시옹,Café des Fédérations,Food,55,"https://www.google.com/maps/search/?api=1&query=45.7665,4.8335",https://www.lesfederationslyon.fr/,,100년 전통 부숑 디너,45.7665,4.8335,도보,
+2026-04-07,5,20:00,23:59,리옹 일정 마무리,Airbnb (Presqu'île),Accommodation,0,"https://www.google.com/maps/search/?api=1&query=45.7628,4.8332",,,휴식 및 짐 정리,45.7628,4.8332,도보,

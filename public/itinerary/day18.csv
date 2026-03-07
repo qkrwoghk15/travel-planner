@@ -1,7 +1,7 @@
 Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,Transit,PlanB
-2026-04-20,18,00:00,08:30,수면,The RomeHello,Accommodation,0,"https://www.google.com/maps/search/?api=1&query=41.9,12.49",,,로마 체크아웃 (11:00),41.9035,12.4945,,
-2026-04-20,18,08:30,11:30,벽화/자유시간,Tor Marancia,Sightseeing,0,"https://www.google.com/maps/search/?api=1&query=41.85,12.49",,,현대 미술 벽화거리,41.8585,12.4955,버스,
-2026-04-20,18,11:30,13:30,점심: 테르미니,Termini,Food,30,"https://www.google.com/maps/search/?api=1&query=41.9,12.5",,,출국 전 마지막 로마 식사,41.9014,12.502,도보,
-2026-04-20,18,13:30,18:30,공항 이동,Fiumicino Airport,Transport,14,"https://www.google.com/maps/search/?api=1&query=41.8,12.23",,,레오나르도 익스프레스,41.8003,12.2389,기차,
-2026-04-20,18,18:30,21:15,공항 수속/저녁,Fiumicino,Food,20,"https://www.google.com/maps/search/?api=1&query=41.8,12.23",,,공항 라운지/식당 (18:30~),41.8003,12.2389,도보,
-2026-04-20,18,21:15,23:59,비행 (TW0406),In-flight,Transport,0,"https://www.google.com/maps/search/?api=1&query=41.8,12.23",,,로마 출발,0,0,비행기,
+2026-04-20,18,09:00,11:30,판테온 & 시내 산책,Pantheon,Sightseeing,0,"https://www.google.com/maps/search/?api=1&query=41.8985,12.4765",,,로마 시내 마지막 오전,41.8985,12.4765,도보,
+2026-04-20,18,11:30,13:30,점심 식사: 아르만도,Armando al Pantheon,Food,65,"https://www.google.com/maps/search/?api=1&query=41.8995,12.4765",,,미슐랭 로마 전통 식당 (11:30),41.8995,12.4765,도보,
+2026-04-20,18,13:30,18:00,로마 자유 쇼핑 & 젤라또,Giolitti,Food,20,"https://www.google.com/maps/search/?api=1&query=41.9015,12.4775",,,명품 거리 쇼핑 및 조올리띠 젤라또,41.9015,12.4775,도보,
+2026-04-20,18,18:00,19:15,공항 이동,Fiumicino (FCO),Transport,14,"https://www.google.com/maps/search/?api=1&query=41.8003,12.2389",,,레오나르도 익스프레스 탑승,41.8003,12.2389,기차: Termini ➔ FCO,
+2026-04-20,18,19:15,21:15,공항 수속 및 석식,FCO Airport,Food,30,"https://www.google.com/maps/search/?api=1&query=41.8003,12.2389",,,티웨이 TW0406 체크인 및 식사,41.8003,12.2389,도보,
+2026-04-20,18,21:15,23:59,귀국 비행,In-flight,Transport,0,0,,,로마 이륙,0,0,비행기,

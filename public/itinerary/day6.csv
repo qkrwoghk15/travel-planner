@@ -1,7 +1,6 @@
 Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,Transit,PlanB
-2026-04-08,6,00:00,08:00,수면,Hotel Interlaken,Accommodation,0,"https://www.google.com/maps/search/?api=1&query=46.68,7.86",,,,46.6865,7.8635,,
-2026-04-08,6,08:00,11:30,융프라우요흐,Jungfraujoch,Sightseeing,130,"https://www.google.com/maps/search/?api=1&query=46.54,7.98",,,만년설 투어,46.5475,7.9821,산악열차,
-2026-04-08,6,11:30,13:30,점심: 그린델발트,Grindelwald,Food,40,"https://www.google.com/maps/search/?api=1&query=46.62,8.03",,,클리프 워크 및 점심,46.6241,8.0315,도보,
-2026-04-08,6,13:30,18:30,라우터브루넨,Lauterbrunnen,Sightseeing,0,"https://www.google.com/maps/search/?api=1&query=46.59,7.9",,,폭포 마을 산책,46.5955,7.9075,기차,
-2026-04-08,6,18:30,19:30,저녁: 라테르네,Laterne,Food,60,"https://www.google.com/maps/search/?api=1&query=46.68,7.86",,,정통 스위스 요리,46.6865,7.8635,도보,
-2026-04-08,6,19:30,23:59,휴식,Hotel Interlaken,Accommodation,0,"https://www.google.com/maps/search/?api=1&query=46.68,7.86",,,,46.6865,7.8635,도보,
+2026-04-08,6,06:38,11:30,인터라켄 이동,Interlaken Ost,Transport,85,"https://www.google.com/maps/search/?api=1&query=46.6904,7.8692",,,Lyon ➔ Genève ➔ Visp ➔ Interlaken,46.6904,7.8692,기차: SBB,
+2026-04-08,6,11:30,13:30,점심 식사: 기차 피크닉,Train Picnic,Food,20,"https://www.google.com/maps/search/?api=1&query=46.2941,7.8811",,,비스프 역 COOP 샌드위치 런치,46.2941,7.8811,기차,
+2026-04-08,6,13:30,15:00,숙소 체크인,Hotel Interlaken,Accommodation,160,"https://www.google.com/maps/search/?api=1&query=46.6865,7.8635",https://www.hotelinterlaken.ch/,,인터라켄 2박 3일 시작,46.6865,7.8635,도보,
+2026-04-08,6,15:00,18:00,브리엔츠 호수 유람선,Lake Brienz,Sightseeing,35,"https://www.google.com/maps/search/?api=1&query=46.6904,7.8692",,,에메랄드빛 호수 항해,46.6904,7.8692,유람선,
+2026-04-08,6,18:30,20:30,저녁 식사: 퐁뒤 빌라,Fondue Villa,Food,65,"https://www.google.com/maps/search/?api=1&query=46.6835,7.8515",,,무제한 퐁뒤 & 정원 다이닝,46.6835,7.8515,도보,

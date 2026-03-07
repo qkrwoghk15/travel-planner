@@ -1,7 +1,7 @@
 Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,Transit,PlanB
-2026-04-18,16,00:00,08:30,수면,The RomeHello,Accommodation,110,"https://www.google.com/maps/search/?api=1&query=41.9,12.49",,,,41.9035,12.4945,,
-2026-04-18,16,08:30,11:30,바티칸 박물관,Vatican City,Sightseeing,30,"https://www.google.com/maps/search/?api=1&query=41.9,12.45",,,최고의 보물창고 관람,41.9065,12.4535,메트로,
-2026-04-18,16,11:30,13:30,점심: 본치 피자,Bonci Pizzarium,Food,25,"https://www.google.com/maps/search/?api=1&query=41.9,12.45",,,최고의 조각 피자,41.9075,12.4511,도보,
-2026-04-18,16,13:30,18:30,동물원/천사의 성,Bioparco di Roma,Sightseeing,25,"https://www.google.com/maps/search/?api=1&query=41.91,12.48",,,보르게세 동물원 관람,41.9175,12.4855,트램,
-2026-04-18,16,18:30,19:30,저녁: 다 엔조,Da Enzo al 29,Food,50,"https://www.google.com/maps/search/?api=1&query=41.88,12.47",,,트라스테베레 18:30 오픈런,41.8885,12.4775,도보,
-2026-04-18,16,19:30,23:59,트레비 분수,Trevi Fountain,Sightseeing,0,"https://www.google.com/maps/search/?api=1&query=41.9,12.48",,,동전 던지기,41.9005,12.4835,도보,
+2026-04-18,16,09:00,11:30,로마 이동,Roma Termini,Transport,50,"https://www.google.com/maps/search/?api=1&query=41.9014,12.502",,,피렌체 ➔ 로마 고속열차,41.9014,12.502,기차: Frecciarossa,
+2026-04-18,16,11:30,13:30,점심 식사: 로스치올리,Roscioli,Food,80,"https://www.google.com/maps/search/?api=1&query=41.8942,12.4743",,,로마 1위 카르보나라 (11:30 예약),41.8942,12.4743,메트로: Termini ➔ Barberini,
+2026-04-18,16,13:30,15:00,숙소 체크인,The RomeHello,Accommodation,110,"https://www.google.com/maps/search/?api=1&query=41.9035,12.4945",https://theromehello.com/,,로마 3박 4일 시작,41.9035,12.4945,도보,
+2026-04-18,16,15:00,18:00,콜로세움 & 포로 로마노,Colosseum,Sightseeing,20,"https://www.google.com/maps/search/?api=1&query=41.8905,12.4925",,,2026 복원 완료 지하 구역 관람,41.8905,12.4925,메트로: Line B,
+2026-04-18,16,18:30,20:30,저녁 식사: 산타 루치아,Santa Lucia,Food,85,"https://www.google.com/maps/search/?api=1&query=41.8995,12.4725",,,환상적인 테라스 저녁 (18:30),41.8995,12.4725,도보,
+2026-04-18,16,20:30,23:59,나보나 광장 야경,Piazza Navona,Sightseeing,0,"https://www.google.com/maps/search/?api=1&query=41.8992,12.4731",,,화려한 분수 야경 산책,41.8992,12.4731,도보,

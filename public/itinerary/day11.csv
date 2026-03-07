@@ -1,7 +1,5 @@
 Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,Transit,PlanB
-2026-04-13,11,00:00,08:30,수면,Prague Marriott,Accommodation,0,"https://www.google.com/maps/search/?api=1&query=50.08,14.43",,,프라하 체크아웃 (12:00),50.0885,14.4315,,
-2026-04-13,11,08:30,11:30,블타바 강변/쇼핑,Vltava River,Sightseeing,0,"https://www.google.com/maps/search/?api=1&query=50.09,14.41",,,여유로운 오전 산책,50.0935,14.4175,도보,
-2026-04-13,11,11:30,13:30,점심: 카페 사보이,Cafe Savoy,Food,35,"https://www.google.com/maps/search/?api=1&query=50.08,14.4",,,아름다운 인테리어와 커피,50.0805,14.4065,트램,
-2026-04-13,11,13:30,18:30,빈으로 이동,Vienna Hbf,Transport,40,"https://www.google.com/maps/search/?api=1&query=48.18,16.37",,,Railjet 탑승 (14:44-18:49),48.1855,16.3775,기차,
-2026-04-13,11,18:30,19:30,저녁: 슈니첼,Vienna Hbf,Food,30,"https://www.google.com/maps/search/?api=1&query=48.18,16.37",,,빈 중앙역 인근 슈니첼,48.1855,16.3775,도보,
-2026-04-13,11,19:30,23:59,야간열차 탑승,Nightjet Train,Transport,150,"https://www.google.com/maps/search/?api=1&query=48.18,16.37",,,21:27 베네치아행 야간열차 취침,48.1855,16.3775,기차,
+2026-04-13,11,09:00,12:00,프라하 성 투어,Prague Castle,Sightseeing,15,"https://www.google.com/maps/search/?api=1&query=50.0905,14.4005",,,비투스 대성당 & 황금소로 관람,50.0905,14.4005,트램: 22번,
+2026-04-13,11,12:00,13:30,점심 식사: 나셰 마소,Naše Maso,Food,30,"https://www.google.com/maps/search/?api=1&query=50.0905,14.4275",,,정육점 비스트로 인생 버거 점심,50.0905,14.4275,도보,
+2026-04-13,11,13:30,17:00,카를교 & 페트린 타워,Charles Bridge,Sightseeing,10,"https://www.google.com/maps/search/?api=1&query=50.0865,14.4115",,,시내 전경 조망 및 강변 산책,50.0865,14.4115,도보,
+2026-04-13,11,18:30,20:30,저녁 식사: 미슐랭 Field,Field,Food,110,"https://www.google.com/maps/search/?api=1&query=50.0925,14.4215",,,창의적 체코 요리 파인다이닝 (예약),50.0925,14.4215,도보,

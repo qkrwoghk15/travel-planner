@@ -1,7 +1,5 @@
 Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,Transit,PlanB
-2026-04-11,9,00:00,07:30,수면,iQ Hotel Munchen,Accommodation,0,"https://www.google.com/maps/search/?api=1&query=48.13,11.56",,,뮌헨 체크아웃 (11:00),48.1385,11.5625,,
-2026-04-11,9,07:43,11:30,프라하 이동,Prague hl.n.,Transport,45,"https://www.google.com/maps/search/?api=1&query=50.08,14.43",,,ALEX 열차 기차여행,50.0835,14.4345,기차,
-2026-04-11,9,11:30,13:30,점심: 기차/피크닉,Train,Food,20,"https://www.google.com/maps/search/?api=1&query=50.08,14.43",,,뮌헨역에서 구매한 샌드위치 런치,50.0835,14.4345,기차,
-2026-04-11,9,13:30,18:30,광장/체크인,Old Town Square,Sightseeing,0,"https://www.google.com/maps/search/?api=1&query=50.08,14.42",,,프라하 2박 3일 체크인 (15:00) 후 광장,50.0875,14.4205,도보,
-2026-04-11,9,18:30,19:30,저녁: 로칼,Lokál Dlouhááá,Food,30,"https://www.google.com/maps/search/?api=1&query=50.09,14.42",,,필스너와 굴라시,50.0905,14.4265,도보,
-2026-04-11,9,19:30,23:59,휴식,Prague Marriott,Accommodation,150,"https://www.google.com/maps/search/?api=1&query=50.08,14.43",,,시내 호텔 휴식,50.0885,14.4315,도보,
+2026-04-11,9,09:00,11:30,BMW 박물관 투어,BMW Museum,Sightseeing,20,"https://www.google.com/maps/search/?api=1&query=48.1765,11.5595",,,자동차 공학의 마스터피스 관람,48.1765,11.5595,메트로: U3,
+2026-04-11,9,11:30,13:30,점심 식사: 님펜부르크 궁전,Schloss Nymphenburg,Food,40,"https://www.google.com/maps/search/?api=1&query=48.1585,11.5035",,,화려한 궁전 정원 옆에서의 식사,48.1585,11.5035,트램,
+2026-04-11,9,13:30,17:00,영국 정원 서핑 관람,English Garden,Sightseeing,0,"https://www.google.com/maps/search/?api=1&query=48.1525,11.5915",,,도시 강물 서핑 이색 풍경 산책,48.1525,11.5915,도보,
+2026-04-11,9,18:30,20:30,저녁 식사: 테레사 그릴,Theresa Grill,Food,65,"https://www.google.com/maps/search/?api=1&query=48.1495,11.5775",,,참나무 장작 스테이크 다이닝,48.1495,11.5775,도보,

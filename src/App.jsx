@@ -1,136 +1,88 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { createPortal } from 'react-dom';
 import Papa from 'papaparse';
-import { 
-  MapPin, Clock, Euro, ExternalLink, Utensils, Train, Camera, Hotel, Info, Navigation, 
-  CheckCircle2, CalendarDays, ArrowRight, X, Globe, Map as MapIcon, Zap, Ticket, 
-  Link as LinkIcon, Play, Pause, RotateCcw, ChevronLeft, ChevronRight, ShieldCheck, 
-  Coins, Lightbulb, Waves, Star, Youtube, ShoppingBag, Coffee, Search, Heart, Sparkles,
-  AlertCircle, Bus, Ship, Plane, CreditCard, Droplets, MessageSquare
-} from 'lucide-react';
+import { MapPin, Euro, Utensils, Train, Camera, Hotel, Info, Navigation, CalendarDays, ArrowRight, X, Globe, Map as MapIcon, RotateCcw, ChevronLeft, ChevronRight, ShieldCheck, Coins, Lightbulb, Waves, Star, ShoppingBag, Coffee, Search, Heart, Sparkles, MessageSquare, Compass, Calendar, Zap } from 'lucide-react';
 import { MapContainer, TileLayer, Marker, Popup, Polyline, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import { clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 
-function cn(...inputs) {
-  return twMerge(clsx(inputs));
-}
+function cn(...inputs) { return twMerge(clsx(inputs)); }
 
-// Leaflet Fix
 delete L.Icon.Default.prototype._getIconUrl;
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
-  iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
-  shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
-});
+L.Icon.Default.mergeOptions({ iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png', iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png', shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png' });
 
 const CATEGORY_MAP = { Food: '미식', Transport: '이동', Sightseeing: '관광', Accommodation: '숙박', Shopping: '쇼핑', Cafe: '카페', Default: '기타' };
-const CATEGORY_ICONS = {
-  Food: <Utensils className="w-4 h-4" />,
-  Transport: <Train className="w-4 h-4" />,
-  Sightseeing: <Camera className="w-4 h-4" />,
-  Accommodation: <Hotel className="w-4 h-4" />,
-  Shopping: <ShoppingBag className="w-4 h-4" />,
-  Cafe: <Coffee className="w-4 h-4" />,
-  Default: <Info className="w-4 h-4" />
-};
-const CATEGORY_COLORS = {
-  Food: 'text-orange-600 bg-orange-50 border-orange-100 ring-orange-200',
-  Transport: 'text-blue-600 bg-blue-50 border-blue-100 ring-blue-200',
-  Sightseeing: 'text-emerald-600 bg-emerald-50 border-emerald-100 ring-emerald-200',
-  Accommodation: 'text-purple-600 bg-purple-50 border-purple-100 ring-purple-200',
-  Shopping: 'text-pink-600 bg-pink-50 border-pink-100 ring-pink-200',
-  Cafe: 'text-amber-600 bg-amber-50 border-amber-100 ring-amber-200',
-  Default: 'text-slate-600 bg-slate-50 border-slate-100 ring-slate-200'
-};
+const CATEGORY_ICONS = { Food: <Utensils className="w-4 h-4" />, Transport: <Train className="w-4 h-4" />, Sightseeing: <Camera className="w-4 h-4" />, Accommodation: <Hotel className="w-4 h-4" />, Shopping: <ShoppingBag className="w-4 h-4" />, Cafe: <Coffee className="w-4 h-4" />, Default: <Info className="w-4 h-4" /> };
+const CATEGORY_COLORS = { Food: 'text-orange-600 bg-orange-50 border-orange-100', Transport: 'text-blue-600 bg-blue-50 border-blue-100', Sightseeing: 'text-emerald-600 bg-emerald-50 border-emerald-100', Accommodation: 'text-purple-600 bg-purple-50 border-purple-100', Shopping: 'text-pink-600 bg-pink-50 border-pink-100', Cafe: 'text-amber-600 bg-amber-50 border-amber-100', Default: 'text-slate-600 bg-slate-50 border-slate-100' };
+const CITY_COLORS = { Paris: 'bg-indigo-500', Lyon: 'bg-rose-500', Interlaken: 'bg-emerald-500', Munich: 'bg-amber-600', Prague: 'bg-orange-500', Venice: 'bg-cyan-500', Florence: 'bg-violet-500', Rome: 'bg-blue-600', Incheon: 'bg-slate-400', Default: 'bg-slate-500' };
 
-const TRANSIT_ICONS = {
-  '비행기': <Plane className="w-3 h-3" />,
-  '기차': <Train className="w-3 h-3" />,
-  '버스': <Bus className="w-3 h-3" />,
-  '유람선': <Ship className="w-3 h-3" />,
-  '도보': <Navigation className="w-3 h-3 rotate-45" />,
-  '메트로': <Train className="w-3 h-3" />,
-  '트램': <Train className="w-3 h-3" />,
-  '택시': <Bus className="w-3 h-3" />,
-  '푸니쿨라': <Train className="w-3 h-3" />,
-  '레오나르도': <Train className="w-3 h-3" />,
-  Airplane: <Plane className="w-3 h-3" />,
-  Train: <Train className="w-3 h-3" />,
-  Bus: <Bus className="w-3 h-3" />,
-  Boat: <Ship className="w-3 h-3" />,
-  Walking: <Navigation className="w-3 h-3 rotate-45" />,
-  Metro: <Train className="w-3 h-3" />,
-  Taxi: <Bus className="w-3 h-3" />
+const CITY_NAME_MAP = {
+  Paris: "파리 (Paris)", Lyon: "리옹 (Lyon)", Interlaken: "인터라켄 (Interlaken)",
+  Munich: "뮌헨 (Munich)", Prague: "프라하 (Prague)", Vienna: "빈 (Vienna)",
+  Venice: "베네치아 (Venice)", Florence: "피렌체 (Florence)", Rome: "로마 (Rome)",
+  Incheon: "인천 (Incheon)", "Night Train": "야간열차 (Night Train)"
 };
 
 const CITY_WISDOM = {
-  Paris: {
-    safety: "7구/15구 안전. 보르디예 버터 위탁 수하물 필수 처리.",
-    money: "카드 95% 가능. 팁 15% 포함됨. 만족 시 €1~2 현금.",
-    culture: "상점 입실 시 'Bonjour' 인사는 서비스 품질 결정.",
-    utilities: "무료 수돗물 요청 시 'Une carafe d'eau'라고 말하세요."
-  },
-  Lyon: {
-    safety: "프레스킬 지역 안전. 부숑 인증 마크 확인 필수.",
-    money: "시장 소액 결제용 현금 권장. 카드 대부분 가능.",
-    culture: "미식의 수도답게 식사 시간 김. 부숑 예약 필수.",
-    utilities: "공공 식수대 많음. 텀블러 지참 시 매우 유용."
-  },
-  Interlaken: {
-    safety: "치안 우수. 융프라우 등정 시 선글라스 절대 필수.",
-    money: "온라인 선결제 할인 높음. 카드 보편화.",
-    culture: "독일어/영어 통용. 산악 철도 시간 준수 철저.",
-    utilities: "기차역 화장실 유료. 식당 이용 시 해결 추천."
-  },
-  Munich: {
-    safety: "독일 내에서 가장 안전한 도시. 중앙역 부근만 밤에 조심.",
-    money: "현금 결제 비중이 여전히 꽤 있음 (비어가든 등).",
-    culture: "비어가든에선 합석이 기본. 'Prost!'로 건배하기.",
-    utilities: "판트(Pfand) 제도로 플라스틱 병/캔 환급 가능."
-  },
-  Prague: {
-    safety: "천문 시계와 카를교 근처 소매치기 매우 주의.",
-    money: "체코 코루나(CZK) 사용. 환전소 사기 주의 (카드 결제 추천).",
-    culture: "맥주(Pivo)가 물보다 쌈. 팁은 영수증 확인 후 10% 추가.",
-    utilities: "화장실 유료. 트램 티켓 펀칭 안하면 엄청난 벌금."
-  },
-  Venice: {
-    safety: "산 마르코 소매치기 주의. 가방 앞으로 매기.",
-    money: "바포레토권 온라인 선구매. 도시 입장료 확인.",
-    culture: "치케티는 서서 먹는 문화. 안쪽 골목 추천.",
-    utilities: "산 조르조 종탑 전망대로 T-폰다코 대체 추천."
-  },
-  Florence: {
-    safety: "가죽 시장 흥정 필수. 소매치기 상시 주의.",
-    money: "박물관 예약비 별도 확인. 스테이크 무게 단위 주문.",
-    culture: "우피치 월요일 휴관. 예약 시간 20분 전 도착 필수.",
-    utilities: "시내 중심 무료 화장실 드묾. 카페 화장실 활용."
-  },
-  Rome: {
-    safety: "관광지 소매치기 극심. 가방 앞으로 매기.",
-    money: "유료 화장실용 €1 동전 필수. 예약 60일 전 오픈.",
-    culture: "노천카페 자릿세 비쌈. 6월 2일 공화국 선포일 주의.",
-    utilities: "코 모양 식수대 'Nasoni' 물 매우 차고 깨끗함."
-  }
+  Paris: { safety: "7구/15구 안전. 소매치기 주의.", money: "나비고 주간권 추천.", culture: "Bonjour 인사는 필수.", utilities: "식수대 활용.", prep: "나비고 사진 필수 지참." },
+  Lyon: { safety: "프레스킬 지구 안전.", money: "부숑 카드 가능.", culture: "식사 시간이 김.", utilities: "자전거 팁 활용.", prep: "Velo'v 앱 미리 설치." },
+  Interlaken: { safety: "치안 우수.", money: "할인권 필수 확인.", culture: "일요일 상점 휴무.", utilities: "화장실 유료.", prep: "융프라우 웹캠 확인." },
+  Munich: { safety: "매우 안전.", money: "비어가든 현금.", culture: "Prost! 건배.", utilities: "판트 제도.", prep: "기차 앱 설치." },
+  Prague: { safety: "소매치기 주의.", money: "코루나 사용.", culture: "맥주가 저렴.", utilities: "트램 펀칭 필수.", prep: "Bolt 앱 설치." },
+  Venice: { safety: "광장 소매치기 주의.", money: "바포레토 선구매.", culture: "치케티 문화.", utilities: "전망대 추천.", prep: "도시 입장료 확인." },
+  Florence: { safety: "흥정 필수.", money: "사전 예약 필수.", culture: "스테이크 미디엄 레어.", utilities: "카페 화장실.", prep: "우피치 월요일 휴관." },
+  Rome: { safety: "소매치기 극심.", money: "화장실용 동전.", culture: "식수대 활용.", utilities: "예약 60일 전.", prep: "바티칸 예약 필수." }
 };
 
-function MapController({ center, zoom, bounds, forceFly = false }) {
+const getDayInfo = (dayNumber) => {
+  const startDate = new Date('2026-05-18');
+  const targetDate = new Date(startDate);
+  targetDate.setDate(startDate.getDate() + (dayNumber - 1));
+  const dayOfWeek = targetDate.getDay(); // 0: Sun, 6: Sat
+  return {
+    dayName: ['일', '월', '화', '수', '목', '금', '토'][dayOfWeek],
+    isSat: dayOfWeek === 6,
+    isSun: dayOfWeek === 0
+  };
+};
+
+function MapController({ center, zoom, bounds }) {
   const map = useMap();
   useEffect(() => {
     if (!map) return;
-    if (bounds && bounds.length > 0) {
-      if (forceFly) map.flyToBounds(bounds, { padding: [40, 40], maxZoom: 16, duration: 1.5 });
-      else map.fitBounds(bounds, { padding: [40, 40], maxZoom: 16 });
-    } else if (center && !isNaN(center[0]) && !isNaN(center[1])) {
-      if (forceFly) map.flyTo(center, zoom || 14, { duration: 1.5 }); 
-      else map.setView(center, zoom || 14); 
-    }
-    const timer = setTimeout(() => map.invalidateSize(), 400);
-    return () => clearTimeout(timer);
-  }, [center, zoom, bounds, map, forceFly]);
+    if (bounds?.length > 0) map.fitBounds(bounds, { padding: [40, 40], maxZoom: 16 });
+    else if (center && !isNaN(center[0])) map.setView(center, zoom || 14);
+    setTimeout(() => map.invalidateSize(), 400);
+  }, [center, zoom, bounds, map]);
   return null;
+}
+
+function Modal({ isOpen, onClose, title, children }) {
+  useEffect(() => {
+    const handleEsc = (e) => {
+      if (e.key === 'Escape') onClose();
+    };
+    if (isOpen) {
+      window.addEventListener('keydown', handleEsc);
+    }
+    return () => {
+      window.removeEventListener('keydown', handleEsc);
+    };
+  }, [isOpen, onClose]);
+
+  if (!isOpen) return null;
+  return createPortal(
+    <div className="fixed inset-0 z-[2000] flex items-center justify-center bg-slate-900/60 backdrop-blur-sm p-4 text-left">
+      <div className="bg-white w-full max-w-2xl max-h-[85vh] rounded-[3rem] overflow-hidden flex flex-col shadow-2xl">
+        <div className="p-6 border-b flex items-center justify-between bg-slate-50 text-left text-slate-900">
+          <h2 className="text-xl font-black tracking-tighter uppercase italic">{title}</h2>
+          <button onClick={onClose} className="p-2 hover:bg-slate-200 rounded-full text-slate-400"><X className="w-5 h-5" /></button>
+        </div>
+        <div className="flex-grow overflow-y-auto p-6 no-scrollbar text-left text-slate-900">{children}</div>
+      </div>
+    </div>, document.body
+  );
 }
 
 export default function App() {
@@ -138,175 +90,108 @@ export default function App() {
   const [summary, setSummary] = useState(null);
   const [selectedDay, setSelectedDay] = useState(1);
   const [loading, setLoading] = useState(true);
-  const [dayLoading, setDayLoading] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [now, setNow] = useState(new Date());
-  const [mapConfig, setMapConfig] = useState({ center: [48.8566, 2.3522], zoom: 14, bounds: null, forceFly: false });
-  const [focusedEventIndex, setFocusedEventIndex] = useState(null);
-  const [searchTerm, setSearchBaseTerm] = useState("");
   const [cityEssentials, setCityEssentials] = useState({});
+  const [isEssentialsOpen, setIsEssentialsOpen] = useState(false);
+  const [isTipsOpen, setIsTipsOpen] = useState(false);
+  const [isGlobalMapOpen, setIsGlobalMapOpen] = useState(false);
+  const [mapConfig, setMapConfig] = useState({ center: [48.8566, 2.3522], zoom: 14, bounds: null });
+  const [focusedEventIndex, setFocusedEventIndex] = useState(null);
+  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    fetch('/itinerary/summary.json')
-      .then(res => res.json())
-      .then(data => { setSummary(data); setLoading(false); })
-      .catch(err => { console.error('Summary Load Error:', err); setLoading(false); });
-      
-    fetch('/itinerary/places.json')
-      .then(res => res.json())
-      .then(data => setCityEssentials(data))
-      .catch(err => console.error('Places Load Error:', err));
-
-    const timer = setInterval(() => setNow(new Date()), 60000);
-    return () => clearInterval(timer);
+    fetch('/itinerary/summary.json').then(res => res.json()).then(data => { setSummary(data); setLoading(false); });
+    fetch('/itinerary/places.json').then(res => res.json()).then(data => setCityEssentials(data));
   }, []);
 
   useEffect(() => {
     if (!summary) return;
-    setDayLoading(true);
+    setItinerary([]);
     Papa.parse(`/itinerary/day${selectedDay}.csv`, {
       download: true, header: true, dynamicTyping: true, skipEmptyLines: true,
-      complete: (results) => {
-        const data = results.data.filter(row => row.Activity);
-        setItinerary(data);
-        setDayLoading(false);
-      },
-      error: (err) => { console.error('Day Load Error:', err); setDayLoading(false); }
+      complete: (res) => setItinerary(res.data.filter(row => row.Activity))
     });
   }, [selectedDay, summary]);
 
-  const resetToDailyView = () => {
-    setFocusedEventIndex(null);
-    if (itinerary.length > 0) {
-      const points = itinerary.filter(e => e.Lat && e.Lng).map(e => [e.Lat, e.Lng]);
-      if (points.length > 1) setMapConfig({ bounds: points, forceFly: true });
-      else if (points.length === 1) setMapConfig({ center: points[0], zoom: 14, forceFly: true });
-    }
-  };
-
-  useEffect(() => { resetToDailyView(); }, [selectedDay, itinerary]);
-
-  const currentStatus = useMemo(() => {
-    if (!summary) return { isTripDay: false };
-    const todayStr = now.toISOString().split('T')[0];
-    const timeStr = now.toTimeString().split(' ')[0].substring(0, 5);
-    const todayInfo = summary.total_points?.find(item => item.date === todayStr);
-    const activeEvent = itinerary.find(item => item.Date === todayStr && timeStr >= (item.StartTime || '') && timeStr < (item.EndTime || ''));
-    return { isTripDay: !!todayInfo, currentDay: todayInfo ? Number(todayInfo.day) : null, activeEvent, timeStr };
-  }, [itinerary, summary, now]);
-
-  const currentCityName = useMemo(() => {
-    if (!summary || !selectedDay) return "";
-    let foundCity = "";
-    summary.stay_groups.forEach(group => {
-      if (group.days.includes(selectedDay)) {
-        foundCity = group.city;
-      }
-    });
-    // Fallback if "Night Train" is selected but we want to show destination info
-    if (foundCity === "Night Train") return "Prague"; 
-    if (foundCity === "Incheon") return "Rome";
-    return foundCity;
+  const dayInfo = useMemo(() => {
+    if (!summary) return { city: "", flow: "" };
+    let cur = "", prev = "";
+    summary.stay_groups.forEach(g => { if (g.days.includes(selectedDay)) cur = g.city; });
+    if (selectedDay > 1) summary.stay_groups.forEach(g => { if (g.days.includes(selectedDay-1)) prev = g.city; });
+    else prev = "Incheon";
+    const curKo = CITY_NAME_MAP[cur] || cur;
+    const prevKo = CITY_NAME_MAP[prev] || prev;
+    return { city: cur, flow: prev !== cur ? `${prevKo} ➔ ${curKo}` : curKo };
   }, [summary, selectedDay]);
 
-  const filteredEssentials = useMemo(() => {
-    const list = cityEssentials[currentCityName] || [];
-    if (!searchTerm) return list;
-    return list.filter(item => 
-      item.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
-      item.desc.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      (item.review && item.review.toLowerCase().includes(searchTerm.toLowerCase()))
-    );
-  }, [currentCityName, searchTerm, cityEssentials]);
+  const currentCityWisdom = useMemo(() => CITY_WISDOM[dayInfo.city] || null, [dayInfo.city]);
+  const sortedItinerary = useMemo(() => [...itinerary].sort((a,b)=>(a.StartTime||'').localeCompare(b.StartTime||'')), [itinerary]);
+  const filteredEssentials = useMemo(() => (cityEssentials[dayInfo.city] || []).filter(item => !searchTerm || item.name.toLowerCase().includes(searchTerm.toLowerCase())), [cityEssentials, dayInfo.city, searchTerm]);
 
-  const currentCityWisdom = useMemo(() => CITY_WISDOM[currentCityName] || null, [currentCityName]);
-  const days = useMemo(() => summary?.days || [], [summary]);
-  const dayCost = useMemo(() => itinerary.reduce((sum, item) => sum + (Number(item.Cost) || 0), 0), [itinerary]);
+  useEffect(() => {
+    const pts = itinerary.filter(e => e.Lat && !isNaN(e.Lat)).map(e => [e.Lat, e.Lng]);
+    if (pts.length > 1) setMapConfig({ center: pts[0], zoom: 14, bounds: pts });
+    else if (pts.length === 1) setMapConfig({ center: pts[0], zoom: 14, bounds: null });
+  }, [itinerary]);
 
-  if (loading) return (
-    <div className="flex flex-col items-center justify-center h-screen bg-slate-50 gap-4 font-sans">
-      <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
-      <p className="text-slate-500 font-black tracking-widest leading-none italic uppercase">EuroGuide Loading...</p>
-    </div>
-  );
+  if (loading) return <div className="h-screen flex items-center justify-center font-black text-blue-600 text-2xl animate-pulse tracking-[0.5em]">L O A D I N G . . .</div>;
 
   return (
-    <div className="min-h-screen bg-[#F8FAFC] font-sans pb-10">
-      <header className="bg-white/80 backdrop-blur-md border-b sticky top-0 z-[100]">
-        <div className="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="bg-blue-600 p-1.5 rounded-lg shadow-md"><Sparkles className="text-white w-4 h-4 fill-white/20" /></div>
-            <div>
-              <h1 className="text-lg font-black text-slate-900 tracking-tight leading-none italic">EuroGuide Pro</h1>
-              <p className="text-[8px] text-slate-400 mt-0.5 font-bold uppercase tracking-widest">{days.length} Days Epicurean Journey</p>
-            </div>
+    <div className="min-h-screen bg-[#F8FAFC] font-sans pb-20 text-left text-slate-900">
+      <header className="bg-white border-b sticky top-0 z-[1000] px-6 h-20 flex items-center justify-between shadow-sm">
+        <div className="flex items-center gap-4 text-left">
+          <div className="bg-slate-900 p-3 rounded-2xl shadow-xl"><Globe className="text-white w-6 h-6 animate-spin-slow" /></div>
+          <div className="text-left">
+            <h1 className="text-2xl font-black text-slate-900 tracking-tighter leading-none italic uppercase">유럽 미식 대장정</h1>
+            <p className="text-[10px] text-slate-400 font-bold uppercase tracking-widest mt-1">19 Days Grand Journey 2026</p>
           </div>
-          <div className="flex items-center gap-6">
-            <div className="text-right hidden sm:block">
-              <p className="text-[8px] text-slate-400 font-black uppercase">전체 예상 예산</p>
-              <p className="text-sm font-black text-blue-600">€{summary?.total_cost?.toLocaleString()}</p>
-            </div>
-            <div className="h-6 w-px bg-slate-200 hidden sm:block" />
-            <div className="text-right">
-              <p className="text-[8px] text-slate-400 font-black uppercase">현재 진행</p>
-              <p className="text-sm font-black text-slate-700">{selectedDay}일차</p>
-            </div>
-          </div>
+        </div>
+        <div className="text-right">
+          <p className="text-[10px] text-slate-400 font-black uppercase mb-1 tracking-widest">총 여행 예산</p>
+          <div className="flex items-center gap-2 justify-end text-slate-900 font-black text-2xl tracking-tighter leading-none"><Euro className="w-5 h-5 text-blue-600" /> €{summary?.total_cost?.toLocaleString()}</div>
         </div>
       </header>
 
-      <main className="max-w-7xl mx-auto px-4 py-6">
-        {currentStatus.isTripDay && (
-          <div className="mb-6">
-            <div className="bg-blue-600 text-white px-6 py-2.5 rounded-2xl shadow-xl flex items-center justify-between">
-              <div className="flex items-center gap-3">
-                <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse shadow-[0_0_10px_rgba(239,68,68,1)]" />
-                <div>
-                  <p className="text-[8px] font-black uppercase tracking-[0.2em] opacity-70">Live Now - {currentStatus.timeStr}</p>
-                  <h4 className="text-sm font-black tracking-tight">{currentStatus.activeEvent ? currentStatus.activeEvent.Activity : "자유 시간 및 휴식"}</h4>
-                </div>
-              </div>
-              <button onClick={() => setSelectedDay(Number(currentStatus.currentDay))} className="bg-white/20 hover:bg-white/30 px-3 py-1.5 rounded-lg text-[10px] font-black transition-all">오늘 일정</button>
-            </div>
-          </div>
-        )}
+      <main className="max-w-7xl mx-auto px-6 py-10 space-y-10 text-left">
+        <section className="bg-white p-8 rounded-[3rem] border border-slate-200 shadow-sm relative overflow-hidden text-left">
+          <div className="absolute top-0 left-0 w-2 h-full bg-blue-600" />
+          <h3 className="text-xs font-black text-slate-400 uppercase tracking-widest mb-8 flex items-center gap-3 text-left"><Compass className="w-5 h-5 text-blue-600" /> 여정 진행 경로 (Journey Progression)</h3>
+          <div className="flex gap-6 overflow-x-auto no-scrollbar text-left pb-4">
+            {summary?.stay_groups.map((group, groupIdx) => {
+              const cityKoEn = CITY_NAME_MAP[group.city] || group.city;
+              const color = CITY_COLORS[group.city] || CITY_COLORS.Default;
+              const isGroupActive = group.days.includes(selectedDay);
 
-        {/* Journey Timeline */}
-        <section className="mb-6 bg-white p-5 rounded-[1.5rem] border border-slate-200 shadow-sm overflow-hidden">
-          <h3 className="text-[9px] font-black text-slate-400 uppercase tracking-[0.2em] mb-4 flex items-center gap-2">
-            <CalendarDays className="w-3 h-3 text-blue-500" /> 여정 내비게이션 (프랑스➔스위스➔독일➔체코➔이탈리아)
-          </h3>
-          <div className="flex items-start gap-3 overflow-x-auto no-scrollbar pb-1">
-            {summary?.stay_groups.map((group, gIdx) => {
-              const isActiveGroup = group.days.includes(selectedDay);
               return (
-                <div key={gIdx} className="flex-shrink-0 flex flex-col gap-2 min-w-[150px]">
+                <div key={groupIdx} className="flex flex-col gap-3 min-w-fit">
                   <div className={cn(
-                    "p-3 rounded-xl border transition-all",
-                    isActiveGroup ? "bg-slate-900 border-slate-900 shadow-md" : "bg-slate-50 border-slate-100"
+                    "px-4 py-1.5 rounded-xl border text-[10px] font-black uppercase tracking-tighter text-center whitespace-nowrap transition-all",
+                    isGroupActive ? "bg-slate-900 border-slate-900 text-white shadow-lg scale-105" : "bg-slate-50 border-slate-100 text-slate-400"
                   )}>
-                    <div className="flex items-center gap-1 mb-1">
-                      <MapPin className={cn("w-2.5 h-2.5", isActiveGroup ? "text-blue-400" : "text-slate-400")} />
-                      <span className={cn("text-[11px] font-black tracking-tight", isActiveGroup ? "text-white" : "text-slate-900")}>{group.city}</span>
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <Hotel className={cn("w-2.5 h-2.5", isActiveGroup ? "text-blue-400" : "text-slate-400")} />
-                      <span className={cn("text-[9px] font-bold truncate w-28", isActiveGroup ? "text-slate-400" : "text-slate-500")}>{group.accommodation}</span>
-                    </div>
+                    {cityKoEn}
                   </div>
-                  <div className="flex flex-wrap gap-1 px-0.5">
-                    {group.days.map(day => (
-                      <button 
-                        key={day} 
-                        onClick={() => setSelectedDay(day)}
-                        className={cn(
-                          "w-7 h-7 rounded-md text-[10px] font-black transition-all border flex items-center justify-center relative",
-                          selectedDay === day ? "bg-blue-600 border-blue-600 text-white shadow-sm scale-105 z-10" : "bg-white border-slate-100 text-slate-400 hover:border-slate-300"
-                        )}
-                      >
-                        {day}
-                      </button>
-                    ))}
+                  <div className="flex gap-1.5 justify-center">
+                    {group.days.map(day => {
+                      const { isSat, isSun } = getDayInfo(day);
+                      return (
+                        <button 
+                          key={day} 
+                          onClick={() => setSelectedDay(day)} 
+                          className={cn(
+                            "w-10 h-10 rounded-xl flex items-center justify-center transition-all border-2 font-black text-sm relative",
+                            selectedDay === day 
+                              ? "bg-blue-600 border-blue-600 text-white shadow-xl scale-110 z-10" 
+                              : isSat 
+                                ? "bg-blue-50 border-blue-200 text-blue-600 hover:border-blue-300" 
+                                : isSun 
+                                  ? "bg-red-50 border-red-200 text-red-600 hover:border-red-300" 
+                                  : "bg-white border-slate-100 text-slate-400 hover:border-slate-300"
+                          )}
+                        >
+                          {day}
+                          <div className={cn("absolute -bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full opacity-0", selectedDay === day && "opacity-100 bg-white")} />
+                        </button>
+                      );
+                    })}
                   </div>
                 </div>
               );
@@ -314,247 +199,112 @@ export default function App() {
           </div>
         </section>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-          <div className="lg:col-span-8 space-y-4">
-            <div className="flex items-end justify-between border-b border-slate-200 pb-4">
-              <div className="flex items-center gap-4">
-                <div>
-                  <h2 className="text-2xl font-black text-slate-900 tracking-tighter">Daily Itinerary</h2>
-                  <p className="text-[11px] text-slate-500 font-medium mt-1">{selectedDay}일차 일정 - {itinerary[0]?.Date || '로딩 중...'}</p>
-                </div>
-                <div className="flex gap-1.5 mb-1.5">
-                  <button onClick={() => setSelectedDay(prev => Math.max(days[0] || 1, prev - 1))} className="p-1.5 bg-white border border-slate-200 text-slate-400 rounded-lg hover:bg-slate-50 transition-all shadow-sm"><ChevronLeft className="w-4 h-4" /></button>
-                  <button onClick={() => setSelectedDay(prev => Math.min(days[days.length - 1] || 18, prev + 1))} className="p-1.5 bg-white border border-slate-200 text-slate-400 rounded-lg hover:bg-slate-50 transition-all shadow-sm"><ChevronRight className="w-4 h-4" /></button>
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 text-left">
+          <div className="lg:col-span-8 space-y-6 text-left">
+            <div className="bg-slate-900 text-white p-8 rounded-[3.5rem] shadow-2xl flex flex-col sm:flex-row items-center justify-between gap-6 relative overflow-hidden text-left">
+              <Sparkles className="absolute -right-6 -bottom-6 w-32 h-32 text-white/5 rotate-12" />
+              <div className="text-left flex-grow">
+                <h2 className="text-3xl font-black tracking-tighter italic uppercase flex flex-wrap items-center gap-4 text-left">
+                  {selectedDay}일차 일정 <div className="h-8 w-px bg-white/20 hidden sm:block" /> <span className="text-blue-400 text-xl">{dayInfo.flow}</span>
+                </h2>
+                <div className="flex items-center gap-4 mt-3 text-left">
+                  <div className="bg-white/10 px-3 py-1 rounded-lg border border-white/10 flex items-center gap-2 text-[11px] font-black text-left">
+                    <Calendar className="w-3.5 h-3.5 text-blue-400" />
+                    {itinerary[0]?.Date} ({getDayInfo(selectedDay).dayName})
+                  </div>
+                  <div className="bg-emerald-500/20 px-3 py-1 rounded-lg border border-emerald-500/30 flex items-center gap-2 text-[11px] font-black text-emerald-400 uppercase text-left leading-none"><Euro className="w-3.5 h-3.5 text-emerald-400" /> 일일 지출: €{itinerary.reduce((s,e)=>s+(Number(e.Cost)||0),0)}</div>
                 </div>
               </div>
-              <div className="bg-blue-600 text-white px-4 py-2 rounded-xl text-[11px] font-black shadow-md flex items-center gap-1.5">
-                <Euro className="w-3 h-3" /> 일일 지출: €{dayCost.toLocaleString()}
+              <div className="flex gap-3 z-10 shrink-0">
+                <button onClick={() => setIsTipsOpen(true)} className="flex flex-col items-center gap-2 group"><div className="bg-amber-400 p-4 rounded-2xl shadow-lg group-hover:scale-110 transition-all shadow-amber-900/20"><Lightbulb className="w-6 h-6 text-slate-900" /></div><span className="text-[9px] font-black uppercase text-white tracking-widest">Tips</span></button>
+                <button onClick={() => setIsEssentialsOpen(true)} className="flex flex-col items-center gap-2 group"><div className="bg-blue-500 p-4 rounded-2xl shadow-lg group-hover:scale-110 transition-all shadow-blue-900/20"><Compass className="w-6 h-6 text-white" /></div><span className="text-[9px] font-black uppercase text-white tracking-widest">Must-Go</span></button>
               </div>
             </div>
 
-            <div className="space-y-3">
-              {itinerary.sort((a,b)=>(a.StartTime||'').localeCompare(b.StartTime||'')).map((event, idx) => {
-                const isLive = currentStatus.activeEvent?.Activity === event.Activity && Number(currentStatus.currentDay) === selectedDay;
-                return (
-                  <div key={idx} className="relative pl-9">
-                    <button 
-                      onClick={() => { setFocusedEventIndex(idx); setMapConfig({ center: [event.Lat, event.Lng], zoom: 16, forceFly: true }); }}
-                      className={cn(
-                        "absolute left-0 top-1/2 -translate-y-1/2 w-7 h-7 rounded-full border border-[#F8FAFC] z-10 flex items-center justify-center shadow-sm transition-all hover:scale-110", 
-                        isLive ? "bg-red-500 scale-110 shadow-lg shadow-red-200" : (focusedEventIndex === idx ? "bg-blue-600 ring-2 ring-blue-200 shadow-md" : (CATEGORY_COLORS[event.Category]?.split(' ')[1] || 'bg-slate-100'))
-                      )}
-                    >
-                      {isLive ? <Zap className="w-3.5 h-3.5 text-white fill-white" /> : (CATEGORY_ICONS[event.Category] || CATEGORY_ICONS.Default)}
-                    </button>
-                    <div className={cn("bg-white p-4 rounded-2xl border transition-all duration-300 flex flex-col gap-3", isLive ? "border-red-500 ring-2 ring-red-50 shadow-md" : "border-slate-200 shadow-sm hover:shadow-md")}>
-                      <div className="flex items-center gap-4">
-                        <div className="min-w-[60px] flex flex-col items-center border-r border-slate-100 pr-4">
-                          <span className={cn("font-black text-[13px] tracking-tighter", isLive ? "text-red-600" : "text-slate-900")}>{event.StartTime || '--:--'}</span>
-                          <span className="text-[8px] text-slate-400 font-bold uppercase tracking-tighter">~ {event.EndTime || '--:--'}</span>
-                        </div>
-                        <div className="flex-grow min-w-0">
-                          <div className="flex items-center gap-2 mb-0.5">
-                            <span className={cn("px-1.5 py-0.5 rounded-full text-[7px] font-black uppercase tracking-widest border", CATEGORY_COLORS[event.Category])}>{CATEGORY_MAP[event.Category] || '기타'}</span>
-                            <h3 className="text-[13px] font-black text-slate-800 tracking-tight truncate">{event.Activity}</h3>
-                          </div>
-                          <div className="flex items-center gap-3">
-                            <span className="flex items-center gap-1 text-[9px] text-slate-400 font-black shrink-0"><MapPin className="w-2.5 h-2.5 text-red-400" />{event.Location}</span>
-                            <p className="text-slate-500 text-[10px] font-medium truncate italic opacity-80">{event.Description}</p>
-                          </div>
-                        </div>
-                        <div className="flex items-center gap-2 shrink-0 pl-4 border-l border-slate-50">
-                          <div className="flex gap-1.5">
-                            {event.MapLink && <a href={event.MapLink} target="_blank" rel="noreferrer" title="Google Maps" className="p-2 bg-slate-50 hover:bg-blue-600 hover:text-white text-slate-400 rounded-xl transition-all shadow-sm border border-slate-100"><MapIcon className="w-3.5 h-3.5" /></a>}
-                            {event.BookingLink && <a href={event.BookingLink} target="_blank" rel="noreferrer" title="Booking" className="p-2 bg-blue-50 hover:bg-blue-600 hover:text-white text-blue-600 rounded-xl transition-all shadow-sm border border-blue-100"><Ticket className="w-3.5 h-3.5" /></a>}
-                            {event.OfficialLink && <a href={event.OfficialLink} target="_blank" rel="noreferrer" title="Official Website" className="p-2 bg-emerald-50 hover:bg-emerald-600 hover:text-white text-emerald-600 rounded-xl transition-all shadow-sm border border-emerald-100"><Globe className="w-3.5 h-3.5" /></a>}
-                          </div>
-                          <div className="h-8 w-px bg-slate-100 mx-1" />
-                          <div className="flex flex-col items-end min-w-[50px]">
-                            <span className="text-sm font-black text-slate-900 tracking-tighter">€{(Number(event.Cost) || 0).toLocaleString()}</span>
-                            <p className="text-[7px] font-black text-slate-400 uppercase tracking-widest mt-0.5">Budget</p>
-                          </div>
+            <div className="space-y-4 text-left">
+              {sortedItinerary.map((e, i) => (
+                <div key={i} className="relative pl-12 group text-left">
+                  <div className="absolute left-[1.375rem] top-0 bottom-0 w-0.5 bg-slate-200 group-last:bg-gradient-to-b group-last:from-slate-200 group-last:to-transparent" />
+                  <button onClick={() => { setFocusedEventIndex(i); setMapConfig({ center: [e.Lat, e.Lng], zoom: 16 }); }} className={cn("absolute left-0 top-8 w-11 h-11 rounded-[1.25rem] border-4 border-[#F8FAFC] z-10 flex items-center justify-center shadow-md transition-all hover:scale-110", focusedEventIndex === i ? "bg-slate-900 text-white rotate-12 scale-110 shadow-lg" : (CATEGORY_COLORS[e.Category]?.split(' ')[1] || 'bg-slate-100'))}>{CATEGORY_ICONS[e.Category] || CATEGORY_ICONS.Default}</button>
+                  <div className={cn("bg-white p-6 rounded-[2.5rem] border transition-all duration-500 flex flex-col gap-5 text-left shadow-sm", focusedEventIndex === i ? "border-slate-900 shadow-2xl -translate-y-1" : "border-slate-200")}>
+                    <div className="flex items-start justify-between text-left">
+                      <div className="flex gap-5 text-left">
+                        <div className="bg-slate-50 px-4 py-2 rounded-2xl border border-slate-100 flex flex-col items-center justify-center min-w-[85px] shadow-inner text-slate-900 font-black text-left"><span className="text-sm">{e.StartTime}</span><span className="text-[9px] text-slate-400 mt-1 uppercase text-center leading-none">~{e.EndTime}</span></div>
+                        <div className="text-left">
+                          <div className="flex items-center gap-2 mb-2 text-left text-slate-900"><span className={cn("text-[8px] font-black uppercase px-2.5 py-1 rounded-full border shadow-sm", CATEGORY_COLORS[e.Category])}>{CATEGORY_MAP[e.Category]}</span><h4 className="text-base font-black text-left">{e.Activity}</h4></div>
+                          <div className="flex items-center gap-3 text-[11px] font-black text-slate-400 text-left"><p className="flex items-center gap-1.5 text-red-500 shrink-0 text-left"><MapPin className="w-3.5 h-3.5" />{e.Location}</p><div className="h-3 w-px bg-slate-200" /><p className="text-blue-600 font-black">€{Number(e.Cost).toLocaleString()}</p></div>
                         </div>
                       </div>
-
-                      {(event.Transit || event.PlanB) && (
-                        <div className="flex flex-wrap gap-2 pt-2 border-t border-slate-50">
-                          {event.Transit && (
-                            <div className="flex items-center gap-1.5 bg-blue-50/50 px-2.5 py-1 rounded-lg border border-blue-100/50">
-                              {TRANSIT_ICONS[Object.keys(TRANSIT_ICONS).find(k => event.Transit.includes(k)) || '도보']}
-                              <p className="text-[9px] text-blue-700 font-bold uppercase tracking-tight">{event.Transit}</p>
-                            </div>
-                          )}
-                          {event.PlanB && (
-                            <div className="flex items-center gap-1.5 bg-amber-50/50 px-2.5 py-1 rounded-lg border border-amber-100/50">
-                              <AlertCircle className="w-3 h-3 text-amber-600" />
-                              <p className="text-[9px] text-amber-700 font-bold leading-tight"><span className="opacity-60 mr-1 italic">Plan B:</span>{event.PlanB}</p>
-                            </div>
-                          )}
-                        </div>
-                      )}
+                      <div className="flex gap-2 shrink-0">
+                        {e.MapLink && <a href={e.MapLink} target="_blank" rel="noreferrer" className="p-3 bg-slate-50 text-slate-400 rounded-2xl hover:bg-blue-600 hover:text-white transition-all border border-slate-100 shadow-sm"><MapIcon className="w-5 h-5" /></a>}
+                        {e.OfficialLink && <a href={e.OfficialLink} target="_blank" rel="noreferrer" className="p-3 bg-slate-50 text-slate-400 rounded-2xl hover:bg-emerald-600 hover:text-white transition-all border border-slate-100 shadow-sm"><Globe className="w-5 h-5" /></a>}
+                      </div>
+                    </div>
+                    <div className="bg-slate-50/80 p-5 rounded-[1.75rem] border border-slate-100 relative text-left">
+                      <MessageSquare className="absolute -right-2 -top-2 w-8 h-8 text-blue-100 rotate-12" />
+                      <p className="text-xs font-bold text-slate-600 italic opacity-95 text-left leading-relaxed">"{e.Description}"</p>
+                      {e.Transit && <div className="mt-4 pt-4 border-t border-slate-200/50 flex items-center gap-4 text-left"><div className="bg-blue-600 text-white p-2 rounded-xl shadow-lg"><Navigation className="w-4 h-4 rotate-45 fill-white" /></div><div className="text-left"><p className="text-[9px] font-black text-slate-400 uppercase tracking-widest text-left">교통 안내 (Transit)</p><p className="text-[11px] font-black text-blue-700 text-left leading-none">{e.Transit}</p></div></div>}
                     </div>
                   </div>
-                );
-              })}
+                </div>
+              ))}
             </div>
           </div>
 
-          <div className="lg:col-span-4 space-y-6">
-            {/* Real-time Map */}
-            <div className="bg-white p-4 rounded-[2rem] border border-slate-200 shadow-sm overflow-hidden">
-              <div className="flex items-center justify-between mb-4 px-2">
-                <h3 className="font-black flex items-center gap-2 text-slate-900 text-sm"><MapIcon className="w-4 h-4 text-blue-600" />실시간 동선 가이드</h3>
-                <div className="flex gap-1">
-                  <button onClick={() => setIsModalOpen(true)} className="p-1.5 bg-blue-50 text-blue-600 rounded-lg hover:bg-blue-600 hover:text-white transition-all"><Globe className="w-3.5 h-3.5" /></button>
-                  <button onClick={resetToDailyView} className="p-1.5 bg-slate-50 text-slate-400 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-all"><RotateCcw className="w-3.5 h-3.5" /></button>
-                </div>
-              </div>
-              <div style={{ height: '250px', width: '100%', borderRadius: '1.5rem', overflow: 'hidden' }}>
-                <MapContainer center={mapConfig.center} zoom={mapConfig.zoom} style={{ height: '100%', width: '100%' }} scrollWheelZoom={false}>
-                  <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-                  <MapController center={mapConfig.center} zoom={mapConfig.zoom} bounds={mapConfig.bounds} forceFly={mapConfig.forceFly} />
-                  {itinerary.filter(e => e.Lat && e.Lng).map((event, i) => (
-                    <Marker key={i} position={[event.Lat, event.Lng]} icon={L.divIcon({
-                      className: 'custom-div-icon',
-                      html: `<div class="w-5 h-5 rounded-full flex items-center justify-center text-[8px] font-black border border-white shadow-lg bg-slate-900 text-white">${i + 1}</div>`,
-                      iconSize: [20, 20], iconAnchor: [10, 10]
-                    })}>
-                      <Popup><div className="font-black text-xs">{event.Activity}</div></Popup>
-                    </Marker>
-                  ))}
+          <div className="lg:col-span-4 sticky top-28 space-y-8 text-left">
+            <div className="bg-white p-6 rounded-[3.5rem] border border-slate-200 shadow-lg relative overflow-hidden text-left text-slate-900">
+              <div className="flex items-center justify-between mb-6 text-left"><h3 className="text-base font-black uppercase italic flex items-center gap-3 text-left"><Navigation className="w-5 h-5 text-blue-600" /> 실시간 위치 추적</h3><button onClick={() => setIsGlobalMapOpen(true)} className="p-3 bg-blue-50 text-blue-600 rounded-2xl hover:bg-blue-600 hover:text-white transition-all shadow-inner"><Globe className="w-5 h-5" /></button></div>
+              <div style={{ height: '400px', borderRadius: '2.5rem', overflow: 'hidden', border: '8px solid #F8FAFC' }}>
+                <MapContainer center={mapConfig.center} zoom={mapConfig.zoom} style={{ height: '100%', width: '100%' }} scrollWheelZoom={false}><TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" /><MapController center={mapConfig.center} zoom={mapConfig.zoom} bounds={mapConfig.bounds} />
+                  {itinerary.filter(e=>e.Lat && !isNaN(e.Lat)).map((e, i)=>(<Marker key={i} position={[e.Lat, e.Lng]} icon={L.divIcon({ className: '', html: `<div class="w-8 h-8 bg-slate-900 border-4 border-white rounded-full flex items-center justify-center text-[10px] font-black text-white shadow-2xl">${i+1}</div>` })}><Popup><span className="font-black text-xs text-slate-900">{e.Activity}</span></Popup></Marker>))}
                 </MapContainer>
-              </div>
-            </div>
-
-            {/* Expanded Must-Go List with Search, Ranking & Reviews */}
-            <div className="bg-amber-50 border border-amber-200 rounded-[2rem] p-6 shadow-sm overflow-hidden flex flex-col">
-              <div className="flex items-center justify-between mb-4 border-b border-amber-200 pb-3">
-                <h3 className="text-lg font-black text-amber-900 flex items-center gap-2">⭐ {currentCityName} Must-Go</h3>
-                <span className="text-[9px] font-black bg-amber-200 text-amber-800 px-2 py-0.5 rounded-full uppercase tracking-tighter">{filteredEssentials.length} Places</span>
-              </div>
-              
-              <div className="relative mb-4">
-                <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-amber-400" />
-                <input 
-                  type="text" 
-                  placeholder="맛집, 명소 검색..." 
-                  className="w-full bg-white/80 border border-amber-100 rounded-xl py-2 pl-9 pr-4 text-xs font-medium focus:outline-none focus:ring-2 focus:ring-amber-200 transition-all"
-                  value={searchTerm}
-                  onChange={(e) => setSearchBaseTerm(e.target.value)}
-                />
-              </div>
-
-              <div className="space-y-3 max-h-[550px] overflow-y-auto no-scrollbar pr-1">
-                {filteredEssentials.map((item, i) => (
-                  <div key={i} className={cn(
-                    "bg-white/60 hover:bg-white transition-all rounded-2xl p-4 border shadow-sm group relative flex flex-col gap-2",
-                    item.isMust ? "border-amber-300 ring-1 ring-amber-100" : "border-amber-100"
-                  )}>
-                    <div className="flex justify-between items-start">
-                      <div className="flex flex-col gap-0.5">
-                        <div className="flex items-center gap-2">
-                          <h4 className="font-black text-amber-900 text-sm leading-tight group-hover:text-blue-600 transition-colors">{item.name}</h4>
-                          {item.isMust && <Star className="w-3 h-3 text-amber-500 fill-amber-500" />}
-                        </div>
-                        <p className="text-[10px] text-amber-800/70 font-medium">{item.desc}</p>
-                      </div>
-                      <div className="flex items-center gap-1 shrink-0 ml-2 bg-amber-100/50 px-1.5 py-0.5 rounded text-[9px] font-black text-amber-700">
-                        Top {item.rank}
-                      </div>
-                    </div>
-
-                    {item.review && (
-                      <div className="mt-1 p-2.5 bg-amber-100/30 rounded-xl border border-amber-200/50 flex items-start gap-2">
-                        <MessageSquare className="w-3 h-3 text-amber-500 shrink-0 mt-0.5" />
-                        <p className="text-[10px] text-amber-900/90 font-bold leading-relaxed">{item.review}</p>
-                      </div>
-                    )}
-
-                    <div className="flex items-center gap-2 mt-1">
-                      <span className={cn(
-                        "text-[7px] font-black uppercase px-1.5 py-0.5 rounded",
-                        item.type === 'Food' ? "bg-orange-100 text-orange-700" : 
-                        (item.type === 'Shopping' ? "bg-pink-100 text-pink-700" : 
-                        (item.type === 'Cafe' ? "bg-amber-100 text-amber-700" : "bg-emerald-100 text-emerald-700"))
-                      )}>{item.type}</span>
-                      <div className="flex gap-1 ml-auto opacity-0 group-hover:opacity-100 transition-opacity">
-                        {item.links?.maps && <a href={item.links.maps} target="_blank" rel="noreferrer" className="p-1.5 bg-white border border-slate-200 text-slate-400 hover:text-blue-600 hover:border-blue-200 rounded-md transition-all shadow-sm"><MapIcon className="w-3 h-3" /></a>}
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* City Wisdom (Pro-Tips) */}
-            <div className="bg-slate-900 text-white rounded-[2rem] p-6 shadow-xl border border-white/10">
-              <h3 className="text-lg font-black flex items-center gap-2 mb-4 border-b border-white/10 pb-3">
-                <Lightbulb className="w-5 h-5 text-amber-400" /> {currentCityName} 마스터 팁
-              </h3>
-              <div className="space-y-4">
-                {currentCityWisdom ? (
-                  <>
-                    <div className="flex gap-3">
-                      <div className="bg-white/10 p-2 rounded-xl shrink-0 h-fit"><ShieldCheck className="w-4 h-4 text-emerald-400" /></div>
-                      <div>
-                        <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-0.5">청결 및 치안</p>
-                        <p className="text-[11px] font-medium leading-relaxed opacity-90">{currentCityWisdom.safety}</p>
-                      </div>
-                    </div>
-                    <div className="flex gap-3">
-                      <div className="bg-white/10 p-2 rounded-xl shrink-0 h-fit"><Coins className="w-4 h-4 text-amber-400" /></div>
-                      <div>
-                        <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-0.5">결제 및 팁</p>
-                        <p className="text-[11px] font-medium leading-relaxed opacity-90">{currentCityWisdom.money}</p>
-                      </div>
-                    </div>
-                    <div className="flex gap-3">
-                      <div className="bg-white/10 p-2 rounded-xl shrink-0 h-fit"><Globe className="w-4 h-4 text-blue-400" /></div>
-                      <div>
-                        <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-0.5">로컬 문화</p>
-                        <p className="text-[11px] font-medium leading-relaxed opacity-90">{currentCityWisdom.culture}</p>
-                      </div>
-                    </div>
-                    <div className="flex gap-3">
-                      <div className="bg-white/10 p-2 rounded-xl shrink-0 h-fit"><Waves className="w-4 h-4 text-cyan-400" /></div>
-                      <div>
-                        <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-0.5">식수 및 기타</p>
-                        <p className="text-[11px] font-medium leading-relaxed opacity-90">{currentCityWisdom.utilities}</p>
-                      </div>
-                    </div>
-                  </>
-                ) : <p className="text-center py-4 text-slate-500 text-xs italic">데이터 분석 중...</p>}
               </div>
             </div>
           </div>
         </div>
       </main>
 
-      {/* Global Map Modal */}
-      {isModalOpen && createPortal(
-        <div className="fixed inset-0 z-[2000] flex items-center justify-center bg-slate-900/60 backdrop-blur-md p-4 font-sans">
-          <div className="bg-white w-full max-w-7xl h-full max-h-[85vh] rounded-[3.5rem] overflow-hidden flex flex-col relative shadow-2xl border border-white/20">
-            <button onClick={() => setIsModalOpen(false)} className="absolute top-8 right-8 z-[2100] bg-slate-900 text-white p-4 rounded-full hover:bg-blue-600 transition-all shadow-2xl"><X className="w-6 h-6" /></button>
-            <div className="p-10 border-b bg-white relative z-[2050] shrink-0">
-              <h2 className="text-3xl font-black text-slate-900 tracking-tighter">19일간의 5개국 대장정</h2>
-              <p className="text-slate-500 font-medium">프랑스 ➔ 스위스 ➔ 독일 ➔ 체코 ➔ 이탈리아</p>
+      <Modal isOpen={isEssentialsOpen} onClose={() => setIsEssentialsOpen(false)} title={`⭐ ${CITY_NAME_MAP[dayInfo.city] || dayInfo.city} 필수 방문 리스트`}>
+        <div className="relative mb-8 text-left text-slate-900"><Search className="absolute left-5 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" /><input type="text" placeholder="맛집, 명소 검색..." className="w-full bg-slate-100 border-none rounded-[1.5rem] py-4 pl-14 pr-6 text-sm font-black focus:ring-4 focus:ring-blue-100 text-left shadow-inner" value={searchTerm} onChange={e=>setSearchTerm(e.target.value)} /></div>
+        <div className="space-y-6 text-left text-slate-900">
+          {filteredEssentials.map((item, i)=>(
+            <div key={i} className="bg-slate-50 p-6 rounded-[2.5rem] border group hover:shadow-xl relative transition-all duration-300 text-left">
+              <div className="flex justify-between items-start mb-4 text-left">
+                <div className="text-left"><div className="flex items-center gap-3 mb-1.5 text-slate-900 font-black text-lg italic text-left">{item.name}{item.isMust && <Star className="w-4 h-4 text-amber-400 fill-amber-400" />}</div><p className="text-[11px] text-slate-500 font-black uppercase text-left tracking-widest">{item.desc}</p></div>
+                <div className="bg-slate-900 text-white px-4 py-1.5 rounded-xl text-[10px] font-black uppercase italic shadow-lg shrink-0">Rank #{item.rank}</div>
+              </div>
+              <div className="bg-white/80 p-5 rounded-[1.75rem] border flex gap-4 text-slate-700 font-bold italic text-[13px] shadow-inner text-left"><MessageSquare className="w-5 h-5 text-blue-500 shrink-0 mt-1" />"{item.review}"</div>
+              <div className="flex items-center justify-between mt-6 text-left"><span className="text-[9px] font-black uppercase px-3 py-1 rounded-lg border bg-orange-100 text-orange-700 shadow-sm">{item.type}</span><a href={item.links.maps} target="_blank" rel="noreferrer" className="bg-slate-900 text-white px-5 py-2 rounded-xl text-[10px] font-black uppercase hover:bg-blue-600 transition-all flex items-center gap-2 shadow-lg leading-none">지도 보기 <ArrowRight className="w-3.5 h-3.5" /></a></div>
             </div>
-            <div className="flex-grow w-full relative bg-slate-50">
-              <MapContainer center={[47.0, 9.0]} zoom={5} style={{ height: '100%', width: '100%' }}>
-                <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-                {summary?.total_points.map((pt, i) => (
-                  <Marker key={i} position={pt.pos} icon={L.divIcon({
-                    className: 'custom-div-icon',
-                    html: `<div class="w-8 h-8 rounded-full flex items-center justify-center text-[10px] font-black border-2 border-white shadow-2xl bg-blue-600 text-white">${i + 1}</div>`,
-                    iconSize: [32, 32], iconAnchor: [16, 16]
-                  })}><Popup><div className="font-black text-xs p-1">{pt.activity}</div></Popup></Marker>
-                ))}
-                {summary?.total_points.length > 1 && <Polyline positions={summary.total_points.map(pt => pt.pos)} color="#2563eb" weight={3} opacity={0.3} dashArray="10, 20" />}
-              </MapContainer>
-            </div>
+          ))}
+        </div>
+      </Modal>
+
+      <Modal isOpen={isTipsOpen} onClose={() => setIsTipsOpen(false)} title={`💡 ${CITY_NAME_MAP[dayInfo.city] || dayInfo.city} 마스터 팁`}>
+        {currentCityWisdom && <div className="space-y-8 text-left text-slate-900">
+          <div className="bg-amber-50 p-8 rounded-[3rem] border border-amber-100 shadow-xl text-left"><h4 className="text-sm font-black text-amber-900 uppercase mb-4 flex items-center gap-3 text-left"><Zap className="w-5 h-5 fill-amber-500 text-amber-500" /> 사전 준비 (Prep)</h4><p className="text-sm font-bold text-amber-800 text-left leading-relaxed">{currentCityWisdom.prep}</p></div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-left">
+            {[ { icon: <ShieldCheck className="text-emerald-500" />, label: "치안 및 안전", content: currentCityWisdom.safety }, { icon: <Coins className="text-amber-500" />, label: "예산 및 결제", content: currentCityWisdom.money }, { icon: <Globe className="text-blue-500" />, label: "현지 문화", content: currentCityWisdom.culture }, { icon: <Waves className="text-cyan-500" />, label: "식수 및 기타", content: currentCityWisdom.utilities } ].map((tip, i)=>(
+              <div key={i} className="bg-white p-6 rounded-[2.5rem] border shadow-md text-left transition-all hover:shadow-xl"><div className="bg-slate-50 w-12 h-12 rounded-2xl flex items-center justify-center mb-4 text-left shadow-inner">{tip.icon}</div><h5 className="text-[11px] font-black text-slate-400 uppercase mb-2 text-left tracking-widest">{tip.label}</h5><p className="text-[13px] font-bold text-slate-700 text-left leading-relaxed">{tip.content}</p></div>
+            ))}
           </div>
-        </div>, document.body
-      )}
+        </div>}
+      </Modal>
+
+      <Modal isOpen={isGlobalMapOpen} onClose={() => setIsGlobalMapOpen(false)} title="🌍 전체 여정 경로">
+        <div style={{ height: '65vh', borderRadius: '3rem', overflow: 'hidden', border: '10px solid #F8FAFC' }} className="shadow-2xl text-left"><MapContainer center={[47.0, 9.0]} zoom={5} style={{ height: '100%', width: '100%' }}><TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+            {summary?.total_points.filter(pt => pt.pos && !isNaN(pt.pos[0])).map((pt, i) => {
+              const cityName = pt.activity.replace(' Arrival', '');
+              const cityKoEn = CITY_NAME_MAP[cityName] || pt.activity;
+              return (
+                <Marker key={i} position={pt.pos} icon={L.divIcon({ className: '', html: `<div class="w-10 h-10 bg-blue-600 border-4 border-white rounded-full flex items-center justify-center text-xs font-black text-white shadow-2xl">${i + 1}</div>` })}>
+                  <Popup><span className="font-black text-sm italic text-left text-slate-900">{cityKoEn}</span></Popup>
+                </Marker>
+              );
+            })}
+          {summary?.total_points.length > 1 && <Polyline positions={summary.total_points.map(pt => pt.pos)} color="#2563eb" weight={4} opacity={0.2} dashArray="12, 24" />}
+        </MapContainer></div>
+      </Modal>
     </div>
   );
 }
