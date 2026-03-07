@@ -1,6 +1,8 @@
-Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng
-2026-04-06,4,08:00,08:30,🔑 [체크아웃] Hôtel Astra Opéra,Paris,Accommodation,0,https://www.google.com/maps/search/?api=1&query=Hotel+Astra+Opera+Paris,,,체크아웃 후 Gare de Lyon 역 이동,48.8732,2.3295
-2026-04-06,4,09:00,11:00,🚆 TGV 탑승 (파리 -> 리옹),Paris -> Lyon,Transport,45,https://www.google.com/maps/search/?api=1&query=Gare+de+Lyon+Part-Dieu,,,미식의 도시 리옹 파르디외 역 도착,45.7606,4.8594
-2026-04-06,4,11:30,13:30,🍴 점심: Halles de Lyon Paul Bocuse 시장,Lyon,Food,30,https://www.google.com/maps/search/?api=1&query=Les+Halles+de+Lyon+Paul+Bocuse,,https://www.halles-de-lyon-paulbocuse.com/,리옹 미식의 성지 시장 구경 및 점심,45.7623,4.8519
-2026-04-06,4,14:00,15:00,🏠 [체크인] Hôtel Vaubecour,Lyon,Accommodation,150,https://www.google.com/maps/search/?api=1&query=Hotel+Vaubecour+Lyon,https://www.hotelvaubecour-lyon.com/,https://www.hotelvaubecour-lyon.com/,리옹 프레스킬 중심가 가성비 숙소,45.7596,4.8585
-2026-04-06,4,18:30,20:00,🍴 저녁: Bouchon Tupin,Lyon,Food,35,https://www.google.com/maps/search/?api=1&query=Bouchon+Tupin+Lyon,https://www.bouchon-tupin.com/,https://www.bouchon-tupin.com/,리옹 정통 요리의 현대적 재해석,45.7624,4.8344
+Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,Transit,PlanB
+2026-04-06,4,00:00,07:30,수면,Cler Hôtel,Accommodation,0,"https://www.google.com/maps/search/?api=1&query=48.85,2.3",,,체크아웃 11:30까지,48.8575,2.3055,,
+2026-04-06,4,07:30,09:30,리옹행 TGV,Lyon Part-Dieu,Transport,55,"https://www.google.com/maps/search/?api=1&query=45.76,4.85",,,TGV 이동,45.7606,4.8597,기차,
+2026-04-06,4,09:30,11:30,체크인/언덕,Fourvière,Sightseeing,0,"https://www.google.com/maps/search/?api=1&query=45.76,4.82",,,리옹 1박 2일 숙박 시작 (체크인 14:00) 짐보관,45.7621,4.8221,푸니쿨라,
+2026-04-06,4,11:30,13:30,점심: 카페 로뷔,Café Lobut,Food,45,"https://www.google.com/maps/search/?api=1&query=45.77,4.87",,,로컬 부숑,45.7715,4.8785,메트로,
+2026-04-06,4,13:30,18:30,벽화/비외 리옹,Mur des Canuts,Sightseeing,0,"https://www.google.com/maps/search/?api=1&query=45.77,4.82",,,"트라불 탐험, 대형 벽화",45.7771,4.8275,도보,
+2026-04-06,4,18:30,19:30,저녁: 라 뫼니에르,La Meunière,Food,60,"https://www.google.com/maps/search/?api=1&query=45.76,4.83",,,전통 부숑,45.7655,4.8355,도보,
+2026-04-06,4,19:30,23:59,강변 야경,Hôtel La Résidence,Accommodation,0,"https://www.google.com/maps/search/?api=1&query=45.75,4.83",,,휴식,45.7555,4.8325,도보,

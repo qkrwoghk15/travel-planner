@@ -1,7 +1,7 @@
-Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng
-2026-04-11,9,08:00,09:30,🚆 [이동] 융프라우요흐 등정,Jungfraujoch,Transport,0,https://www.google.com/maps/search/?api=1&query=Grindelwald+Terminal,,,아이거 익스프레스 케이블카 이용,46.6245,8.0185
-2026-04-11,9,09:30,11:30,🏔️ 융프라우요흐 등정,Jungfraujoch,Sightseeing,165,https://www.google.com/maps/search/?api=1&query=Jungfraujoch,,https://www.jungfrau.ch/,유럽의 지붕에서 만년설 감상,46.5475,7.9851
-2026-04-11,9,11:30,13:30,🍴 점심: Jungfraujoch 레스토랑,Jungfraujoch,Food,30,https://www.google.com/maps/search/?api=1&query=Jungfraujoch+Restaurant,,,설산 뷰 런치,46.5475,7.9854
-2026-04-11,9,14:00,17:30,🚶 라우터브루넨 폭포 마을 탐방,Lauterbrunnen,Sightseeing,0,https://www.google.com/maps/search/?api=1&query=Lauterbrunnen,,,72개 폭포가 있는 마을 산책,46.5935,7.9077
-2026-04-11,9,18:30,20:00,🍴 저녁: Restaurant Bären,Unterseen,Food,45,https://www.google.com/maps/search/?api=1&query=Restaurant+Baren+Unterseen,,https://www.baeren-unterseen.ch/,고풍스러운 정통 뢰스티 미식,46.6865,7.8485
-2026-04-11,9,20:30,23:59,🛌 숙소 복귀 및 휴식,Interlaken,Rest,0,https://www.google.com/maps/search/?api=1&query=Backpackers+Villa+Interlaken,,,연박 숙소 휴식,46.6854,7.8614
+Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,Transit,PlanB
+2026-04-11,9,00:00,07:30,수면,iQ Hotel Munchen,Accommodation,0,"https://www.google.com/maps/search/?api=1&query=48.13,11.56",,,뮌헨 체크아웃 (11:00),48.1385,11.5625,,
+2026-04-11,9,07:43,11:30,프라하 이동,Prague hl.n.,Transport,45,"https://www.google.com/maps/search/?api=1&query=50.08,14.43",,,ALEX 열차 기차여행,50.0835,14.4345,기차,
+2026-04-11,9,11:30,13:30,점심: 기차/피크닉,Train,Food,20,"https://www.google.com/maps/search/?api=1&query=50.08,14.43",,,뮌헨역에서 구매한 샌드위치 런치,50.0835,14.4345,기차,
+2026-04-11,9,13:30,18:30,광장/체크인,Old Town Square,Sightseeing,0,"https://www.google.com/maps/search/?api=1&query=50.08,14.42",,,프라하 2박 3일 체크인 (15:00) 후 광장,50.0875,14.4205,도보,
+2026-04-11,9,18:30,19:30,저녁: 로칼,Lokál Dlouhááá,Food,30,"https://www.google.com/maps/search/?api=1&query=50.09,14.42",,,필스너와 굴라시,50.0905,14.4265,도보,
+2026-04-11,9,19:30,23:59,휴식,Prague Marriott,Accommodation,150,"https://www.google.com/maps/search/?api=1&query=50.08,14.43",,,시내 호텔 휴식,50.0885,14.4315,도보,

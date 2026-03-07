@@ -1,6 +1,7 @@
-Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng
-2026-04-18,16,09:30,12:00,⛪ 두오모 쿠폴라 등정,Florence,Sightseeing,30,https://www.google.com/maps/search/?api=1&query=Duomo+di+Milano,https://www.duomomilano.it/,https://www.duomomilano.it/,피렌체 시내 조망,43.7731,11.256
-2026-04-18,16,12:00,13:30,🍴 점심: All'Antico Vinaio,Florence,Food,15,https://www.google.com/maps/search/?api=1&query=All+Antico+Vinaio+Florence,,https://www.allanticovinaio.com/,전설적인 샌드위치 미식,43.7685,11.2575
-2026-04-18,16,15:30,18:00,🌅 미켈란젤로 언덕 일몰,Florence,Sightseeing,0,https://www.google.com/maps/search/?api=1&query=Piazzale+Michelangelo,,,피렌체 일몰 명소,43.7629,11.2651
-2026-04-18,16,18:30,20:30,🍴 저녁: Trattoria Sostanza,Florence,Food,55,https://www.google.com/maps/search/?api=1&query=Trattoria+Sostanza+Florence,,,인생 버터 치킨 미식,43.7735,11.2465
-2026-04-18,16,21:00,23:59,🛌 숙소 복귀 및 휴식,Florence,Rest,0,https://www.google.com/maps/search/?api=1&query=Plus+Florence,,,연박 숙소 휴식,43.78,11.255
+Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,Transit,PlanB
+2026-04-18,16,00:00,08:30,수면,The RomeHello,Accommodation,110,"https://www.google.com/maps/search/?api=1&query=41.9,12.49",,,,41.9035,12.4945,,
+2026-04-18,16,08:30,11:30,바티칸 박물관,Vatican City,Sightseeing,30,"https://www.google.com/maps/search/?api=1&query=41.9,12.45",,,최고의 보물창고 관람,41.9065,12.4535,메트로,
+2026-04-18,16,11:30,13:30,점심: 본치 피자,Bonci Pizzarium,Food,25,"https://www.google.com/maps/search/?api=1&query=41.9,12.45",,,최고의 조각 피자,41.9075,12.4511,도보,
+2026-04-18,16,13:30,18:30,동물원/천사의 성,Bioparco di Roma,Sightseeing,25,"https://www.google.com/maps/search/?api=1&query=41.91,12.48",,,보르게세 동물원 관람,41.9175,12.4855,트램,
+2026-04-18,16,18:30,19:30,저녁: 다 엔조,Da Enzo al 29,Food,50,"https://www.google.com/maps/search/?api=1&query=41.88,12.47",,,트라스테베레 18:30 오픈런,41.8885,12.4775,도보,
+2026-04-18,16,19:30,23:59,트레비 분수,Trevi Fountain,Sightseeing,0,"https://www.google.com/maps/search/?api=1&query=41.9,12.48",,,동전 던지기,41.9005,12.4835,도보,

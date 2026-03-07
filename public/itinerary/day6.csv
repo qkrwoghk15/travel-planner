@@ -1,8 +1,7 @@
-Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng
-2026-04-08,6,08:30,09:00,🔑 [체크아웃] Hôtel Vaubecour,Lyon,Accommodation,0,https://www.google.com/maps/search/?api=1&query=Hotel+Vaubecour+Lyon,,,체크아웃 후 스위스행 열차 탑승,45.7596,4.8585
-2026-04-08,6,09:00,13:30,🚆 기차 이동 (리옹 -> 체르마트),Lyon -> Zermatt,Transport,85,https://www.google.com/maps/search/?api=1&query=Zermatt+Station,,,비스프 환승 후 산악 열차 등정,46.0207,7.7491
-2026-04-08,6,13:30,14:30,🏠 [체크인] Zermatt Youth Hostel,Zermatt,Accommodation,160,https://www.google.com/maps/search/?api=1&query=Zermatt+Youth+Hostel,https://www.youthhostel.ch/en/hostels/zermatt/,https://www.youthhostel.ch/en/hostels/zermatt/,마터호른 뷰가 보이는 프라이빗 룸,46.015,7.746
-2026-04-08,6,14:30,15:10,🚆 [이동] 고르너그라트 열차역 이동,Zermatt GGB,Transport,0,https://www.google.com/maps/search/?api=1&query=Gornergrat+Bahn,,,역전 GGB 승강장으로 이동,46.0238,7.7487
-2026-04-08,6,15:10,18:00,🏔️ 고르너그라트 전망대,Gornergrat,Sightseeing,90,https://www.google.com/maps/search/?api=1&query=Gornergrat,,https://www.gornergrat.ch/,33분 소요 톱니바퀴 열차 등정 후 절경 감상,45.9833,7.7833
-2026-04-08,6,18:30,20:00,🍴 저녁: Restaurant DuPont,Zermatt,Food,40,https://www.google.com/maps/search/?api=1&query=Restaurant+DuPont+Zermatt,,https://www.dupont-zermatt.ch/,전망대 하산 후 마을 중심 퐁뒤 미식,46.019,7.749
-2026-04-08,6,20:30,23:59,🛌 숙소 복귀 및 휴식,Zermatt,Rest,0,https://www.google.com/maps/search/?api=1&query=Zermatt+Youth+Hostel,,,개인실에서 마터호른 감상,46.015,7.746
+Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,Transit,PlanB
+2026-04-08,6,00:00,08:00,수면,Hotel Interlaken,Accommodation,0,"https://www.google.com/maps/search/?api=1&query=46.68,7.86",,,,46.6865,7.8635,,
+2026-04-08,6,08:00,11:30,융프라우요흐,Jungfraujoch,Sightseeing,130,"https://www.google.com/maps/search/?api=1&query=46.54,7.98",,,만년설 투어,46.5475,7.9821,산악열차,
+2026-04-08,6,11:30,13:30,점심: 그린델발트,Grindelwald,Food,40,"https://www.google.com/maps/search/?api=1&query=46.62,8.03",,,클리프 워크 및 점심,46.6241,8.0315,도보,
+2026-04-08,6,13:30,18:30,라우터브루넨,Lauterbrunnen,Sightseeing,0,"https://www.google.com/maps/search/?api=1&query=46.59,7.9",,,폭포 마을 산책,46.5955,7.9075,기차,
+2026-04-08,6,18:30,19:30,저녁: 라테르네,Laterne,Food,60,"https://www.google.com/maps/search/?api=1&query=46.68,7.86",,,정통 스위스 요리,46.6865,7.8635,도보,
+2026-04-08,6,19:30,23:59,휴식,Hotel Interlaken,Accommodation,0,"https://www.google.com/maps/search/?api=1&query=46.68,7.86",,,,46.6865,7.8635,도보,

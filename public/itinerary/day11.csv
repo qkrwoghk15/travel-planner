@@ -1,7 +1,7 @@
-Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng
-2026-04-13,11,09:30,12:00,🎨 브레라 지구(Brera) 산책,Milan,Sightseeing,0,https://www.google.com/maps/search/?api=1&query=Brera+District+Milan,,,예술적인 거리 탐방,45.4715,9.1885
-2026-04-13,11,12:30,14:00,🍴 점심: Ratanà (모던 밀라네제),Milan,Food,55,https://www.google.com/maps/search/?api=1&query=Ratana+Milan,,https://www.ratana.it/,현대적 리조또 미식,45.4855,9.1895
-2026-04-13,11,14:30,17:00,🏰 스포르체스코 성 & 공원 휴식,Milan,Sightseeing,0,https://www.google.com/maps/search/?api=1&query=Sforzesco+Castle,,,역사적 성과 공원 산책,45.4705,9.1793
-2026-04-13,11,17:30,19:00,☕ 스타벅스 리저브 로스터리,Milan,Sightseeing,15,https://www.google.com/maps/search/?api=1&query=Starbucks+Reserve+Roastery+Milan,,https://www.starbucksreserve.com/en-us/locations/milan,세계에서 가장 아름다운 스타벅스,45.4655,9.1865
-2026-04-13,11,19:30,21:30,🍴 저녁: 나빌리(Navigli) 아페리티보,Milan,Food,40,https://www.google.com/maps/search/?api=1&query=Navigli+Milan,,,운하 야경과 아페리티보 문화,45.4525,9.1755
-2026-04-13,11,22:00,23:59,🛌 숙소 복귀 및 휴식,Milan,Rest,0,https://www.google.com/maps/search/?api=1&query=43+Station+Hotel+Milan,,,연박 숙소 휴식,45.4847,9.2045
+Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,Transit,PlanB
+2026-04-13,11,00:00,08:30,수면,Prague Marriott,Accommodation,0,"https://www.google.com/maps/search/?api=1&query=50.08,14.43",,,프라하 체크아웃 (12:00),50.0885,14.4315,,
+2026-04-13,11,08:30,11:30,블타바 강변/쇼핑,Vltava River,Sightseeing,0,"https://www.google.com/maps/search/?api=1&query=50.09,14.41",,,여유로운 오전 산책,50.0935,14.4175,도보,
+2026-04-13,11,11:30,13:30,점심: 카페 사보이,Cafe Savoy,Food,35,"https://www.google.com/maps/search/?api=1&query=50.08,14.4",,,아름다운 인테리어와 커피,50.0805,14.4065,트램,
+2026-04-13,11,13:30,18:30,빈으로 이동,Vienna Hbf,Transport,40,"https://www.google.com/maps/search/?api=1&query=48.18,16.37",,,Railjet 탑승 (14:44-18:49),48.1855,16.3775,기차,
+2026-04-13,11,18:30,19:30,저녁: 슈니첼,Vienna Hbf,Food,30,"https://www.google.com/maps/search/?api=1&query=48.18,16.37",,,빈 중앙역 인근 슈니첼,48.1855,16.3775,도보,
+2026-04-13,11,19:30,23:59,야간열차 탑승,Nightjet Train,Transport,150,"https://www.google.com/maps/search/?api=1&query=48.18,16.37",,,21:27 베네치아행 야간열차 취침,48.1855,16.3775,기차,

@@ -1,7 +1,7 @@
-Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng
-2026-04-15,13,09:00,10:30,🚆 기차 이동 (베네치아 -> 볼로냐),Venice -> Bologna,Transport,25,https://www.google.com/maps/search/?api=1&query=Bologna+Centrale,,,볼로냐 중앙역 도착,44.5058,11.3418
-2026-04-15,13,11:30,13:30,🍴 점심: Osteria dell'Orsa (라구),Bologna,Food,25,https://www.google.com/maps/search/?api=1&query=Osteria+dell+Orsa+Bologna,,https://www.osteriadellorsa.it/,원조 라구 파스타 성지,44.4965,11.3485
-2026-04-15,13,14:00,15:00,🏠 [체크인] Combo Bologna,Bologna,Accommodation,120,https://www.google.com/maps/search/?api=1&query=Combo+Bologna,https://www.combobologna.it/,https://www.combobologna.it/,힙한 감성의 개인실 체크인,44.508,11.342
-2026-04-15,13,15:00,18:00,⛪ 마조레 광장 & 포르티코 산책,Bologna,Sightseeing,0,https://www.google.com/maps/search/?api=1&query=Piazza+Maggiore,,,UNESCO 회랑 탐방,44.4938,11.343
-2026-04-15,13,18:30,20:00,🍴 저녁: Quadrilatero 미식 지구 투어,Bologna,Food,35,https://www.google.com/maps/search/?api=1&query=Tamburini+Bologna,,http://www.tamburini.com/,전통 델리 미식 체험,44.4935,11.3445
-2026-04-15,13,20:30,23:59,🛌 숙소 복귀 및 휴식,Bologna,Rest,0,https://www.google.com/maps/search/?api=1&query=Combo+Bologna,,,볼로냐에서의 밤,44.508,11.342
+Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,Transit,PlanB
+2026-04-15,13,00:00,08:30,수면,Hotel Palazzo Giovanelli,Accommodation,0,"https://www.google.com/maps/search/?api=1&query=45.44,12.32",,,베네치아 체크아웃 (11:00),45.4415,12.3285,,
+2026-04-15,13,08:30,11:30,피렌체 이동,Florence S.M.N,Transport,30,"https://www.google.com/maps/search/?api=1&query=43.77,11.24",,,고속열차 이동,43.7765,11.2478,기차,
+2026-04-15,13,11:30,13:30,점심: 카살링가,Trattoria Casalinga,Food,40,"https://www.google.com/maps/search/?api=1&query=43.76,11.24",,,도착 직후 정통 가정식,43.7675,11.2485,도보,
+2026-04-15,13,13:30,18:30,우피치 미술관,Uffizi Gallery,Sightseeing,30,"https://www.google.com/maps/search/?api=1&query=43.76,11.25",,,피렌체 2박 3일 체크인 (14:00) 후 미술관,43.7677,11.2553,도보,
+2026-04-15,13,18:30,19:30,저녁: 부카 라피,Buca Lapi,Food,95,"https://www.google.com/maps/search/?api=1&query=43.77,11.25",,,피렌체 1티어 티본 스테이크,43.7725,11.2515,도보,
+2026-04-15,13,19:30,23:59,두오모 야경,Hotel Spadai,Accommodation,220,"https://www.google.com/maps/search/?api=1&query=43.77,11.25",,,두오모 산책 후 휴식,43.7735,11.2555,도보,

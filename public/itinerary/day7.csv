@@ -1,9 +1,7 @@
-Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng
-2026-04-09,7,08:30,09:00,🔑 숙소 조식 및 하이킹 준비,Zermatt,Rest,0,https://www.google.com/maps/search/?api=1&query=Zermatt+Youth+Hostel,,,하이킹을 위한 든든한 조식 준비,46.015,7.746
-2026-04-09,7,09:00,09:30,🚆 [이동] 수네가(Sunnegga) 승강장 이동,Zermatt Village,Transport,0,https://www.google.com/maps/search/?api=1&query=Sunnegga-Express,,,전기버스 탑승 후 승강장 이동,46.0225,7.7525
-2026-04-09,7,09:30,12:30,🚶 수네가 5대 호수 하이킹,Sunnegga/Blauherd,Sightseeing,50,https://www.google.com/maps/search/?api=1&query=Stellisee,,,슈텔리제 등 5개 호수 탐방,46.0175,7.8025
-2026-04-09,7,12:30,14:00,🍴 점심: Saycheese!,Zermatt Village,Food,50,https://www.google.com/maps/search/?api=1&query=Saycheese+Zermatt,,https://www.zermatterhof.ch/en/restaurants-bars/saycheese/,푸니쿨라 하산 후 최고급 치즈 미식,46.02,7.749
-2026-04-09,7,14:00,14:30,🚠 [이동] 글래시어 파라다이스 승강장,Zermatt Bergbahnen,Transport,0,https://www.google.com/maps/search/?api=1&query=Zermatt+Bergbahnen,,,케이블카 승강장 이동,46.0145,7.7455
-2026-04-09,7,14:30,17:30,🏔️ 글래시어 파라다이스,Zermatt Glacier,Sightseeing,100,https://www.google.com/maps/search/?api=1&query=Matterhorn+Glacier+Paradise,,https://www.matterhornparadise.ch/,해발 3883m 등정 및 만년설 체험,45.9383,7.73
-2026-04-09,7,18:30,20:30,🍴 저녁: Restaurant Schäferstube,Zermatt Village,Food,55,https://www.google.com/maps/search/?api=1&query=Restaurant+Schaferstube+Zermatt,,https://www.tradition-julens.ch/en/schaeferstube/,체르마트 명물 양고기 스테이크,46.0185,7.7485
-2026-04-09,7,20:30,23:59,🛌 숙소 복귀 및 휴식,Zermatt,Rest,0,https://www.google.com/maps/search/?api=1&query=Zermatt+Youth+Hostel,,,연박 숙소 개인실 휴식,46.015,7.746
+Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,Transit,PlanB
+2026-04-09,7,00:00,07:00,수면,Hotel Interlaken,Accommodation,0,"https://www.google.com/maps/search/?api=1&query=46.68,7.86",,,인터라켄 체크아웃 (11:00),46.6865,7.8635,,
+2026-04-09,7,07:00,11:30,뮌헨 이동,Munich Hbf,Transport,70,"https://www.google.com/maps/search/?api=1&query=48.14,11.55",,,바젤 경유 ICE,48.1402,11.5583,기차,
+2026-04-09,7,11:30,13:30,점심: 아우구스티너,Augustiner Klosterwirt,Food,30,"https://www.google.com/maps/search/?api=1&query=48.13,11.57",,,뮌헨 도착 직후 최고의 맥주,48.1385,11.5725,도보,
+2026-04-09,7,13:30,18:30,마리엔플라츠,Marienplatz,Sightseeing,0,"https://www.google.com/maps/search/?api=1&query=48.13,11.57",,,뮌헨 2박 3일 숙박 체크인 (14:00) 후 구시가지,48.1371,11.5753,메트로,
+2026-04-09,7,18:30,19:30,저녁: 호프브로이,Hofbräuhaus,Food,40,"https://www.google.com/maps/search/?api=1&query=48.13,11.58",,,정통 학센과 1리터 맥주,48.1375,11.5805,도보,
+2026-04-09,7,19:30,23:59,야경,iQ Hotel Munchen,Accommodation,130,"https://www.google.com/maps/search/?api=1&query=48.13,11.56",,,호텔 복귀,48.1385,11.5625,메트로,

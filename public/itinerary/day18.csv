@@ -1,4 +1,7 @@
-Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng
-2026-04-20,18,08:30,12:00,⛪ 바티칸 박물관,Vatican City,Sightseeing,25,https://www.google.com/maps/search/?api=1&query=Vatican+Museums,https://tickets.museivaticani.va/,https://www.museivaticani.va/,세계 최대 박물관 투어,41.9065,12.4534
-2026-04-20,18,18:30,19:10,🚆 레오나르도 익스프레스 (공항 이동),Termini -> FCO,Transport,14,https://www.google.com/maps/search/?api=1&query=Fiumicino+Airport,,,공항 직통 열차 이동,41.8003,12.2389
-2026-04-20,18,21:15,23:59,🛫 로마 출발 (AF264),Rome -> Incheon,Transport,0,https://www.google.com/maps/search/?api=1&query=Fiumicino+Airport,,,귀국행 비행기 탑승,41.8003,12.2389
+Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,Transit,PlanB
+2026-04-20,18,00:00,08:30,수면,The RomeHello,Accommodation,0,"https://www.google.com/maps/search/?api=1&query=41.9,12.49",,,로마 체크아웃 (11:00),41.9035,12.4945,,
+2026-04-20,18,08:30,11:30,벽화/자유시간,Tor Marancia,Sightseeing,0,"https://www.google.com/maps/search/?api=1&query=41.85,12.49",,,현대 미술 벽화거리,41.8585,12.4955,버스,
+2026-04-20,18,11:30,13:30,점심: 테르미니,Termini,Food,30,"https://www.google.com/maps/search/?api=1&query=41.9,12.5",,,출국 전 마지막 로마 식사,41.9014,12.502,도보,
+2026-04-20,18,13:30,18:30,공항 이동,Fiumicino Airport,Transport,14,"https://www.google.com/maps/search/?api=1&query=41.8,12.23",,,레오나르도 익스프레스,41.8003,12.2389,기차,
+2026-04-20,18,18:30,21:15,공항 수속/저녁,Fiumicino,Food,20,"https://www.google.com/maps/search/?api=1&query=41.8,12.23",,,공항 라운지/식당 (18:30~),41.8003,12.2389,도보,
+2026-04-20,18,21:15,23:59,비행 (TW0406),In-flight,Transport,0,"https://www.google.com/maps/search/?api=1&query=41.8,12.23",,,로마 출발,0,0,비행기,

@@ -1,6 +1,7 @@
-Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng
-2026-04-05,3,09:30,11:30,🎨 오르세 미술관 관람,Paris,Sightseeing,16,https://www.google.com/maps/search/?api=1&query=Musee+d+Orsay,https://billetterie.musee-orsay.fr/,https://www.musee-orsay.fr/,인상주의 미술의 정수 감상,48.8599,2.3265
-2026-04-05,3,11:30,13:30,🍴 점심: L'As du Fallafel,Paris,Food,15,https://www.google.com/maps/search/?api=1&query=L+As+du+Fallafel+Paris,,http://l-as-du-fallafel.zenchef.com/,메트로 1호선 Saint-Paul 역 인근 맛집,48.8574,2.3591
-2026-04-05,3,14:00,17:00,🚶 몽마르트르 언덕 & 사크레쾨르,Paris,Sightseeing,0,https://www.google.com/maps/search/?api=1&query=Sacre+Coeur+Basillica,,,파리 전경 감상 및 도보 산책,48.8867,2.3431
-2026-04-05,3,18:30,20:00,🍴 저녁: Galeries Lafayette Gourmet,Paris,Food,30,https://www.google.com/maps/search/?api=1&query=Galeries+Lafayette+Le+Gourmet,,https://haussmann.galerieslafayette.com/en/gourmet/,오페라 프리미엄 식품관 델리 저녁,48.8735,2.3315
-2026-04-05,3,20:30,23:59,🛌 숙소 복귀 및 짐 정리,Paris,Rest,0,https://www.google.com/maps/search/?api=1&query=Hotel+Astra+Opera+Paris,,,익일 TGV 이동 준비,48.8732,2.3295
+Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,Transit,PlanB
+2026-04-05,3,00:00,08:30,수면,Cler Hôtel,Accommodation,0,"https://www.google.com/maps/search/?api=1&query=48.85,2.3",,,,48.8575,2.3055,,
+2026-04-05,3,08:30,11:30,마레/디올 갤러리,La Galerie Dior,Sightseeing,12,"https://www.google.com/maps/search/?api=1&query=48.86,2.3",,,디올 패션 전시,48.8665,2.3025,메트로,
+2026-04-05,3,11:30,13:30,점심: 뒤모네,Chez Dumonet,Food,75,"https://www.google.com/maps/search/?api=1&query=48.84,2.32",,,비프 부르기뇽 11:30 방문,48.8495,2.3275,메트로,
+2026-04-05,3,13:30,18:30,쇼핑/몽마르트르,Sacré-Cœur,Shopping,50,"https://www.google.com/maps/search/?api=1&query=48.88,2.34",,,보르디예 버터 구입 및 일몰,48.8867,2.3431,메트로,
+2026-04-05,3,18:30,19:30,저녁: 에펠탑 전망,Madame Brasserie,Food,100,"https://www.google.com/maps/search/?api=1&query=48.85,2.29",,,18:30 예약 에펠탑 다이닝,48.8584,2.2945,메트로,
+2026-04-05,3,19:30,23:59,휴식,Cler Hôtel,Accommodation,0,"https://www.google.com/maps/search/?api=1&query=48.85,2.3",,,짐 정리,48.8575,2.3055,도보,

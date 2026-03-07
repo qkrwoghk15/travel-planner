@@ -1,8 +1,7 @@
-Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng
-2026-04-04,2,08:30,09:30,🚶 숙소 출발 (루브르 도보 이동),Paris,Sightseeing,0,https://www.google.com/maps/search/?api=1&query=Louvre+Museum,,,오페라 가를 경유한 파리 중심가 도보 산책,48.8719,2.3456
-2026-04-04,2,09:30,11:30,🎨 루브르 박물관 관람,Paris,Sightseeing,22,https://www.google.com/maps/search/?api=1&query=Louvre+Museum,https://www.ticketlouvre.fr/,https://www.louvre.fr/en,세계 최대 박물관의 예술품 감상,48.8606,2.3376
-2026-04-04,2,11:30,13:30,🍴 점심: Bouillon Chartier,Paris,Food,25,https://www.google.com/maps/search/?api=1&query=Bouillon+Chartier+Grands+Boulevards,,https://www.bouillon-chartier.com/,박물관 관람 후 숙소 방향 가성비 프렌치,48.8719,2.3429
-2026-04-04,2,14:00,16:30,🛍️ 봉 마르셰 백화점 & 보르디예 버터,Paris,Sightseeing,60,https://www.google.com/maps/search/?api=1&query=Le+Bon+Marche+Paris,,https://www.lebonmarche.com/,메트로 10 12호선 Sèvres - Babylone 역 미식 쇼핑,48.8517,2.3248
-2026-04-04,2,17:00,18:30,🌇 에펠탑 사진 포인트 (샤요 궁),Paris,Sightseeing,0,https://www.google.com/maps/search/?api=1&query=Place+du+Trocadero,,,메트로 6 9호선 Trocadéro 역 하차,48.8623,2.2881
-2026-04-04,2,18:30,20:00,🍴 저녁: Le Relais de l'Entrecote,Paris,Food,45,https://www.google.com/maps/search/?api=1&query=Le+Relais+de+l+Entrecote+Paris,,https://www.relaisentrecote.fr/,정통 갈비 스테이크 단일 메뉴 맛집,48.866,2.3015
-2026-04-04,2,20:30,23:59,🛌 숙소 복귀 및 휴식,Paris,Rest,0,https://www.google.com/maps/search/?api=1&query=Hotel+Astra+Opera+Paris,,,9구 중심가 개인실 휴식,48.8732,2.3295
+Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,Transit,PlanB
+2026-04-04,2,00:00,08:30,수면,Cler Hôtel,Accommodation,0,"https://www.google.com/maps/search/?api=1&query=48.85,2.3",,,,48.8575,2.3055,,
+2026-04-04,2,08:30,11:30,루브르 박물관,Musée du Louvre,Sightseeing,17,"https://www.google.com/maps/search/?api=1&query=48.86,2.33",,,핵심 3대 대작 관람,48.8606,2.3376,메트로,
+2026-04-04,2,11:30,13:30,점심: 셉팀,Septime,Food,85,"https://www.google.com/maps/search/?api=1&query=48.85,2.37",,,11:30 예약 필수,48.8515,2.3775,메트로,
+2026-04-04,2,13:30,18:30,13구 벽화/동물원,Parc Zoologique,Sightseeing,20,"https://www.google.com/maps/search/?api=1&query=48.83,2.41",,,벽화 마을과 동물원,48.8315,2.4165,메트로,
+2026-04-04,2,18:30,19:30,저녁: 폴 베르,Bistrot Paul Bert,Food,60,"https://www.google.com/maps/search/?api=1&query=48.85,2.38",,,정통 스테이크 18:30 오픈런,48.8505,2.3845,메트로,
+2026-04-04,2,19:30,23:59,오페라/센강,Palais Garnier,Sightseeing,120,"https://www.google.com/maps/search/?api=1&query=48.87,2.33",,,공연 및 센강 유람선,48.8719,2.3316,메트로,

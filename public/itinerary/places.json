@@ -1,0 +1,2098 @@
+{
+  "Paris": [
+    {
+      "name": "Louvre Museum",
+      "type": "Sightseeing",
+      "desc": "세계 3대 박물관",
+      "review": "압도적 규모. 모나리자는 멀리서 보지만 감동적.",
+      "lat": 48.8606,
+      "lng": 2.3376,
+      "rank": 1,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=48.8606,2.3376"
+      }
+    },
+    {
+      "name": "Eiffel Tower",
+      "type": "Sightseeing",
+      "desc": "파리의 상징",
+      "review": "화이트 에펠은 야경의 끝판왕. 소매치기 조심.",
+      "lat": 48.8584,
+      "lng": 2.2945,
+      "rank": 2,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=48.8584,2.2945"
+      }
+    },
+    {
+      "name": "Septime",
+      "type": "Food",
+      "desc": "네오 비스트로",
+      "review": "예약이 하늘의 별따기지만 맛은 환상적.",
+      "lat": 48.8515,
+      "lng": 2.3775,
+      "rank": 3,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=48.8515,2.3775"
+      }
+    },
+    {
+      "name": "Chez Dumonet",
+      "type": "Food",
+      "desc": "비프 부르기뇽 맛집",
+      "review": "인생 고기 요리. 양이 많아서 쉐어 필수.",
+      "lat": 48.8495,
+      "lng": 2.3275,
+      "rank": 4,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=48.8495,2.3275"
+      }
+    },
+    {
+      "name": "La Grande Épicerie",
+      "type": "Shopping",
+      "desc": "봉마르셰 식품관",
+      "review": "보르디예 버터와 트러플 소금 싹쓸이하기 좋음.",
+      "lat": 48.8515,
+      "lng": 2.3245,
+      "rank": 5,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=48.8515,2.3245"
+      }
+    },
+    {
+      "name": "Montmartre",
+      "type": "Sightseeing",
+      "desc": "예술가의 언덕",
+      "review": "일몰 때 뷰가 미쳤음. 팔찌 강매단 조심.",
+      "lat": 48.8867,
+      "lng": 2.3431,
+      "rank": 6,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=48.8867,2.3431"
+      }
+    },
+    {
+      "name": "Musee d'Orsay",
+      "type": "Sightseeing",
+      "desc": "인상파 미술관",
+      "review": "루브르보다 동선이 편하고 고흐 작품이 많아 좋음.",
+      "lat": 48.8599,
+      "lng": 2.3265,
+      "rank": 7,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=48.8599,2.3265"
+      }
+    },
+    {
+      "name": "Sainte-Chapelle",
+      "type": "Sightseeing",
+      "desc": "스테인드글라스 성당",
+      "review": "햇빛 좋은 날 가면 눈물이 날 정도로 아름다움.",
+      "lat": 48.8554,
+      "lng": 2.3449,
+      "rank": 8,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=48.8554,2.3449"
+      }
+    },
+    {
+      "name": "Bistrot Paul Bert",
+      "type": "Food",
+      "desc": "스테이크 프릿츠",
+      "review": "파리 정통 비스트로 분위기. 후추 소스 스테이크 최고.",
+      "lat": 48.8505,
+      "lng": 2.3845,
+      "rank": 9,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=48.8505,2.3845"
+      }
+    },
+    {
+      "name": "Madame Brasserie",
+      "type": "Food",
+      "desc": "에펠탑 1층 레스토랑",
+      "review": "뷰 하나만으로도 돈값 하는 곳. 예약 필수.",
+      "lat": 48.8584,
+      "lng": 2.2945,
+      "rank": 10,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=48.8584,2.2945"
+      }
+    },
+    {
+      "name": "Le Marais",
+      "type": "Sightseeing",
+      "desc": "마레 지구",
+      "review": "트렌디한 편집샵과 카페가 많아 쇼핑하기 최적.",
+      "lat": 48.8575,
+      "lng": 2.3594,
+      "rank": 11,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=48.8575,2.3594"
+      }
+    },
+    {
+      "name": "Palais Garnier",
+      "type": "Sightseeing",
+      "desc": "오페라 가르니에",
+      "review": "내부가 베르사유 궁전만큼 화려함.",
+      "lat": 48.8719,
+      "lng": 2.3316,
+      "rank": 12,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=48.8719,2.3316"
+      }
+    },
+    {
+      "name": "Parc Zoologique",
+      "type": "Sightseeing",
+      "desc": "뱅센 동물원",
+      "review": "아이들과 가기 좋은 현대적인 동물원.",
+      "lat": 48.8315,
+      "lng": 2.4165,
+      "rank": 13,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=48.8315,2.4165"
+      }
+    },
+    {
+      "name": "Street Art 13th",
+      "type": "Sightseeing",
+      "desc": "13구 벽화 마을",
+      "review": "거대한 빌딩 벽화들이 압도적임.",
+      "lat": 48.8321,
+      "lng": 2.3665,
+      "rank": 14,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=48.8321,2.3665"
+      }
+    },
+    {
+      "name": "La Parisienne",
+      "type": "Food",
+      "desc": "바게트 우승 빵집",
+      "review": "겉바속촉 바게트 샌드위치가 미친 맛.",
+      "lat": 48.8465,
+      "lng": 2.3325,
+      "rank": 15,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=48.8465,2.3325"
+      }
+    },
+    {
+      "name": "Angelina",
+      "type": "Cafe",
+      "desc": "몽블랑 & 핫초코",
+      "review": "극강의 단맛. 당 충전하기 좋으나 웨이팅 길음.",
+      "lat": 48.8655,
+      "lng": 2.3285,
+      "rank": 16,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=48.8655,2.3285"
+      }
+    },
+    {
+      "name": "Noir Coffee",
+      "type": "Cafe",
+      "desc": "스페셜티 커피",
+      "review": "파리에서 드물게 한국인 입맛에 맞는 산미 커피.",
+      "lat": 48.8725,
+      "lng": 2.3015,
+      "rank": 17,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=48.8725,2.3015"
+      }
+    },
+    {
+      "name": "Girafe",
+      "type": "Food",
+      "desc": "에펠탑 뷰 테라스",
+      "review": "인스타 핫플. 해산물 플래터가 신선함.",
+      "lat": 48.8635,
+      "lng": 2.2895,
+      "rank": 18,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=48.8635,2.2895"
+      }
+    },
+    {
+      "name": "Clamato",
+      "type": "Food",
+      "desc": "해산물 타파스",
+      "review": "예약 안되는 셉팀 세컨 브랜드. 웨이팅 할 가치 있음.",
+      "lat": 48.8525,
+      "lng": 2.3785,
+      "rank": 19,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=48.8525,2.3785"
+      }
+    },
+    {
+      "name": "Jardin des Tuileries",
+      "type": "Sightseeing",
+      "desc": "튈르리 정원",
+      "review": "초록 의자에 앉아 분수 보며 쉬는게 최고의 힐링.",
+      "lat": 48.8635,
+      "lng": 2.3275,
+      "rank": 20,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=48.8635,2.3275"
+      }
+    }
+  ],
+  "Lyon": [
+    {
+      "name": "Fourvière Basilique",
+      "type": "Sightseeing",
+      "desc": "푸르비에르 대성당",
+      "review": "리옹 시내가 한눈에 내려다보이는 야경 명소.",
+      "lat": 45.7621,
+      "lng": 4.8221,
+      "rank": 1,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=45.7621,4.8221"
+      }
+    },
+    {
+      "name": "Vieux Lyon",
+      "type": "Sightseeing",
+      "desc": "비외 리옹",
+      "review": "르네상스 시대 골목과 비밀통로(트라불) 탐험 꿀잼.",
+      "lat": 45.7625,
+      "lng": 4.8275,
+      "rank": 2,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=45.7625,4.8275"
+      }
+    },
+    {
+      "name": "Les Halles de Lyon",
+      "type": "Food",
+      "desc": "폴 보퀴즈 실내 시장",
+      "review": "미식의 도시 리옹의 심장. 굴과 화이트와인 조합 추천.",
+      "lat": 45.7621,
+      "lng": 4.8511,
+      "rank": 3,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=45.7621,4.8511"
+      }
+    },
+    {
+      "name": "Mur des Canuts",
+      "type": "Sightseeing",
+      "desc": "크루아 루스 벽화",
+      "review": "유럽 최대의 착시 벽화. 디테일이 살아있음.",
+      "lat": 45.7771,
+      "lng": 4.8275,
+      "rank": 4,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=45.7771,4.8275"
+      }
+    },
+    {
+      "name": "Café Lobut",
+      "type": "Food",
+      "desc": "로컬 부숑",
+      "review": "전통 리옹 가정식을 제대로 맛볼 수 있음.",
+      "lat": 45.7715,
+      "lng": 4.8785,
+      "rank": 5,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=45.7715,4.8785"
+      }
+    },
+    {
+      "name": "La Meunière",
+      "type": "Food",
+      "desc": "전통 부숑",
+      "review": "무한리필 전채 요리 카트가 인상적.",
+      "lat": 45.7655,
+      "lng": 4.8355,
+      "rank": 6,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=45.7655,4.8355"
+      }
+    },
+    {
+      "name": "Parc de la Tête d'Or",
+      "type": "Sightseeing",
+      "desc": "테트 도르 공원",
+      "review": "무료 동물원과 식물원이 있는 거대한 호수 공원.",
+      "lat": 45.7775,
+      "lng": 4.8555,
+      "rank": 7,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=45.7775,4.8555"
+      }
+    },
+    {
+      "name": "Musée Lumière",
+      "type": "Sightseeing",
+      "desc": "뤼미에르 박물관",
+      "review": "영화의 탄생지를 직접 보는 감동.",
+      "lat": 45.7455,
+      "lng": 4.8695,
+      "rank": 8,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=45.7455,4.8695"
+      }
+    },
+    {
+      "name": "Fresque des Lyonnais",
+      "type": "Sightseeing",
+      "desc": "유명인 벽화",
+      "review": "어린왕자 작가 등 리옹 출신 30인 벽화 찾기.",
+      "lat": 45.7675,
+      "lng": 4.8285,
+      "rank": 9,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=45.7675,4.8285"
+      }
+    },
+    {
+      "name": "Bouchon Tupin",
+      "type": "Food",
+      "desc": "모던 부숑",
+      "review": "무거운 전통 부숑이 부담스럽다면 추천하는 세련된 맛.",
+      "lat": 45.7615,
+      "lng": 4.8325,
+      "rank": 10,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=45.7615,4.8325"
+      }
+    },
+    {
+      "name": "Musée des Confluences",
+      "type": "Sightseeing",
+      "desc": "합류 박물관",
+      "review": "건축물이 우주선 같고 전시가 매우 현대적임.",
+      "lat": 45.7315,
+      "lng": 4.8185,
+      "rank": 11,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=45.7315,4.8185"
+      }
+    },
+    {
+      "name": "Brasserie Georges",
+      "type": "Food",
+      "desc": "대형 브라세리",
+      "review": "1836년 오픈. 시끌벅적한 축제 분위기와 맥주.",
+      "lat": 45.7485,
+      "lng": 4.8275,
+      "rank": 12,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=45.7485,4.8275"
+      }
+    },
+    {
+      "name": "Place Bellecour",
+      "type": "Sightseeing",
+      "desc": "벨쿠르 광장",
+      "review": "유럽에서 가장 큰 보행자 광장. 관람차 야경 이쁨.",
+      "lat": 45.7575,
+      "lng": 4.8325,
+      "rank": 13,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=45.7575,4.8325"
+      }
+    },
+    {
+      "name": "Théâtre Gallo Romain",
+      "type": "Sightseeing",
+      "desc": "로마 원형 극장",
+      "review": "푸르비에르 언덕 옆 고대 유적. 압도적 규모.",
+      "lat": 45.7595,
+      "lng": 4.8205,
+      "rank": 14,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=45.7595,4.8205"
+      }
+    },
+    {
+      "name": "Marché Saint-Antoine",
+      "type": "Shopping",
+      "desc": "강변 야외 시장",
+      "review": "일요일 오전에 가면 가장 활기찬 로컬 시장.",
+      "lat": 45.7615,
+      "lng": 4.8305,
+      "rank": 15,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=45.7615,4.8305"
+      }
+    },
+    {
+      "name": "Daniel & Denise",
+      "type": "Food",
+      "desc": "고급 부숑",
+      "review": "미슐랭 빕구르망. 파테 앙 크루트가 예술.",
+      "lat": 45.7615,
+      "lng": 4.8485,
+      "rank": 16,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=45.7615,4.8485"
+      }
+    },
+    {
+      "name": "Café des Fédérations",
+      "type": "Food",
+      "desc": "유명 부숑",
+      "review": "현지인들로 가득한 왁자지껄한 맛집.",
+      "lat": 45.7665,
+      "lng": 4.8335,
+      "rank": 17,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=45.7665,4.8335"
+      }
+    },
+    {
+      "name": "Péniche Le Sirius",
+      "type": "Cafe",
+      "desc": "선상 바",
+      "review": "론 강에 떠있는 배 위에서 마시는 맥주 낭만적.",
+      "lat": 45.7585,
+      "lng": 4.8385,
+      "rank": 18,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=45.7585,4.8385"
+      }
+    },
+    {
+      "name": "Musée des Beaux-Arts",
+      "type": "Sightseeing",
+      "desc": "리옹 미술관",
+      "review": "미니 루브르라 불리는 알찬 미술관.",
+      "lat": 45.7675,
+      "lng": 4.8335,
+      "rank": 19,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=45.7675,4.8335"
+      }
+    },
+    {
+      "name": "Croix-Rousse",
+      "type": "Sightseeing",
+      "desc": "실크 노동자 마을",
+      "review": "힙한 카페와 빈티지 샵이 많은 언덕 동네.",
+      "lat": 45.7745,
+      "lng": 4.8315,
+      "rank": 20,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=45.7745,4.8315"
+      }
+    }
+  ],
+  "Interlaken": [
+    {
+      "name": "Jungfraujoch",
+      "type": "Sightseeing",
+      "desc": "융프라우요흐",
+      "review": "유럽의 지붕. 고산병 조심. 컵라면은 필수.",
+      "lat": 46.5475,
+      "lng": 7.9821,
+      "rank": 1,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=46.5475,7.9821"
+      }
+    },
+    {
+      "name": "Harder Kulm",
+      "type": "Sightseeing",
+      "desc": "하더쿨름",
+      "review": "인터라켄 전체가 내려다보이는 미친 뷰. 일몰 추천.",
+      "lat": 46.6975,
+      "lng": 7.8555,
+      "rank": 2,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=46.6975,7.8555"
+      }
+    },
+    {
+      "name": "Lake Brienz Cruise",
+      "type": "Sightseeing",
+      "desc": "브리엔츠 유람선",
+      "review": "에메랄드빛 물색이 현실 같지 않음.",
+      "lat": 46.6904,
+      "lng": 7.8692,
+      "rank": 3,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=46.6904,7.8692"
+      }
+    },
+    {
+      "name": "Grindelwald First",
+      "type": "Sightseeing",
+      "desc": "피르스트",
+      "review": "클리프 워크 스릴 만점. 액티비티 천국.",
+      "lat": 46.6241,
+      "lng": 8.0315,
+      "rank": 4,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=46.6241,8.0315"
+      }
+    },
+    {
+      "name": "Fondue Villa",
+      "type": "Food",
+      "desc": "퐁뒤 빌라",
+      "review": "무제한 퐁뒤 체험. 정원에서 먹는 분위기 최고.",
+      "lat": 46.6835,
+      "lng": 7.8515,
+      "rank": 5,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=46.6835,7.8515"
+      }
+    },
+    {
+      "name": "Lauterbrunnen",
+      "type": "Sightseeing",
+      "desc": "라우터브루넨",
+      "review": "폭포가 쏟아지는 요정 마을. 하이킹 강추.",
+      "lat": 46.5955,
+      "lng": 7.9075,
+      "rank": 6,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=46.5955,7.9075"
+      }
+    },
+    {
+      "name": "Ballenberg Museum",
+      "type": "Sightseeing",
+      "desc": "발렌베르크 박물관",
+      "review": "스위스 전통 가옥 야외 박물관. 엄청 넓음.",
+      "lat": 46.7511,
+      "lng": 8.0835,
+      "rank": 7,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=46.7511,8.0835"
+      }
+    },
+    {
+      "name": "Laterne",
+      "type": "Food",
+      "desc": "정통 스위스 요리",
+      "review": "뢰스티와 치즈 퐁뒤가 짜지 않고 맛있음.",
+      "lat": 46.6865,
+      "lng": 7.8635,
+      "rank": 8,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=46.6865,7.8635"
+      }
+    },
+    {
+      "name": "Taverne",
+      "type": "Food",
+      "desc": "호텔 레스토랑",
+      "review": "스테이크와 와인 조합이 좋고 친절함.",
+      "lat": 46.6855,
+      "lng": 7.8615,
+      "rank": 9,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=46.6855,7.8615"
+      }
+    },
+    {
+      "name": "Lake Thun",
+      "type": "Sightseeing",
+      "desc": "툰 호수",
+      "review": "브리엔츠보다 크고 주변 성들이 이쁨.",
+      "lat": 46.6815,
+      "lng": 7.7285,
+      "rank": 10,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=46.6815,7.7285"
+      }
+    },
+    {
+      "name": "Schilthorn",
+      "type": "Sightseeing",
+      "desc": "쉴트호른",
+      "review": "융프라우보다 한적하고 뷰가 탁 트여 좋음.",
+      "lat": 46.5575,
+      "lng": 7.8355,
+      "rank": 11,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=46.5575,7.8355"
+      }
+    },
+    {
+      "name": "Iseltwald",
+      "type": "Sightseeing",
+      "desc": "이젤트발트",
+      "review": "사랑의 불시착 촬영지. 잔잔하고 예쁨.",
+      "lat": 46.7115,
+      "lng": 7.9635,
+      "rank": 12,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=46.7115,7.9635"
+      }
+    },
+    {
+      "name": "Höhematte",
+      "type": "Sightseeing",
+      "desc": "회에마테 공원",
+      "review": "패러글라이딩 착륙장. 잔디밭에 누워만 있어도 힐링.",
+      "lat": 46.6865,
+      "lng": 7.8585,
+      "rank": 13,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=46.6865,7.8585"
+      }
+    },
+    {
+      "name": "Oeschinensee",
+      "type": "Sightseeing",
+      "desc": "외시넨 호수",
+      "review": "조금 멀지만 알프스 최고의 에메랄드 호수.",
+      "lat": 46.4985,
+      "lng": 7.7285,
+      "rank": 14,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=46.4985,7.7285"
+      }
+    },
+    {
+      "name": "St. Beatus Caves",
+      "type": "Sightseeing",
+      "desc": "베아투스 동굴",
+      "review": "호수 옆 동굴 탐험. 폭포가 멋짐.",
+      "lat": 46.6845,
+      "lng": 7.7815,
+      "rank": 15,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=46.6845,7.7815"
+      }
+    },
+    {
+      "name": "Wengen",
+      "type": "Sightseeing",
+      "desc": "벵겐",
+      "review": "차가 없는 청정 마을. 융프라우 뷰 최고.",
+      "lat": 46.6055,
+      "lng": 7.9215,
+      "rank": 16,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=46.6055,7.9215"
+      }
+    },
+    {
+      "name": "Mürren",
+      "type": "Sightseeing",
+      "desc": "뮈렌",
+      "review": "통나무집들이 귀여운 산악 마을.",
+      "lat": 46.5595,
+      "lng": 7.8935,
+      "rank": 17,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=46.5595,7.8935"
+      }
+    },
+    {
+      "name": "Kleine Scheidegg",
+      "type": "Sightseeing",
+      "desc": "클라이네 샤이덱",
+      "review": "융프라우 열차 환승역. 하이킹 코스 절경.",
+      "lat": 46.5855,
+      "lng": 7.9615,
+      "rank": 18,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=46.5855,7.9615"
+      }
+    },
+    {
+      "name": "Spiez",
+      "type": "Sightseeing",
+      "desc": "슈피츠",
+      "review": "예쁜 성과 요트 항구가 있는 평화로운 마을.",
+      "lat": 46.6885,
+      "lng": 7.6795,
+      "rank": 19,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=46.6885,7.6795"
+      }
+    },
+    {
+      "name": "Gelmerbahn",
+      "type": "Sightseeing",
+      "desc": "겔머반",
+      "review": "경사도 106%의 롤러코스터 같은 푸니쿨라.",
+      "lat": 46.6115,
+      "lng": 8.3185,
+      "rank": 20,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=46.6115,8.3185"
+      }
+    }
+  ],
+  "Munich": [
+    {
+      "name": "Marienplatz",
+      "type": "Sightseeing",
+      "desc": "마리엔플라츠",
+      "review": "뮌헨의 심장. 신시청사 인형극 꼭 봐야함.",
+      "lat": 48.1371,
+      "lng": 11.5753,
+      "rank": 1,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=48.1371,11.5753"
+      }
+    },
+    {
+      "name": "Viktualienmarkt",
+      "type": "Sightseeing",
+      "desc": "빅투알리엔 시장",
+      "review": "비어 가든에서 프레첼과 맥주 마시면 천국.",
+      "lat": 48.1351,
+      "lng": 11.5763,
+      "rank": 2,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=48.1351,11.5763"
+      }
+    },
+    {
+      "name": "Hofbräuhaus",
+      "type": "Food",
+      "desc": "호프브로이하우스",
+      "review": "시끌벅적한 옥토버페스트 분위기 365일 체감. 학센 존맛.",
+      "lat": 48.1375,
+      "lng": 11.5805,
+      "rank": 3,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=48.1375,11.5805"
+      }
+    },
+    {
+      "name": "Augustiner Klosterwirt",
+      "type": "Food",
+      "desc": "아우구스티너",
+      "review": "현지인 추천 1위 맥주. 호프브로이보다 맥주는 여기가 최고.",
+      "lat": 48.1385,
+      "lng": 11.5725,
+      "rank": 4,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=48.1385,11.5725"
+      }
+    },
+    {
+      "name": "BMW Museum",
+      "type": "Sightseeing",
+      "desc": "BMW 박물관",
+      "review": "차알못도 감탄하게 만드는 전시 퀄리티.",
+      "lat": 48.1765,
+      "lng": 11.5595,
+      "rank": 5,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=48.1765,11.5595"
+      }
+    },
+    {
+      "name": "Residenz München",
+      "type": "Sightseeing",
+      "desc": "뮌헨 레지덴츠",
+      "review": "바이에른 왕가의 화려함의 극치. 방이 끝이 없음.",
+      "lat": 48.1415,
+      "lng": 11.5785,
+      "rank": 6,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=48.1415,11.5785"
+      }
+    },
+    {
+      "name": "Englischer Garten",
+      "type": "Sightseeing",
+      "desc": "영국 정원",
+      "review": "강에서 서핑하는 사람들 구경. 엄청나게 큼.",
+      "lat": 48.1525,
+      "lng": 11.5915,
+      "rank": 7,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=48.1525,11.5915"
+      }
+    },
+    {
+      "name": "Alte Pinakothek",
+      "type": "Sightseeing",
+      "desc": "알테 피나코테크",
+      "review": "고전 미술의 정수. 일요일 1유로 입장 꿀팁.",
+      "lat": 48.1485,
+      "lng": 11.5705,
+      "rank": 8,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=48.1485,11.5705"
+      }
+    },
+    {
+      "name": "Theresa Grill",
+      "type": "Food",
+      "desc": "테레사 그릴",
+      "review": "슈니첼 질릴 때 쯤 가는 모던한 그릴 스테이크 맛집.",
+      "lat": 48.1495,
+      "lng": 11.5775,
+      "rank": 9,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=48.1495,11.5775"
+      }
+    },
+    {
+      "name": "Weinhaus Neuner",
+      "type": "Food",
+      "desc": "바바리안 파인다이닝",
+      "review": "고급스러운 전통 요리와 완벽한 와인 페어링.",
+      "lat": 48.1385,
+      "lng": 11.5685,
+      "rank": 10,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=48.1385,11.5685"
+      }
+    },
+    {
+      "name": "Nymphenburg Palace",
+      "type": "Sightseeing",
+      "desc": "님펜부르크 궁전",
+      "review": "아름다운 정원. 백조가 헤엄치는 평화로운 곳.",
+      "lat": 48.1585,
+      "lng": 11.5035,
+      "rank": 11,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=48.1585,11.5035"
+      }
+    },
+    {
+      "name": "Deutsches Museum",
+      "type": "Sightseeing",
+      "desc": "독일 박물관",
+      "review": "세계 최대 과학 박물관. 하루 종일 봐도 모자람.",
+      "lat": 48.1305,
+      "lng": 11.5835,
+      "rank": 12,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=48.1305,11.5835"
+      }
+    },
+    {
+      "name": "Olympiapark",
+      "type": "Sightseeing",
+      "desc": "올림픽 공원",
+      "review": "우주선 같은 지붕. 언덕 위에 올라가면 탁 트인 뷰.",
+      "lat": 48.1735,
+      "lng": 11.5465,
+      "rank": 13,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=48.1735,11.5465"
+      }
+    },
+    {
+      "name": "Allianz Arena",
+      "type": "Sightseeing",
+      "desc": "알리안츠 아레나",
+      "review": "바이에른 뮌헨 홈구장 투어. 축구팬 필수.",
+      "lat": 48.2185,
+      "lng": 11.6245,
+      "rank": 14,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=48.2185,11.6245"
+      }
+    },
+    {
+      "name": "Dachau Concentration Camp",
+      "type": "Sightseeing",
+      "desc": "다하우 수용소",
+      "review": "뮌헨 근교. 역사적으로 매우 숙연해지는 곳.",
+      "lat": 48.2605,
+      "lng": 11.4685,
+      "rank": 15,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=48.2605,11.4685"
+      }
+    },
+    {
+      "name": "Rathaus-Glockenspiel",
+      "type": "Sightseeing",
+      "desc": "신시청사 인형극",
+      "review": "마리엔플라츠 정각의 하이라이트.",
+      "lat": 48.1375,
+      "lng": 11.5755,
+      "rank": 16,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=48.1375,11.5755"
+      }
+    },
+    {
+      "name": "St. Peter's Church",
+      "type": "Sightseeing",
+      "desc": "성 피터 교회 탑",
+      "review": "300계단 오르면 신시청사가 정면으로 보이는 최고의 뷰.",
+      "lat": 48.1365,
+      "lng": 11.5755,
+      "rank": 17,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=48.1365,11.5755"
+      }
+    },
+    {
+      "name": "Käfer Schänke",
+      "type": "Food",
+      "desc": "고급 바이에른",
+      "review": "조금 비싸지만 퀄리티 높은 오리 구이와 맥주.",
+      "lat": 48.1415,
+      "lng": 11.6005,
+      "rank": 18,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=48.1415,11.6005"
+      }
+    },
+    {
+      "name": "Ratskeller",
+      "type": "Food",
+      "desc": "신시청사 지하 식당",
+      "review": "접근성 좋고 분위기 웅장함. 소시지 플래터 추천.",
+      "lat": 48.1375,
+      "lng": 11.5755,
+      "rank": 19,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=48.1375,11.5755"
+      }
+    },
+    {
+      "name": "Dallmayr",
+      "type": "Shopping",
+      "desc": "최고급 델리",
+      "review": "뮌헨의 포트넘앤메이슨. 선물용 커피와 디저트 겟.",
+      "lat": 48.1385,
+      "lng": 11.5775,
+      "rank": 20,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=48.1385,11.5775"
+      }
+    }
+  ],
+  "Prague": [
+    {
+      "name": "Charles Bridge",
+      "type": "Sightseeing",
+      "desc": "카를교",
+      "review": "프라하의 상징. 일출 시간에 가면 사람 없고 마법 같음.",
+      "lat": 50.0865,
+      "lng": 14.4115,
+      "rank": 1,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=50.0865,14.4115"
+      }
+    },
+    {
+      "name": "Prague Castle",
+      "type": "Sightseeing",
+      "desc": "프라하 성",
+      "review": "성 비투스 대성당 스테인드글라스 압도적. 야경 필수.",
+      "lat": 50.0905,
+      "lng": 14.4005,
+      "rank": 2,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=50.0905,14.4005"
+      }
+    },
+    {
+      "name": "Old Town Square",
+      "type": "Sightseeing",
+      "desc": "구시가지 광장",
+      "review": "천문 시계탑 정각 쇼. 틴 성당 야경이 미쳤음.",
+      "lat": 50.0875,
+      "lng": 14.4205,
+      "rank": 3,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=50.0875,14.4205"
+      }
+    },
+    {
+      "name": "Lokál Dlouhááá",
+      "type": "Food",
+      "desc": "로칼",
+      "review": "가장 신선한 필스너 생맥주와 굴라시. 현지인 바글바글.",
+      "lat": 50.0905,
+      "lng": 14.4265,
+      "rank": 4,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=50.0905,14.4265"
+      }
+    },
+    {
+      "name": "Field",
+      "type": "Food",
+      "desc": "미슐랭 파인다이닝",
+      "review": "창의적인 체코 요리. 런치 코스가 가성비 훌륭.",
+      "lat": 50.0925,
+      "lng": 14.4215,
+      "rank": 5,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=50.0925,14.4215"
+      }
+    },
+    {
+      "name": "Petrin Funicular",
+      "type": "Sightseeing",
+      "desc": "페트린 언덕",
+      "review": "푸니쿨라 타고 올라가서 보는 프라하 시내 빨간 지붕 뷰.",
+      "lat": 50.0825,
+      "lng": 14.3965,
+      "rank": 6,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=50.0825,14.3965"
+      }
+    },
+    {
+      "name": "Naše Maso",
+      "type": "Food",
+      "desc": "나셰 마소",
+      "review": "정육점 식당. 드라이에이징 버거와 타르타르(육회) 존맛.",
+      "lat": 50.0905,
+      "lng": 14.4275,
+      "rank": 7,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=50.0905,14.4275"
+      }
+    },
+    {
+      "name": "Cafe Savoy",
+      "type": "Cafe",
+      "desc": "카페 사보이",
+      "review": "19세기 인테리어. 아침 식사와 핫초코가 예술.",
+      "lat": 50.0805,
+      "lng": 14.4065,
+      "rank": 8,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=50.0805,14.4065"
+      }
+    },
+    {
+      "name": "St. Vitus Cathedral",
+      "type": "Sightseeing",
+      "desc": "성 비투스 대성당",
+      "review": "프라하 성 내 위치. 고딕 양식의 끝판왕.",
+      "lat": 50.0905,
+      "lng": 14.4005,
+      "rank": 9,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=50.0905,14.4005"
+      }
+    },
+    {
+      "name": "Astronomical Clock",
+      "type": "Sightseeing",
+      "desc": "천문 시계",
+      "review": "정각에 해골이 종 치는게 귀여움. 소매치기 제일 많음.",
+      "lat": 50.0865,
+      "lng": 14.4205,
+      "rank": 10,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=50.0865,14.4205"
+      }
+    },
+    {
+      "name": "Lennon Wall",
+      "type": "Sightseeing",
+      "desc": "존 레논 벽",
+      "review": "자유와 평화의 상징. 사진 찍기 좋은 힙한 스팟.",
+      "lat": 50.0865,
+      "lng": 14.4065,
+      "rank": 11,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=50.0865,14.4065"
+      }
+    },
+    {
+      "name": "Dancing House",
+      "type": "Sightseeing",
+      "desc": "댄싱 하우스",
+      "review": "특이한 현대 건축물. 강변 산책하다 보기 좋음.",
+      "lat": 50.0755,
+      "lng": 14.4145,
+      "rank": 12,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=50.0755,14.4145"
+      }
+    },
+    {
+      "name": "U Fleků",
+      "type": "Food",
+      "desc": "우 플레쿠",
+      "review": "500년 넘은 흑맥주 양조장. 분위기 흥겨우나 식전주 강매 주의.",
+      "lat": 50.0785,
+      "lng": 14.4175,
+      "rank": 13,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=50.0785,14.4175"
+      }
+    },
+    {
+      "name": "Kantýna",
+      "type": "Food",
+      "desc": "칸티나",
+      "review": "육식주의자들의 천국. 뼈 달린 고기 구이 대박.",
+      "lat": 50.0825,
+      "lng": 14.4285,
+      "rank": 14,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=50.0825,14.4285"
+      }
+    },
+    {
+      "name": "Vltava River Cruise",
+      "type": "Sightseeing",
+      "desc": "블타바 강 유람선",
+      "review": "해 질 녘 타면 카를교와 프라하 성이 황금빛으로 빛남.",
+      "lat": 50.0935,
+      "lng": 14.4175,
+      "rank": 15,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=50.0935,14.4175"
+      }
+    },
+    {
+      "name": "Golden Lane",
+      "type": "Sightseeing",
+      "desc": "황금소로",
+      "review": "프라하 성 안의 아기자기한 골목. 카프카 작업실 있음.",
+      "lat": 50.0925,
+      "lng": 14.4035,
+      "rank": 16,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=50.0925,14.4035"
+      }
+    },
+    {
+      "name": "Strahov Monastery",
+      "type": "Sightseeing",
+      "desc": "스트라호프 수도원",
+      "review": "도서관이 해리포터 느낌. 자체 양조장 맥주 강추.",
+      "lat": 50.0865,
+      "lng": 14.3895,
+      "rank": 17,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=50.0865,14.3895"
+      }
+    },
+    {
+      "name": "Vyšehrad",
+      "type": "Sightseeing",
+      "desc": "비셰흐라드",
+      "review": "관광객 적고 뷰가 탁 트인 요새. 산책하기 너무 좋음.",
+      "lat": 50.0645,
+      "lng": 14.4175,
+      "rank": 18,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=50.0645,14.4175"
+      }
+    },
+    {
+      "name": "Klementinum",
+      "type": "Sightseeing",
+      "desc": "클레멘티눔",
+      "review": "세계에서 가장 아름다운 도서관 중 하나. 가이드 투어만 가능.",
+      "lat": 50.0865,
+      "lng": 14.4155,
+      "rank": 19,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=50.0865,14.4155"
+      }
+    },
+    {
+      "name": "Pork's",
+      "type": "Food",
+      "desc": "포크스",
+      "review": "꼴레뇨(체코식 족발) 맛집. 겉바속촉 끝판왕.",
+      "lat": 50.0875,
+      "lng": 14.4065,
+      "rank": 20,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=50.0875,14.4065"
+      }
+    }
+  ],
+  "Venice": [
+    {
+      "name": "Venice Biennale",
+      "type": "Sightseeing",
+      "desc": "비엔날레 정원",
+      "review": "현대 미술의 올림픽. 자르디니 공원 전체가 전시장.",
+      "lat": 45.4285,
+      "lng": 12.3575,
+      "rank": 1,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=45.4285,12.3575"
+      }
+    },
+    {
+      "name": "Al Timon",
+      "type": "Food",
+      "desc": "알 티몬",
+      "review": "운하에 정박한 배 위에서 먹는 치케티와 스프리츠 낭만적.",
+      "lat": 45.4451,
+      "lng": 12.3311,
+      "rank": 2,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=45.4451,12.3311"
+      }
+    },
+    {
+      "name": "Grand Canal Gondola",
+      "type": "Sightseeing",
+      "desc": "그랜드 운하 곤돌라",
+      "review": "비싸지만 베네치아에서만 할 수 있는 대체 불가 경험.",
+      "lat": 45.4345,
+      "lng": 12.3385,
+      "rank": 3,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=45.4345,12.3385"
+      }
+    },
+    {
+      "name": "Antiche Carampane",
+      "type": "Food",
+      "desc": "안티케 카람파네",
+      "review": "현지인 해산물 맛집. 거미게 튀김이 기가 막힘.",
+      "lat": 45.4385,
+      "lng": 12.3311,
+      "rank": 4,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=45.4385,12.3311"
+      }
+    },
+    {
+      "name": "San Zaccaria",
+      "type": "Sightseeing",
+      "desc": "산 자카리아 성당",
+      "review": "물에 잠긴 지하 묘지가 신비롭고 스산한 분위기.",
+      "lat": 45.4345,
+      "lng": 12.3425,
+      "rank": 5,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=45.4345,12.3425"
+      }
+    },
+    {
+      "name": "Piazza San Marco",
+      "type": "Sightseeing",
+      "desc": "산 마르코 광장",
+      "review": "세상에서 가장 아름다운 응접실. 비둘기 매우 많음.",
+      "lat": 45.4335,
+      "lng": 12.3385,
+      "rank": 6,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=45.4335,12.3385"
+      }
+    },
+    {
+      "name": "Rialto Bridge",
+      "type": "Sightseeing",
+      "desc": "리알토 다리",
+      "review": "다리 위에서 보는 대운하 뷰가 엽서 그 자체.",
+      "lat": 45.4385,
+      "lng": 12.3355,
+      "rank": 7,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=45.4385,12.3355"
+      }
+    },
+    {
+      "name": "Burano Island",
+      "type": "Sightseeing",
+      "desc": "부라노 섬",
+      "review": "아이유 뮤비 촬영지. 알록달록 무지개 마을 사진 필수.",
+      "lat": 45.4855,
+      "lng": 12.4165,
+      "rank": 8,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=45.4855,12.4165"
+      }
+    },
+    {
+      "name": "Murano Island",
+      "type": "Sightseeing",
+      "desc": "무라노 섬",
+      "review": "유리 공예의 성지. 시연 보는 재미가 쏠쏠.",
+      "lat": 45.4565,
+      "lng": 12.3545,
+      "rank": 9,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=45.4565,12.3545"
+      }
+    },
+    {
+      "name": "Doge's Palace",
+      "type": "Sightseeing",
+      "desc": "두칼레 궁전",
+      "review": "황금 계단과 대회의실 규모에 입이 떡 벌어짐.",
+      "lat": 45.4335,
+      "lng": 12.3405,
+      "rank": 10,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=45.4335,12.3405"
+      }
+    },
+    {
+      "name": "Osteria Alla Frasca",
+      "type": "Food",
+      "desc": "알라 프라스카",
+      "review": "골목 숨은 맛집. 오징어 먹물 파스타 강추.",
+      "lat": 45.4425,
+      "lng": 12.3385,
+      "rank": 11,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=45.4425,12.3385"
+      }
+    },
+    {
+      "name": "T Fondaco dei Tedeschi",
+      "type": "Shopping",
+      "desc": "T 폰다코",
+      "review": "루프탑 예약 무료. 베네치아 전경 최고 스팟.",
+      "lat": 45.4385,
+      "lng": 12.3365,
+      "rank": 12,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=45.4385,12.3365"
+      }
+    },
+    {
+      "name": "Libreria Acqua Alta",
+      "type": "Sightseeing",
+      "desc": "아쿠아 알타 서점",
+      "review": "물에 잠기는 서점. 곤돌라가 책장이 된 독특한 뷰.",
+      "lat": 45.4385,
+      "lng": 12.3415,
+      "rank": 13,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=45.4385,12.3415"
+      }
+    },
+    {
+      "name": "Bridge of Sighs",
+      "type": "Sightseeing",
+      "desc": "탄식의 다리",
+      "review": "죄수들의 한숨이 서린 곳. 밖에서 사진 찍는게 젤 이쁨.",
+      "lat": 45.4345,
+      "lng": 12.3405,
+      "rank": 14,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=45.4345,12.3405"
+      }
+    },
+    {
+      "name": "Cantina Do Mori",
+      "type": "Food",
+      "desc": "두 모리",
+      "review": "카사노바가 단골이던 1462년 오픈한 가장 오래된 와인바.",
+      "lat": 45.4385,
+      "lng": 12.3325,
+      "rank": 15,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=45.4385,12.3325"
+      }
+    },
+    {
+      "name": "Peggy Guggenheim",
+      "type": "Sightseeing",
+      "desc": "구겐하임 미술관",
+      "review": "운하 바로 옆 대저택 미술관. 피카소 등 현대미술.",
+      "lat": 45.4305,
+      "lng": 12.3315,
+      "rank": 16,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=45.4305,12.3315"
+      }
+    },
+    {
+      "name": "Osteria del Cinghiale Bianco",
+      "type": "Food",
+      "desc": "현지인 식당",
+      "review": "멧돼지 고기 파스타 등 전통 요리. 짭짤함.",
+      "lat": 45.4315,
+      "lng": 12.3325,
+      "rank": 17,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=45.4315,12.3325"
+      }
+    },
+    {
+      "name": "Campanile di San Marco",
+      "type": "Sightseeing",
+      "desc": "산 마르코 종탑",
+      "review": "엘리베이터 있음. 베네치아 본섬이 미니어처처럼 보임.",
+      "lat": 45.4335,
+      "lng": 12.3385,
+      "rank": 18,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=45.4335,12.3385"
+      }
+    },
+    {
+      "name": "Gelateria Suso",
+      "type": "Food",
+      "desc": "수소 젤라또",
+      "review": "베네치아 최고의 젤라또. 항상 줄 서있음.",
+      "lat": 45.4385,
+      "lng": 12.3375,
+      "rank": 19,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=45.4385,12.3375"
+      }
+    },
+    {
+      "name": "Teatro La Fenice",
+      "type": "Sightseeing",
+      "desc": "라 페니체 극장",
+      "review": "불사조라는 이름의 화려한 오페라 극장.",
+      "lat": 45.4335,
+      "lng": 12.3335,
+      "rank": 20,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=45.4335,12.3335"
+      }
+    }
+  ],
+  "Florence": [
+    {
+      "name": "Uffizi Gallery",
+      "type": "Sightseeing",
+      "desc": "우피치 미술관",
+      "review": "르네상스 마스터피스 집결. 보티첼리 비너스의 탄생 실물 영접.",
+      "lat": 43.7677,
+      "lng": 11.2553,
+      "rank": 1,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=43.7677,11.2553"
+      }
+    },
+    {
+      "name": "Buca Lapi",
+      "type": "Food",
+      "desc": "부카 라피",
+      "review": "1880년 오픈. 피렌체 티본 스테이크 1티어. 굽기 미디엄레어 고정.",
+      "lat": 43.7725,
+      "lng": 11.2515,
+      "rank": 2,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=43.7725,11.2515"
+      }
+    },
+    {
+      "name": "Accademia Gallery",
+      "type": "Sightseeing",
+      "desc": "아카데미아",
+      "review": "미켈란젤로 다비드상 원본 하나만으로도 갈 가치 100%.",
+      "lat": 43.7769,
+      "lng": 11.2585,
+      "rank": 3,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=43.7769,11.2585"
+      }
+    },
+    {
+      "name": "Piazzale Michelangelo",
+      "type": "Sightseeing",
+      "desc": "미켈란젤로 광장",
+      "review": "노을 질 때 피렌체 전경은 유럽 야경 중 최고봉.",
+      "lat": 43.7629,
+      "lng": 11.2651,
+      "rank": 4,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=43.7629,11.2651"
+      }
+    },
+    {
+      "name": "Trattoria Casalinga",
+      "type": "Food",
+      "desc": "카살링가",
+      "review": "가성비 좋고 푸근한 로컬 토스카나 가정식.",
+      "lat": 43.7675,
+      "lng": 11.2485,
+      "rank": 5,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=43.7675,11.2485"
+      }
+    },
+    {
+      "name": "Gucci Garden",
+      "type": "Sightseeing",
+      "desc": "구찌 가든",
+      "review": "핑크색 눈알 박스 등 힙한 전시와 전용 굿즈 쇼핑.",
+      "lat": 43.7695,
+      "lng": 11.2561,
+      "rank": 6,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=43.7695,11.2561"
+      }
+    },
+    {
+      "name": "Mercato Centrale",
+      "type": "Food",
+      "desc": "중앙시장 푸드홀",
+      "review": "곱창버거와 트러플 파스타 등 싸고 맛있는 길거리 미식.",
+      "lat": 43.7765,
+      "lng": 11.2515,
+      "rank": 7,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=43.7765,11.2515"
+      }
+    },
+    {
+      "name": "Regina Bistecca",
+      "type": "Food",
+      "desc": "레지나 비스테카",
+      "review": "구 서점을 개조한 클래식하고 고풍스러운 스테이크 다이닝.",
+      "lat": 43.7731,
+      "lng": 11.2565,
+      "rank": 8,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=43.7731,11.2565"
+      }
+    },
+    {
+      "name": "Babae (Wine Window)",
+      "type": "Food",
+      "desc": "와인 윈도우",
+      "review": "벽 구멍으로 와인 잔을 건네받는 흑사병 시대 전통 체험 꿀잼.",
+      "lat": 43.7675,
+      "lng": 11.2485,
+      "rank": 9,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=43.7675,11.2485"
+      }
+    },
+    {
+      "name": "Boboli Gardens",
+      "type": "Sightseeing",
+      "desc": "보볼리 정원",
+      "review": "메디치 가문의 방대한 정원. 다리아픔 주의.",
+      "lat": 43.7651,
+      "lng": 11.2501,
+      "rank": 10,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=43.7651,11.2501"
+      }
+    },
+    {
+      "name": "Duomo (Cathedral)",
+      "type": "Sightseeing",
+      "desc": "두오모 성당",
+      "review": "에메랄드 돔이 압도적. 쿠폴라 등정은 체력 필수.",
+      "lat": 43.7735,
+      "lng": 11.2555,
+      "rank": 11,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=43.7735,11.2555"
+      }
+    },
+    {
+      "name": "Ponte Vecchio",
+      "type": "Sightseeing",
+      "desc": "베키오 다리",
+      "review": "금은방이 늘어선 중세 다리. 야간 산책 낭만적.",
+      "lat": 43.7679,
+      "lng": 11.2531,
+      "rank": 12,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=43.7679,11.2531"
+      }
+    },
+    {
+      "name": "Trattoria Mario",
+      "type": "Food",
+      "desc": "마리오",
+      "review": "합석 필수, 왁자지껄한 로컬 찐맛집. 런치만 운영.",
+      "lat": 43.7765,
+      "lng": 11.2525,
+      "rank": 13,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=43.7765,11.2525"
+      }
+    },
+    {
+      "name": "Santa Maria Novella",
+      "type": "Shopping",
+      "desc": "산타마리아노벨라 약국",
+      "review": "800년 전통 세계 최고 약국. 장미수 화장품 필수 쇼핑.",
+      "lat": 43.7745,
+      "lng": 11.2495,
+      "rank": 14,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=43.7745,11.2495"
+      }
+    },
+    {
+      "name": "Pitti Palace",
+      "type": "Sightseeing",
+      "desc": "피티 궁전",
+      "review": "우피치 못지않은 미술관과 화려한 왕실 방들.",
+      "lat": 43.7645,
+      "lng": 11.2505,
+      "rank": 15,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=43.7645,11.2505"
+      }
+    },
+    {
+      "name": "Giotto's Campanile",
+      "type": "Sightseeing",
+      "desc": "조토의 종탑",
+      "review": "두오모 쿠폴라를 눈앞에서 찍을 수 있는 최고의 뷰포인트.",
+      "lat": 43.7725,
+      "lng": 11.2555,
+      "rank": 16,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=43.7725,11.2555"
+      }
+    },
+    {
+      "name": "All'Antico Vinaio",
+      "type": "Food",
+      "desc": "올안티코 비나이오",
+      "review": "세계에서 제일 유명한 샌드위치(스키아차타). 빵이 엄청 큼.",
+      "lat": 43.7685,
+      "lng": 11.2565,
+      "rank": 17,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=43.7685,11.2565"
+      }
+    },
+    {
+      "name": "Osteria Santo Spirito",
+      "type": "Food",
+      "desc": "산토 스피리토",
+      "review": "트러플 뇨끼가 미쳤음. 현지인, 한국인 모두 인정.",
+      "lat": 43.7665,
+      "lng": 11.2475,
+      "rank": 18,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=43.7665,11.2475"
+      }
+    },
+    {
+      "name": "Bardini Gardens",
+      "type": "Sightseeing",
+      "desc": "바르디니 정원",
+      "review": "봄에 등나무 꽃 터널이 예술. 뷰도 미켈란젤로급.",
+      "lat": 43.7635,
+      "lng": 11.2585,
+      "rank": 19,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=43.7635,11.2585"
+      }
+    },
+    {
+      "name": "Officina della Bistecca",
+      "type": "Food",
+      "desc": "비스테카 공방",
+      "review": "조금 외곽이지만 다리오 체키니 정육점의 퍼포먼스와 고기 최고.",
+      "lat": 43.7685,
+      "lng": 11.2755,
+      "rank": 20,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=43.7685,11.2755"
+      }
+    }
+  ],
+  "Rome": [
+    {
+      "name": "Vatican Museums",
+      "type": "Sightseeing",
+      "desc": "바티칸 박물관",
+      "review": "시스티나 성당 천장화는 평생 잊지 못함. 투어 필수.",
+      "lat": 41.9065,
+      "lng": 12.4535,
+      "rank": 1,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=41.9065,12.4535"
+      }
+    },
+    {
+      "name": "Roscioli",
+      "type": "Food",
+      "desc": "로스치올리",
+      "review": "인생 카르보나라. 빵과 치즈 퀄리티가 다름. 예약 전쟁.",
+      "lat": 41.8942,
+      "lng": 12.4743,
+      "rank": 2,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=41.8942,12.4743"
+      }
+    },
+    {
+      "name": "Colosseum",
+      "type": "Sightseeing",
+      "desc": "콜로세움",
+      "review": "로마의 상징. 내부 입장 안해도 밖에서 보는 야경이 압도적.",
+      "lat": 41.8905,
+      "lng": 12.4925,
+      "rank": 3,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=41.8905,12.4925"
+      }
+    },
+    {
+      "name": "Bioparco di Roma",
+      "type": "Sightseeing",
+      "desc": "보르게세 동물원",
+      "review": "로마의 울창한 숲 속 동물원. 도심 속 오아시스.",
+      "lat": 41.9175,
+      "lng": 12.4855,
+      "rank": 4,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=41.9175,12.4855"
+      }
+    },
+    {
+      "name": "Santa Lucia",
+      "type": "Food",
+      "desc": "산타 루치아",
+      "review": "영화 먹고 기도하고 사랑하라 촬영지. 테라스 감성 최고.",
+      "lat": 41.8995,
+      "lng": 12.4725,
+      "rank": 5,
+      "isMust": true,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=41.8995,12.4725"
+      }
+    },
+    {
+      "name": "Tor Marancia",
+      "type": "Sightseeing",
+      "desc": "토르 마란치아",
+      "review": "외곽 거대 빌딩들에 그려진 스트리트 아트. 숨겨진 힙플.",
+      "lat": 41.8585,
+      "lng": 12.4955,
+      "rank": 6,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=41.8585,12.4955"
+      }
+    },
+    {
+      "name": "Giolitti",
+      "type": "Food",
+      "desc": "조올리띠",
+      "review": "로마 3대 젤라또. 리조(쌀) 맛은 무조건 먹어야 함.",
+      "lat": 41.9015,
+      "lng": 12.4775,
+      "rank": 7,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=41.9015,12.4775"
+      }
+    },
+    {
+      "name": "Bonci Pizzarium",
+      "type": "Food",
+      "desc": "본치 피자",
+      "review": "바티칸 근처. 도우가 미쳤고 토핑이 창의적인 조각 피자.",
+      "lat": 41.9075,
+      "lng": 12.4511,
+      "rank": 8,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=41.9075,12.4511"
+      }
+    },
+    {
+      "name": "Da Enzo al 29",
+      "type": "Food",
+      "desc": "다 엔조",
+      "review": "트라스테베레 최고 핫플. 정통 로만 파스타. 웨이팅 극악.",
+      "lat": 41.8885,
+      "lng": 12.4775,
+      "rank": 9,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=41.8885,12.4775"
+      }
+    },
+    {
+      "name": "Pantheon",
+      "type": "Sightseeing",
+      "desc": "판테온",
+      "review": "고대 로마 건축의 기적. 비 오는 날 천장 구멍 보는 재미.",
+      "lat": 41.8985,
+      "lng": 12.4765,
+      "rank": 10,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=41.8985,12.4765"
+      }
+    },
+    {
+      "name": "Trevi Fountain",
+      "type": "Sightseeing",
+      "desc": "트레비 분수",
+      "review": "사람이 물 반 사람 반. 그래도 동전 던지기는 해야함.",
+      "lat": 41.9005,
+      "lng": 12.4835,
+      "rank": 11,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=41.9005,12.4835"
+      }
+    },
+    {
+      "name": "Borghese Gallery",
+      "type": "Sightseeing",
+      "desc": "보르게세 미술관",
+      "review": "베르니니 조각상들이 살아 움직일 듯함. 사전 예약 100% 필수.",
+      "lat": 41.9145,
+      "lng": 12.4925,
+      "rank": 12,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=41.9145,12.4925"
+      }
+    },
+    {
+      "name": "Piazza Navona",
+      "type": "Sightseeing",
+      "desc": "나보나 광장",
+      "review": "로마에서 가장 활기찬 광장. 분수 3개가 예술.",
+      "lat": 41.8992,
+      "lng": 12.4731,
+      "rank": 13,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=41.8992,12.4731"
+      }
+    },
+    {
+      "name": "Palazzo Zuccari",
+      "type": "Sightseeing",
+      "desc": "괴물의 집",
+      "review": "현관문이 거대한 괴물 입 모양. 독특한 인증샷 스팟.",
+      "lat": 41.9055,
+      "lng": 12.4835,
+      "rank": 14,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=41.9055,12.4835"
+      }
+    },
+    {
+      "name": "Tonnarello",
+      "type": "Food",
+      "desc": "토나렐로",
+      "review": "프라이팬에 나오는 까르보나라와 아마트리치아나 강추.",
+      "lat": 41.8895,
+      "lng": 12.4695,
+      "rank": 15,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=41.8895,12.4695"
+      }
+    },
+    {
+      "name": "Roman Forum",
+      "type": "Sightseeing",
+      "desc": "포로 로마노",
+      "review": "콜로세움 옆 2천년 전 로마 시내 유적. 폐허의 아름다움.",
+      "lat": 41.8925,
+      "lng": 12.4855,
+      "rank": 16,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=41.8925,12.4855"
+      }
+    },
+    {
+      "name": "Armando al Pantheon",
+      "type": "Food",
+      "desc": "아르만도",
+      "review": "판테온 바로 옆 미슐랭 로마 전통 식당. 양고기 추천.",
+      "lat": 41.8995,
+      "lng": 12.4765,
+      "rank": 17,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=41.8995,12.4765"
+      }
+    },
+    {
+      "name": "Spanish Steps",
+      "type": "Sightseeing",
+      "desc": "스페인 계단",
+      "review": "명품 거리 앞 휴식처. 계단에서 취식 금지 벌금 주의.",
+      "lat": 41.9055,
+      "lng": 12.4825,
+      "rank": 18,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=41.9055,12.4825"
+      }
+    },
+    {
+      "name": "Castel Sant'Angelo",
+      "type": "Sightseeing",
+      "desc": "천사의 성",
+      "review": "야경이 예쁘고 테베레 강 다리 위에서 찍는 사진이 명작.",
+      "lat": 41.9035,
+      "lng": 12.4665,
+      "rank": 19,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=41.9035,12.4665"
+      }
+    },
+    {
+      "name": "Pompi",
+      "type": "Food",
+      "desc": "폼피 티라미수",
+      "review": "스페인 계단 앞. 젤라또 질릴 때 먹는 극락의 티라미수.",
+      "lat": 41.9055,
+      "lng": 12.4805,
+      "rank": 20,
+      "isMust": false,
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=41.9055,12.4805"
+      }
+    }
+  ]
+}

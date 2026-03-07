@@ -1,7 +1,7 @@
-Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng
-2026-04-14,12,08:30,11:00,🚆 기차 이동 (밀라노 -> 베네치아),Milan -> Venice,Transport,45,https://www.google.com/maps/search/?api=1&query=Venezia+Santa+Lucia,,,베네치아 본섬 역 도착,45.4411,12.321
-2026-04-14,12,11:30,12:30,🏠 [체크인] Combo Venezia,Venice,Accommodation,180,https://www.google.com/maps/search/?api=1&query=Combo+Venezia,https://www.combovenezia.it/,https://www.combovenezia.it/,수도원 개조 감성 숙소,45.4425,12.3385
-2026-04-14,12,13:00,14:30,🍴 점심: Bar All'Arco (치케티),Venice,Food,25,https://www.google.com/maps/search/?api=1&query=Bar+All+Arco+Venice,,,현지인 최애 치케티 바,45.4385,12.3345
-2026-04-14,12,15:00,18:00,🛶 본섬 탐방 & 폰다코 루프탑,Venice,Sightseeing,0,https://www.google.com/maps/search/?api=1&query=Piazza+San+Marco,,,베네치아 본섬 정복,45.4344,12.3388
-2026-04-14,12,18:30,20:30,🍴 저녁: Trattoria Antiche Carampane,Venice,Food,75,https://www.google.com/maps/search/?api=1&query=Antiche+Carampane+Venice,https://www.antichecarampane.it/,https://www.antichecarampane.it/,정통 해산물 미식의 정수,45.438,12.3315
-2026-04-14,12,21:00,23:59,🛌 숙소 복귀 및 휴식,Venice,Rest,0,https://www.google.com/maps/search/?api=1&query=Combo+Venezia,,,물의 도시 야경 감상,45.4425,12.3385
+Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,Transit,PlanB
+2026-04-14,12,00:00,08:34,수면 (야간열차),Nightjet Train,Accommodation,0,"https://www.google.com/maps/search/?api=1&query=45.44,12.32",,,08:34 베네치아 도착,45.4411,12.3211,기차,
+2026-04-14,12,08:34,11:30,체크인/광장,Hotel Palazzo Giovanelli,Accommodation,230,"https://www.google.com/maps/search/?api=1&query=45.44,12.32",,,베네치아 1박 2일 (체크인 15:00) 짐보관,45.4415,12.3285,바포레토,
+2026-04-14,12,11:30,13:30,점심: 알 티몬,Al Timon,Food,50,"https://www.google.com/maps/search/?api=1&query=45.44,12.33",,,치케티와 스프리츠,45.4451,12.3311,도보,
+2026-04-14,12,13:30,18:30,비엔날레/부라노,Venice Biennale,Sightseeing,30,"https://www.google.com/maps/search/?api=1&query=45.42,12.35",,,현대미술 또는 부라노 섬,45.4285,12.3575,바포레토,
+2026-04-14,12,18:30,19:30,저녁: 카람파네,Antiche Carampane,Food,80,"https://www.google.com/maps/search/?api=1&query=45.43,12.33",,,정통 해산물 맛집,45.4385,12.3311,도보,
+2026-04-14,12,19:30,23:59,곤돌라 야경,Grand Canal,Sightseeing,80,"https://www.google.com/maps/search/?api=1&query=45.43,12.33",,,낭만적인 곤돌라,45.4345,12.3385,곤돌라,

@@ -1,7 +1,7 @@
-Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng
-2026-04-17,15,09:00,10:00,🚆 기차 이동 (볼로냐 -> 피렌체),Bologna -> Florence,Transport,25,https://www.google.com/maps/search/?api=1&query=Firenze+SMN,,,피렌체 SMN 역 도착,43.7775,11.2515
-2026-04-17,15,11:30,13:30,🍴 점심: Mercato Centrale,Florence,Food,20,https://www.google.com/maps/search/?api=1&query=Mercato+Centrale+Firenze,,https://www.mercatocentrale.it/firenze/,중앙시장 미식 체험,43.7765,11.2555
-2026-04-17,15,14:00,15:00,🏠 [체크인] Plus Florence,Florence,Accommodation,150,https://www.google.com/maps/search/?api=1&query=Plus+Florence,https://www.plus-florence.com/,https://www.plus-florence.com/,수영장 있는 고평점 숙소,43.78,11.255
-2026-04-17,15,15:30,18:00,🎨 우피치 미술관 관람,Florence,Sightseeing,25,https://www.google.com/maps/search/?api=1&query=Uffizi+Gallery,https://www.uffizi.it/,https://www.uffizi.it/,르네상스 예술의 정수,43.7677,11.2553
-2026-04-17,15,18:30,21:00,🍴 저녁: Regina Bistecca,Florence,Food,80,https://www.google.com/maps/search/?api=1&query=Regina+Bistecca+Florence,,https://www.reginabistecca.com/,인생 티본 스테이크,43.7735,11.2565
-2026-04-17,15,21:00,23:59,🛌 숙소 복귀 및 휴식,Florence,Rest,0,https://www.google.com/maps/search/?api=1&query=Plus+Florence,,,피렌체에서의 첫날 마무리,43.78,11.255
+Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,Transit,PlanB
+2026-04-17,15,00:00,08:30,수면,Hotel Spadai,Accommodation,0,"https://www.google.com/maps/search/?api=1&query=43.77,11.25",,,피렌체 체크아웃 (12:00),43.7735,11.2555,,
+2026-04-17,15,08:30,11:30,로마 이동,Rome Termini,Transport,50,"https://www.google.com/maps/search/?api=1&query=41.9,12.5",,,고속열차 이동,41.9014,12.502,기차,
+2026-04-17,15,11:30,13:30,점심: 로스치올리,Roscioli,Food,75,"https://www.google.com/maps/search/?api=1&query=41.89,12.47",,,인생 카르보나라 11:30 예약,41.8942,12.4743,메트로,
+2026-04-17,15,13:30,18:30,콜로세움/포로로마노,Colosseum,Sightseeing,20,"https://www.google.com/maps/search/?api=1&query=41.89,12.49",,,로마 3박 4일 체크인 (14:00) 후 관광,41.8905,12.4925,메트로,
+2026-04-17,15,18:30,19:30,저녁: 산타 루치아,Santa Lucia,Food,80,"https://www.google.com/maps/search/?api=1&query=41.89,12.47",,,테라스에서 완벽한 저녁,41.8995,12.4725,도보,
+2026-04-17,15,19:30,23:59,나보나 야경,Piazza Navona,Sightseeing,0,"https://www.google.com/maps/search/?api=1&query=41.89,12.47",,,분수 야경,41.8992,12.4731,도보,

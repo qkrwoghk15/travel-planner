@@ -1,5 +1,7 @@
-Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng
-2026-04-16,14,09:30,11:30,🚶 볼로냐 대학 & 해부학 강의실,Bologna,Sightseeing,5,https://www.google.com/maps/search/?api=1&query=Archiginnasio+of+Bologna,,,유럽 최고 대학 역사 체험,44.492,11.3435
-2026-04-16,14,11:30,13:30,🍴 점심: Mercato delle Erbe (에르베 시장),Bologna,Food,25,https://www.google.com/maps/search/?api=1&query=Mercato+delle+Erbe+Bologna,,,현지인 시장 미식,44.4975,11.3395
-2026-04-16,14,18:30,20:30,🍴 저녁: Oltre (모던 볼로네제),Bologna,Food,55,https://www.google.com/maps/search/?api=1&query=Oltre+Bologna,,http://www.oltrebologna.it/,전통의 현대적 재해석 미식,44.5,11.34
-2026-04-16,14,20:30,23:59,🛌 숙소 복귀 및 휴식,Bologna,Rest,0,https://www.google.com/maps/search/?api=1&query=Combo+Bologna,,,연박 숙소 휴식,44.508,11.342
+Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,Transit,PlanB
+2026-04-16,14,00:00,08:30,수면,Hotel Spadai,Accommodation,0,"https://www.google.com/maps/search/?api=1&query=43.77,11.25",,,,43.7735,11.2555,,
+2026-04-16,14,08:30,11:30,아카데미아/다비드,Accademia,Sightseeing,20,"https://www.google.com/maps/search/?api=1&query=43.77,11.25",,,다비드상 원본 관람,43.7769,11.2585,도보,
+2026-04-16,14,11:30,13:30,점심: 중앙시장,Mercato Centrale,Food,35,"https://www.google.com/maps/search/?api=1&query=43.77,11.25",,,푸드홀 미식 투어,43.7765,11.2515,도보,
+2026-04-16,14,13:30,18:30,미켈란젤로 광장,Piazzale Michelangelo,Sightseeing,0,"https://www.google.com/maps/search/?api=1&query=43.76,11.26",,,피렌체 일몰 감상,43.7629,11.2651,버스,
+2026-04-16,14,18:30,19:30,저녁: 레지나,Regina Bistecca,Food,90,"https://www.google.com/maps/search/?api=1&query=43.77,11.25",,,고품격 스테이크 다이닝,43.7731,11.2565,도보,
+2026-04-16,14,19:30,23:59,베키오 다리,Ponte Vecchio,Sightseeing,0,"https://www.google.com/maps/search/?api=1&query=43.76,11.25",,,다리 야경 및 휴식,43.7679,11.2531,도보,

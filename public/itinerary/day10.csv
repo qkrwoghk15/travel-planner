@@ -1,7 +1,7 @@
-Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng
-2026-04-12,10,08:30,11:30,🚆 기차 이동 (인터라켄 -> 밀라노),Interlaken -> Milan,Transport,85,https://www.google.com/maps/search/?api=1&query=Milano+Centrale,,,도모도솔라 구간 기차 이동,45.4858,9.2039
-2026-04-12,10,11:45,12:30,🏠 [체크인] 43 Station Hotel,Milan,Accommodation,150,https://www.google.com/maps/search/?api=1&query=43+Station+Hotel+Milan,https://www.43stationhotel.com/,https://www.43stationhotel.com/,중앙역 도보 3분 가성비 숙소,45.4862,9.2025
-2026-04-12,10,13:00,14:30,🍴 점심: Luini (판제로티),Milan,Food,15,https://www.google.com/maps/search/?api=1&query=Luini+Milan,,https://www.luini.it/,밀라노 최고의 길거리 미식,45.4646,9.1916
-2026-04-12,10,14:30,17:30,⛪ 밀라노 두오모 루프탑 & Peck 쇼핑,Milan,Sightseeing,25,https://www.google.com/maps/search/?api=1&query=Duomo+di+Milano,https://www.duomomilano.it/,https://www.duomomilano.it/,두오모 테라스 및 Peck 쇼핑,45.4642,9.1919
-2026-04-12,10,18:30,20:30,🍴 저녁: Ratanà (오소부코),Milan,Food,65,https://www.google.com/maps/search/?api=1&query=Ratana+Milan,https://www.ratana.it/,https://www.ratana.it/,밀라노 정통 오소부코 미식,45.4855,9.1895
-2026-04-12,10,21:00,23:59,🛌 숙소 복귀 및 휴식,Milan,Rest,0,https://www.google.com/maps/search/?api=1&query=43+Station+Hotel+Milan,,,밀라노 중심가 개인실 휴식,45.4862,9.2025
+Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,Transit,PlanB
+2026-04-12,10,00:00,08:30,수면,Prague Marriott,Accommodation,0,"https://www.google.com/maps/search/?api=1&query=50.08,14.43",,,,50.0885,14.4315,,
+2026-04-12,10,08:30,11:30,프라하 성,Prague Castle,Sightseeing,15,"https://www.google.com/maps/search/?api=1&query=50.09,14.4",,,세계 최대 고성 단지,50.0905,14.4005,트램,
+2026-04-12,10,11:30,13:30,점심: 나셰 마소,Naše Maso,Food,25,"https://www.google.com/maps/search/?api=1&query=50.09,14.42",,,정육점 햄버거와 육회,50.0905,14.4275,도보,
+2026-04-12,10,13:30,18:30,페트린 언덕,Petrin,Sightseeing,10,"https://www.google.com/maps/search/?api=1&query=50.08,14.39",,,"푸니쿨라, 전경 감상",50.0825,14.3965,푸니쿨라,
+2026-04-12,10,18:30,19:30,저녁: 미슐랭 Field,Field,Food,100,"https://www.google.com/maps/search/?api=1&query=50.09,14.42",,,파인다이닝 (18:30 예약 필수),50.0925,14.4215,도보,
+2026-04-12,10,19:30,23:59,카를교 야경,Charles Bridge,Sightseeing,0,"https://www.google.com/maps/search/?api=1&query=50.08,14.41",,,야경 감상 후 귀가,50.0865,14.4115,도보,

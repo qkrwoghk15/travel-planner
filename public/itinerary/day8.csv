@@ -1,7 +1,7 @@
-Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng
-2026-04-10,8,08:30,09:00,🔑 [체크아웃] Zermatt Youth Hostel,Zermatt,Accommodation,0,https://www.google.com/maps/search/?api=1&query=Zermatt+Youth+Hostel,,,체크아웃 후 인터라켄 이동,46.015,7.746
-2026-04-10,8,09:00,11:30,🚆 기차 이동 (체르마트 -> 인터라켄),Zermatt -> Interlaken,Transport,55,https://www.google.com/maps/search/?api=1&query=Interlaken+Ost,,,인터라켄 동역 도착 및 짐 보관,46.6841,7.8643
-2026-04-10,8,11:30,13:30,🍴 점심: Little Thai,Interlaken,Food,25,https://www.google.com/maps/search/?api=1&query=Little+Thai+Interlaken,,https://www.littlethai.ch/,인터라켄 동역 도보 10분 아시아 미식,46.6825,7.8535
-2026-04-10,8,14:00,15:00,🏠 [체크인] Backpackers Villa,Interlaken,Accommodation,180,https://www.google.com/maps/search/?api=1&query=Backpackers+Villa+Interlaken,https://www.villa.ch/,https://www.villa.ch/,인터라켄 거점 숙소 체크인,46.6854,7.8614
-2026-04-10,8,15:30,18:00,⛴️ 브리엔츠 호수 유람선,Interlaken,Sightseeing,40,https://www.google.com/maps/search/?api=1&query=Interlaken+Ost+See,,https://www.bls.ch/en/freizeit-und-urlaub/schifffahrt,에메랄드빛 유람선 체험,46.6915,7.8705
-2026-04-10,8,18:30,20:00,🍴 저녁: Hüsi Bierhaus,Interlaken,Food,35,https://www.google.com/maps/search/?api=1&query=Husi+Bierhaus+Interlaken,,https://www.huesibierhaus.com/,스위스 맥주와 뢰스티 요리,46.685,7.855
+Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,Transit,PlanB
+2026-04-10,8,00:00,08:30,수면,iQ Hotel Munchen,Accommodation,0,"https://www.google.com/maps/search/?api=1&query=48.13,11.56",,,,48.1385,11.5625,,
+2026-04-10,8,08:30,11:30,BMW 박물관,BMW Museum,Sightseeing,20,"https://www.google.com/maps/search/?api=1&query=48.17,11.55",,,미래지향적 자동차 전시,48.1765,11.5595,메트로,
+2026-04-10,8,11:30,13:30,점심: 바바리안 파인,Weinhaus Neuner,Food,50,"https://www.google.com/maps/search/?api=1&query=48.13,11.56",,,고급 독일 요리,48.1385,11.5685,메트로,
+2026-04-10,8,13:30,18:30,영국 정원/궁전,Englischer Garten,Sightseeing,0,"https://www.google.com/maps/search/?api=1&query=48.15,11.59",,,도심 속 거대 공원 힐링,48.1525,11.5915,도보,
+2026-04-10,8,18:30,19:30,저녁: 테레사 그릴,Theresa Grill,Food,60,"https://www.google.com/maps/search/?api=1&query=48.14,11.57",,,참나무 장작 그릴 스테이크,48.1495,11.5775,도보,
+2026-04-10,8,19:30,23:59,휴식,iQ Hotel Munchen,Accommodation,0,"https://www.google.com/maps/search/?api=1&query=48.13,11.56",,,,48.1385,11.5625,도보,

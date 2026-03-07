@@ -1,6 +1,7 @@
-Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng
-2026-04-03,1,18:10,19:10,🛬 CDG 공항 착륙 및 입국,Paris (CDG),Transport,0,https://www.google.com/maps/search/?api=1&query=Paris+Charles+de+Gaulle+Airport,,,파리 도착 및 입국 심사,49.0097,2.5479
-2026-04-03,1,19:10,20:10,🚆 [이동] RER B 급행 열차,Paris,Transport,12,https://www.google.com/maps/search/?api=1&query=Chatelet+Les+Halles,,,시내 중심 Châtelet 역까지 직통 이동,48.8623,2.3483
-2026-04-03,1,20:10,21:00,🏠 [체크인] Hôtel Astra Opéra,Paris (9구),Accommodation,170,https://www.google.com/maps/search/?api=1&query=Hotel+Astra+Opera+Paris,https://www.astraparkhotel.com/,https://www.astraparkhotel.com/,오페라 인근 4성급 호텔,48.8732,2.3295
-2026-04-03,1,21:00,22:30,🍴 저녁: Bistrot Paul Bert,Paris,Food,35,https://www.google.com/maps/search/?api=1&query=Bistrot+Paul+Bert+Paris,,http://www.bistrotpaulbert.fr/,120년 전통의 프랑스 정통 비스트로,48.8506,2.3852
-2026-04-03,1,22:30,23:59,🛌 숙소 복귀 및 휴식,Paris,Rest,0,https://www.google.com/maps/search/?api=1&query=Hotel+Astra+Opera+Paris,,,조용한 개인실에서 휴식,48.8732,2.3295
+Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,Transit,PlanB
+2026-04-03,1,00:00,10:10,인천공항 대기,인천공항 (ICN),Transport,0,"https://www.google.com/maps/search/?api=1&query=37.46,126.44",,,티웨이 TW0401 탑승 대기,37.4602,126.4407,도보,
+2026-04-03,1,10:10,18:10,파리행 비행 (TW0401),Charles de Gaulle (CDG),Transport,0,"https://www.google.com/maps/search/?api=1&query=49.0,2.54",,,총 15시간 비행 (기내식으로 점심/저녁 해결),49.0097,2.5479,비행기,기내식
+2026-04-03,1,18:10,19:30,입국 및 짐 찾기,Paris (CDG),Transport,0,"https://www.google.com/maps/search/?api=1&query=49.0,2.54",,,입국 심사 및 수하물 수령,49.0097,2.5479,도보,
+2026-04-03,1,19:30,20:45,시내 이동,Cler Hôtel,Transport,15,"https://www.google.com/maps/search/?api=1&query=48.85,2.3",,,RER B ➔ Metro 8호선,48.8575,2.3055,기차,택시 (€65)
+2026-04-03,1,20:45,21:30,체크인,Cler Hôtel,Accommodation,180,"https://www.google.com/maps/search/?api=1&query=48.85,2.3",,,파리 3박 4일 숙박 시작 (체크인 15:00/체크아웃 11:30),48.8575,2.3055,도보,
+2026-04-03,1,21:30,23:59,늦은 저녁/야경,에펠탑,Food,30,"https://www.google.com/maps/search/?api=1&query=48.85,2.29",,,화이트 에펠 관람 및 로컬 푸드,48.8584,2.2945,도보,

@@ -1,6 +1,7 @@
-Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng
-2026-04-07,5,09:30,11:30,⛪ 푸르비에르 성당 & 트라불 탐사,Lyon,Sightseeing,0,https://www.google.com/maps/search/?api=1&query=Basilica+of+Notre+Dame+de+Fourviere,,,푸니쿨라 탑승 후 리옹 전경 감상,45.7623,4.8222
-2026-04-07,5,11:30,13:30,🍴 점심: Daniel et Denise,Lyon,Food,45,https://www.google.com/maps/search/?api=1&query=Daniel+et+Denise+Lyon,,https://danieletdenise.fr/,리옹 최고 셰프의 정통 부숑 체험,45.7615,4.8425
-2026-04-07,5,14:00,17:00,🚶 비외 리옹(Vieux Lyon) 산책,Lyon,Sightseeing,0,https://www.google.com/maps/search/?api=1&query=Vieux+Lyon,,,유네스코 구시가지 비밀 통로 탐방,45.7624,4.8275
-2026-04-07,5,18:30,20:00,🍴 저녁: Restaurant Le Musée,Lyon,Food,40,https://www.google.com/maps/search/?api=1&query=Restaurant+Le+Musee+Lyon,,https://www.facebook.com/restaurantlemusee/,현지인들이 사랑하는 아늑한 미식,45.7645,4.835
-2026-04-07,5,20:30,23:59,🛌 숙소 복귀 및 휴식,Lyon,Rest,0,https://www.google.com/maps/search/?api=1&query=Hotel+Vaubecour+Lyon,,,연박 숙소 개인실 휴식,45.7596,4.8585
+Date,Day,StartTime,EndTime,Activity,Location,Category,Cost,MapLink,BookingLink,OfficialLink,Description,Lat,Lng,Transit,PlanB
+2026-04-07,5,00:00,08:00,수면,Hôtel La Résidence,Accommodation,0,"https://www.google.com/maps/search/?api=1&query=45.75,4.83",,,리옹 체크아웃 (12:00),45.7555,4.8325,,
+2026-04-07,5,08:00,11:30,인터라켄 이동,Interlaken Ost,Transport,85,"https://www.google.com/maps/search/?api=1&query=46.69,7.86",,,제네바 환승,46.6904,7.8692,기차,
+2026-04-07,5,11:30,13:30,점심: 퐁뒤 빌라,Fondue Villa,Food,65,"https://www.google.com/maps/search/?api=1&query=46.68,7.85",,,인터라켄 도착 후 바로 점심,46.6835,7.8515,도보,
+2026-04-07,5,13:30,18:30,유람선/하더쿨름,Lake Brienz,Sightseeing,35,"https://www.google.com/maps/search/?api=1&query=46.69,7.86",,,"체크인 (2박 3일, 15:00) 후 유람선",46.6904,7.8692,유람선,
+2026-04-07,5,18:30,19:30,저녁: 하더쿨름,Harder Kulm,Food,55,"https://www.google.com/maps/search/?api=1&query=46.69,7.85",,,일몰 전망 식사,46.6975,7.8555,푸니쿨라,
+2026-04-07,5,19:30,23:59,휴식,Hotel Interlaken,Accommodation,0,"https://www.google.com/maps/search/?api=1&query=46.68,7.86",,,호텔 복귀,46.6865,7.8635,도보,
